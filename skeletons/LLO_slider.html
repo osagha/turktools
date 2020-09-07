@@ -1,0 +1,55 @@
+<!-- LLO function: https://www.frontiersin.org/articles/10.3389/fnins.2012.00001/full -->
+<!-- The LLO function \pi is defined implicitly as : Lo(\pi(p)) = \gamma Lo(p) + (1-\gamma) Lo(x_0) -->
+<!-- x_0 is the fixed point of the transformation -->
+<!-- The "steepness" parameter \gamma is the slope of the curve at x_0 -->
+<!-- Lo, or log-odds, is defined as follows: Lo(p) = log(p/(1-p)) -->
+<!-- When x_0=0.5,the plot is rotationally symmetric, and we can simplify as follows: -->
+<!-- \pi(p) = 1/(1 + (-1 + 1/p)^\gamma) -->
+
+<!-- slider reference: https://stackoverflow.com/questions/51347057/javascript-non-linear-range-slider -->
+
+<!-- CSS reference: https://www.w3schools.com/tags/att_input_type_range.asp#:~:text=The%20%3Cinput%20type%3D%22range,accepted%20with%20the%20attributes%20below. -->
+
+<style type="text/css">
+.slider-wrapper input {
+  width: 300px;
+  height: 20px;
+  margin: 0;
+  transform-origin: 75px 75px;
+}
+</style>
+
+<div style="height: 100px;">&nbsp;</div>
+
+<div class="slider-wrapper">
+    <input
+      id="input"
+      type="range"
+      min="0"
+      max="1"
+      value="0.5"
+      step="0.0001"
+    />
+</div>
+
+<div id="output"></div>
+
+<script type="text/javascript">
+const x = document.getElementById('input');
+const y = document.getElementById('output');
+
+
+/** LLO **/
+function updateOutput(event) {
+  y.innerText = (100/(1 + Math.pow((-1 + 1/x.value), 1.5))).toFixed(3) + "%";
+}
+
+/** Logistic curve
+function updateOutput(event) {
+  y.innerText = precise(100/(1 + Math.exp(-0.1 * x.value))) + "%";
+}
+**/
+
+updateOutput();
+input.addEventListener('mousemove', updateOutput);
+</script>
