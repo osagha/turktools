@@ -1,8 +1,6 @@
 .DS_Store
-*.csv
+.idea/
 *.pyc
-*.html
-*.txt
 .coverage
 _site
 Gemfile.lock
