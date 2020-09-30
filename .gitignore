@@ -1,5 +1,5 @@
 .DS_Store
-.idea/
+.idea/**
 *.pyc
 .coverage
 _site

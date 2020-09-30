@@ -1,0 +1,181 @@
+{{! Slider template skeleton; use templater.py! }}
+
+<style type="text/css">
+label, input[type=radio], input[type=button] { cursor: pointer; }
+.blue { color: blue; }
+.red { color: red; }
+.trial { padding: 15px 10px; }
+.trial p, .trial table { padding-left: 50px; margin: 3px; }
+.trial table { width: 400px; }
+.trial tr td { width: 14%; text-align: center; }
+.trial_number { float: left; font-size: 1.5em; font-weight: bold; display:inline-block; min-width:50px; }
+#unanswered { font-weight: bold; font-size: 2em; color: black; background-color: red; margin: 0 auto; width: 500px; border: black 1px solid; padding: 10px; display:none; }
+#answered { margin: 0 auto; width: 500px; border: black 1px solid; padding: 10px; display:none; }
+.slider { width: 300px; margin: 0 10px; }
+</style>
+
+<style type="text/css">
+.slider-wrapper input {
+  width: 300px;
+  height: 20px;
+  margin: 0;
+  transform-origin: 75px 75px;
+}
+</style>
+
+<p>Survey Code: <span class="blue">{{code}}</span></p>
+<p class="red"><strong>PLEASE COMPLETE AT MOST ONE <span class="blue">{{code}}</span> SURVEY. YOU WILL NOT BE PAID FOR COMPLETING MORE THAN ONE SURVEY WITH THIS CODE.</strong></p>
+<p><strong>This survey requires that your browser have <span class="red">JavaScript</span> enabled.</strong></p>
+
+<h3>Instructions</h3>
+<p>This questionnaire presents 10 English sentences. <strong>Your task is to judge how helpful an answer is to a question.</strong> Don't worry if it's not completely clear how helpful the answer is. There is no right answer: We're only interested in <strong>your intuition</strong>.</p>
+<p>You can indicate the probability by dragging the slider between "Unhelpful" and "Helpful".</p>
+<p>Here is an example:</p>
+<div class="trial">
+	<p><strong>Background: </strong>Your friend Aaron has gone to Paris on vacation. He's the kind of person who would rather sit in a cafe all day than go around visiting tourist sites. But he'll make an exception for the really unmissable sites.</p>
+	<p><strong>You ask Aaron's friend Jess:</strong> Will Aaron go to the Eiffel Tower?</p>
+	<p><strong>Jess answers:</strong> It's his tenth time visiting Paris.</p>
+	<p><strong>How helpful is Jess's answer?</strong> Please indicate your answer by selecting one of the buttons below, where 1 means not helpful at all, and 7 means very helpful.</p>
+
+	<table><tbody>
+		<tr>
+			<td></td>
+			<td><label for="ChoiceSample1-1">1</label></td>
+			<td><label for="ChoiceSample1-2">2</label></td>
+			<td><label for="ChoiceSample1-3">3</label></td>
+			<td><label for="ChoiceSample1-4">4</label></td>
+			<td><label for="ChoiceSample1-5">5</label></td>
+			<td><label for="ChoiceSample1-6">6</label></td>
+			<td><label for="ChoiceSample1-7">7</label></td>
+		</tr>
+		<tr>
+			<td>Not helpful at all</td>
+			<td><input type="radio" id="ChoiceSample1-1" name="ChoiceSample1" value="1" /></td>
+			<td><input type="radio" id="ChoiceSample1-2" name="ChoiceSample1" value="2" /></td>
+			<td><input type="radio" id="ChoiceSample1-3" name="ChoiceSample1" value="3" /></td>
+			<td><input type="radio" id="ChoiceSample1-4" name="ChoiceSample1" value="4" /></td>
+			<td><input type="radio" id="ChoiceSample1-5" name="ChoiceSample1" value="5" /></td>
+			<td><input type="radio" id="ChoiceSample1-6" name="ChoiceSample1" value="6" /></td>
+			<td><input type="radio" id="ChoiceSample1-7" name="ChoiceSample1" value="7" /></td>
+			<td>Very helpful</td>
+		</tr>
+	</tbody></table>
+
+	<p>Jess's answer isn't as helpful as a simple "yes" or "no", but it's still helpful given that you already know that Aaron doesn't like being a tourist. So select a button on the right, like 5 or 6. </p>
+</div>
+
+<p>Here is another example:</p>
+<div class="trial">
+	<p><strong>Background: </strong>You're ready to leave home for the day, and you haven't checked the weather. It's springtime, and the weather is warming up.</p>
+	<p><strong>You ask your roommate: </strong>Do I need to wear a jacket?</p>
+	<p><strong>Your roommate replies: </strong>There's a full moon tonight.</p>
+	<p><strong>How helpful is your roommate's answer?</strong>Please indicate your answer by selecting one of the buttons below, where 1 means not helpful at all, and 7 means very helpful.</p>
+	<table><tbody>
+		<tr>
+			<td></td>
+			<td><label for="ChoiceSample2-1">1</label></td>
+			<td><label for="ChoiceSample2-2">2</label></td>
+			<td><label for="ChoiceSample2-3">3</label></td>
+			<td><label for="ChoiceSample2-4">4</label></td>
+			<td><label for="ChoiceSample2-5">5</label></td>
+			<td><label for="ChoiceSample2-6">6</label></td>
+			<td><label for="ChoiceSample2-7">7</label></td>
+		</tr>
+		<tr>
+			<td>Not helpful at all</td>
+			<td><input type="radio" id="ChoiceSample2-1" name="ChoiceSample1" value="1" /></td>
+			<td><input type="radio" id="ChoiceSample2-2" name="ChoiceSample1" value="2" /></td>
+			<td><input type="radio" id="ChoiceSample2-3" name="ChoiceSample1" value="3" /></td>
+			<td><input type="radio" id="ChoiceSample2-4" name="ChoiceSample1" value="4" /></td>
+			<td><input type="radio" id="ChoiceSample2-5" name="ChoiceSample1" value="5" /></td>
+			<td><input type="radio" id="ChoiceSample2-6" name="ChoiceSample1" value="6" /></td>
+			<td><input type="radio" id="ChoiceSample2-7" name="ChoiceSample1" value="7" /></td>
+			<td>Very helpful</td>
+		</tr>
+	</tbody></table>
+	<p>Your roommate's answer doesn't help you figure out if you need wear a jacket. So select a value on the left, like 1 or 2. </p>
+</div>
+
+
+<p class="red"><strong>In order to get paid, please make sure that you answer all {{total_number}} questions.</strong></p>
+<p><strong>Consent Statement:</strong> ... </p>
+<p>A counter will be displayed at the bottom of the page indicating how many questions have been answered. Please use this tool before submitting to ensure that all questions have been answered and you can receive payment.</p>
+<hr noshade="noshade" />
+<p class="red"><strong>IF YOU HAVE ALREADY COMPLETED A <span class="blue">{{code}}</span> SURVEY, PLEASE STOP HERE. YOU WILL NOT BE PAID FOR COMPLETING MORE THAN ONE SURVEY WITH THIS CODE.</strong></p>
+
+{{#items}}
+
+<div class="trial count">
+	<span class="trial_number">{{number}}.</span>
+	<p>{{field_1}}</p>
+	<p>{{field_3}}</p>
+	<table><tr><td class='label'>UNHELPFUL</td><td>
+		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response{{number}}"/></div>
+		</td><td class='label'>HELPFUL</td></tr>
+	</table>
+</div>
+
+<hr noshade="noshade" />
+
+{{/items}}
+
+<p>Are you a native speaker of English? <label for="englishY"><input id="englishY" type="radio" name="english" value="1" /> Yes</label> <label for="englishN"><input id="englishN" type="radio" name="english" value="0" /> No</label></p>
+<p>Do you speak a language other than English? <label for="foreignlangY"><input id="foreignlangY" type="radio" name="foreignlang" value="1" /> Yes</label> <label for="foreignlangN"><input id="foreignlangN" type="radio" name="foreignlang" value="0" /> No</label></p>
+<p>(Your answers to these questions do not affect the payment.)</p>
+
+<div id="unanswered">
+	<span>&nbsp;</span> questions (out of {{total_number}} total) have been answered. If you submit now, you will not be paid.<br />
+	<input type="button" value="HIGHLIGHT UNANSWERED QUESTIONS" id="highlight-button" />
+</div>
+
+<div id="answered">
+	<span>&nbsp;</span> questions (out of {{total_number}} total) have been answered. You are ready to submit.
+</div>
+<h3 style="color: red; text-align:center;">After submitting this HIT, do NOT submit another HIT with survey code <span class="blue">{{code}}</span>. You will not be paid for completing more than one survey with this code.</h3>
+<p><input type="hidden" name="numanswered" id="numanswered" /> <input type="hidden" name="useragent" id="useragent" /></p>
+
+<script type='text/javascript'>
+
+total_number = parseInt("{{total_number}}") || Infinity;
+
+function count() {
+	if ($(this).is('div'))
+		$(this).closest('.count').addClass('touched').css('background','transparent');
+
+	var num = $('.count.touched').length;
+
+	$('#unanswered span, #answered span').text(num);
+	$('#numanswered').val(num);
+
+	if ( num < total_number ) {
+		$('#unanswered').show();
+		$('#answered').hide();
+	} else {
+		$('#unanswered').hide();
+		$('#answered').show();
+	}
+}
+$(count);
+
+$(function() {
+	$('#useragent').val(navigator.userAgent);
+});
+
+function highlight() {
+	$('.count').css('background', 'yellow');
+	$('.count.touched').css('background', 'transparent');
+}
+$('#highlight-button').click(highlight);
+
+var link = new $.noUiSlider.Link({target: function(val) {$(this).siblings('input').val(val);}});
+$(".slider").noUiSlider({
+	range: { min: [0], max: [100] },
+	start: [50],
+	handles: 1,
+	connect: "lower",
+	serialization: {
+		lower: [link],
+		format: {decimals: 0}
+	}
+}).on('slide', count);
+</script>
