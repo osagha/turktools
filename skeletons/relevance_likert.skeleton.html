@@ -46,7 +46,6 @@ label, input[type=radio], input[type=button] { cursor: pointer; }
 			<td><label for="ChoiceSample1-4">4</label></td>
 			<td><label for="ChoiceSample1-5">5</label></td>
 			<td><label for="ChoiceSample1-6">6</label></td>
-			<td><label for="ChoiceSample1-7">7</label></td>
 		</tr>
 		<tr>
 			<td>Not helpful at all</td>
@@ -56,7 +55,6 @@ label, input[type=radio], input[type=button] { cursor: pointer; }
 			<td><input type="radio" id="ChoiceSample1-4" name="ChoiceSample1" value="4" /></td>
 			<td><input type="radio" id="ChoiceSample1-5" name="ChoiceSample1" value="5" /></td>
 			<td><input type="radio" id="ChoiceSample1-6" name="ChoiceSample1" value="6" /></td>
-			<td><input type="radio" id="ChoiceSample1-7" name="ChoiceSample1" value="7" /></td>
 			<td>Very helpful</td>
 		</tr>
 	</tbody></table>
@@ -79,7 +77,6 @@ label, input[type=radio], input[type=button] { cursor: pointer; }
 			<td><label for="ChoiceSample2-4">4</label></td>
 			<td><label for="ChoiceSample2-5">5</label></td>
 			<td><label for="ChoiceSample2-6">6</label></td>
-			<td><label for="ChoiceSample2-7">7</label></td>
 		</tr>
 		<tr>
 			<td>Not helpful at all</td>
@@ -89,7 +86,6 @@ label, input[type=radio], input[type=button] { cursor: pointer; }
 			<td><input type="radio" id="ChoiceSample2-4" name="ChoiceSample1" value="4" /></td>
 			<td><input type="radio" id="ChoiceSample2-5" name="ChoiceSample1" value="5" /></td>
 			<td><input type="radio" id="ChoiceSample2-6" name="ChoiceSample1" value="6" /></td>
-			<td><input type="radio" id="ChoiceSample2-7" name="ChoiceSample1" value="7" /></td>
 			<td>Very helpful</td>
 		</tr>
 	</tbody></table>
@@ -107,12 +103,31 @@ label, input[type=radio], input[type=button] { cursor: pointer; }
 
 <div class="trial count">
 	<span class="trial_number">{{number}}.</span>
-	<p>{{field_1}}</p>
-	<p>{{field_3}}</p>
-	<table><tr><td class='label'>UNHELPFUL</td><td>
-		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response{{number}}"/></div>
-		</td><td class='label'>HELPFUL</td></tr>
-	</table>
+	<p><strong>Background: </strong>{{field_1}}</p>
+	<p><strong>{{field_2}}</strong>{{field_3}}</p>
+	<p><strong>{{field_4}}</strong>{{field_5}}</p>
+	<p><strong>{{field_6}}</strong></p>
+	<table><tbody>
+		<tr>
+			<td></td>
+			<td><label for="Choice{{number}}-1">1</label></td>
+			<td><label for="Choice{{number}}-2">2</label></td>
+			<td><label for="Choice{{number}}-3">3</label></td>
+			<td><label for="Choice{{number}}-4">4</label></td>
+			<td><label for="Choice{{number}}-5">5</label></td>
+			<td><label for="Choice{{number}}-6">6</label></td>
+		</tr>
+		<tr>
+			<td>Not helpful at all</td>
+			<td><input type="radio" id="Choice{{number}}-1" name="Choice{{number}}" value="1" /></td>
+			<td><input type="radio" id="Choice{{number}}-2" name="Choice{{number}}" value="2" /></td>
+			<td><input type="radio" id="Choice{{number}}-3" name="Choice{{number}}" value="3" /></td>
+			<td><input type="radio" id="Choice{{number}}-4" name="Choice{{number}}" value="4" /></td>
+			<td><input type="radio" id="Choice{{number}}-5" name="Choice{{number}}" value="5" /></td>
+			<td><input type="radio" id="Choice{{number}}-6" name="Choice{{number}}" value="6" /></td>
+			<td>Very helpful</td>
+		</tr>
+	</tbody></table>
 </div>
 
 <hr noshade="noshade" />
