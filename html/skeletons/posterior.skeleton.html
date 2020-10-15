@@ -1,0 +1,161 @@
+{{! Slider template skeleton; use templater.py! }}
+
+<style type="text/css">
+label, input[type=radio], input[type=button] { cursor: pointer; }
+.blue { color: blue; }
+.red { color: red; }
+.trial { padding: 15px 10px; }
+.trial p, .trial table { padding-left: 50px; margin: 3px; }
+.trial_number { float: left; font-size: 1.5em; font-weight: bold; display:inline-block; min-width:50px; }
+#unanswered { font-weight: bold; font-size: 2em; color: black; background-color: red; margin: 0 auto; width: 500px; border: black 1px solid; padding: 10px; display:none; }
+#answered { margin: 0 auto; width: 500px; border: black 1px solid; padding: 10px; display:none; }
+.slider { width: 300px; margin: 0 10px; }
+</style>
+
+<style type="text/css">
+.slider-wrapper input {
+  width: 300px;
+  height: 20px;
+  margin: 0;
+  transform-origin: 75px 75px;
+}
+</style>
+
+<p>Survey Code: <span class="blue">{{code}}</span></p>
+<p class="red"><strong>PLEASE COMPLETE AT MOST ONE <span class="blue">{{code}}</span> SURVEY. YOU WILL NOT BE PAID FOR COMPLETING MORE THAN ONE SURVEY WITH THIS CODE.</strong></p>
+<p><strong>This survey requires that your browser have <span class="red">JavaScript</span> enabled.</strong></p>
+
+<h3>Instructions</h3>
+<p>This questionnaire presents 10 English sentences. <strong>Your task is to judge what the probability of an event is.</strong> Don't worry if there isn't enough information to assign an exact probability to the possibility. This means that there is no right answer: We're only interested in <strong>your intuition</strong>.</p>
+<p>You can indicate the probability by dragging the slider between "Impossible" and "Certain". As you move the slider, you can see how the probability of the event changes.</p>
+<p>Here is an example:</p>
+<div class="trial">
+	<p><strong>Background: </strong>Your friend Aaron has gone to Paris on vacation. He's the kind of person who would rather sit in a cafe all day than go around visiting tourist sites. But he'll make an exception for the really unmissable sites.</p>
+	<p><strong>Aaron's friend Jess turns to you and says:</strong> It's Aaron's tenth time visiting Paris.</p>
+	<p><strong>What's the probability that Aaron will go to the Eiffel Tower?</strong></p>
+
+	<table><tr><td class='label'>IMPOSSIBLE</td><td>
+		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response_example1"/></div>
+		<div class="output"></div></td><td class='label'>CERTAIN</td></tr>
+	</table>
+	<p>The probability that Aaron will go to the Eiffel Tower is pretty low, since he avoids tourist sites and has been to Paris many times. </p>
+	<p>So slide the slider to the left until you're happy with the percentage that shows under the slider. </p>
+    <p>You may notice that the probabilities change more slowly as the slider approaches the 0% or 100%. This is to give you more control if the event is very unlikely or very likely.</p>
+</div>
+
+<p>Here is another example:</p>
+<div class="trial">
+	<p>Lauren is getting dressed to go outside. It's December and she lives in Canada.</p>
+	<p><strong>Lauren's roommate turns to you and says: </strong>There's a full moon tonight.</p>
+	<p>What's the probability that Lauren will put on shorts?</p>
+	<table><tr><td class='label'>IMPOSSIBLE</td><td>
+		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response_example2"/></div>
+		<div class="output"></div></td><td class='label'>CERTAIN</td></tr>
+	</table>
+	<p>The probability that Lauren will put on shorts is very low, since it is cold in Canada in December. Lauren's roommate's statement about the full moon doesn't change anything.</p>
+	<p>So slide the slider to the left until you are happy with the percentage that shows under the slider. </p>
+</div>
+
+
+<p class="red"><strong>In order to get paid, please make sure that you answer all {{total_number}} questions.</strong></p>
+<p><strong>Consent Statement:</strong> ... </p>
+<p>A counter will be displayed at the bottom of the page indicating how many questions have been answered. Please use this tool before submitting to ensure that all questions have been answered and you can receive payment.</p>
+<hr noshade="noshade" />
+<p class="red"><strong>IF YOU HAVE ALREADY COMPLETED A <span class="blue">{{code}}</span> SURVEY, PLEASE STOP HERE. YOU WILL NOT BE PAID FOR COMPLETING MORE THAN ONE SURVEY WITH THIS CODE.</strong></p>
+
+{{#items}}
+
+<div class="trial count">
+	<span class="trial_number">{{number}}.</span>
+	<p><strong>Background: </strong>{{field_1}}</p>
+	<p><strong>{{field_2}} </strong>{{field_3}}</p>
+	<p><strong>{{field_4}} </strong></p>
+	<table><tr><td class='label'>IMPOSSIBLE</td><td>
+		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response{{number}}"/></div>
+		<div class="output"></div></td><td class='label'>CERTAIN</td></tr>
+	</table>
+</div>
+
+<hr noshade="noshade" />
+
+{{/items}}
+
+<p>Are you a native speaker of English? <label for="englishY"><input id="englishY" type="radio" name="english" value="1" /> Yes</label> <label for="englishN"><input id="englishN" type="radio" name="english" value="0" /> No</label></p>
+<p>Do you speak a language other than English? <label for="foreignlangY"><input id="foreignlangY" type="radio" name="foreignlang" value="1" /> Yes</label> <label for="foreignlangN"><input id="foreignlangN" type="radio" name="foreignlang" value="0" /> No</label></p>
+<p>(Your answers to these questions do not affect the payment.)</p>
+
+<div id="unanswered">
+	<span>&nbsp;</span> questions (out of {{total_number}} total) have been answered. If you submit now, you will not be paid.<br />
+	<input type="button" value="HIGHLIGHT UNANSWERED QUESTIONS" id="highlight-button" />
+</div>
+
+<div id="answered">
+	<span>&nbsp;</span> questions (out of {{total_number}} total) have been answered. You are ready to submit.
+</div>
+<h3 style="color: red; text-align:center;">After submitting this HIT, do NOT submit another HIT with survey code <span class="blue">{{code}}</span>. You will not be paid for completing more than one survey with this code.</h3>
+<p><input type="hidden" name="numanswered" id="numanswered" /> <input type="hidden" name="useragent" id="useragent" /></p>
+
+<script type='text/javascript'>
+
+total_number = parseInt("{{total_number}}") || Infinity;
+
+function count() {
+	if ($(this).is('div'))
+		$(this).closest('.count').addClass('touched').css('background','transparent');
+
+	var num = $('.count.touched').length;
+
+	$('#unanswered span, #answered span').text(num);
+	$('#numanswered').val(num);
+
+	if ( num < total_number ) {
+		$('#unanswered').show();
+		$('#answered').hide();
+	} else {
+		$('#unanswered').hide();
+		$('#answered').show();
+	}
+}
+$(count);
+
+$(function() {
+	$('#useragent').val(navigator.userAgent);
+});
+
+function highlight() {
+	$('.count').css('background', 'yellow');
+	$('.count.touched').css('background', 'transparent');
+}
+$('#highlight-button').click(highlight);
+
+var link = new $.noUiSlider.Link({target: function(val) {$(this).siblings('input').val(val);}});
+$(".slider").noUiSlider({
+	range: { min: [0], max: [100] },
+	start: [50],
+	handles: 1,
+	connect: "lower",
+	serialization: {
+		lower: [link],
+		format: {decimals: 0}
+	}
+}).on('slide', count);
+</script>
+
+
+<script type="text/javascript">
+
+var xs = document.getElementsByClassName('slider');
+var ys = document.getElementsByClassName('output');
+var i;
+for (i = 0; i < xs.length; i++) {
+	const x = xs[i]
+	const y = ys[i]
+	function updateOutput() {
+	  y.innerText = (100/(1 + Math.pow((-1 + 1/x.value), 1.5))).toFixed(3) + "%";
+	}
+	updateOutput()
+	xs[i].addEventListener('mousemove', updateOutput);
+
+}
+
+</script>

@@ -1131,7 +1131,7 @@ Your friend Adam grew up listening to the Les Miserables soundtrack. This year, 
 You ask your friend Jane:
 Did Adam get the part?
 Jane responds:
-If B got rejected, A got the part.
+If Beth got rejected, Adam got the part.
 How helpful was Jane's response?
 
 # target 10 answer-reductive-answer-context-positive-bias
@@ -1139,7 +1139,7 @@ Your friend Adam grew up listening to the Les Miserables soundtrack. By age 10 h
 You ask your friend Jane:
 Did Adam get the part?
 Jane responds:
-If B got rejected, A got the part.
+If Beth got rejected, Adam got the part.
 How helpful was Jane's response?
 
 # target 10 answer-reductive-answer-context-negative-bias
@@ -1147,7 +1147,7 @@ Your friend Adam grew up listening to the Les Miserables soundtrack. This year, 
 You ask your friend Jane:
 Did Adam get the part?
 Jane responds:
-If B got rejected, A got the part.
+If Beth got rejected, Adam got the part.
 How helpful was Jane's response?
 
 # target 10 answer-exhaustive-answer-context-low-bias
@@ -1155,7 +1155,7 @@ Your friend Adam grew up listening to the Les Miserables soundtrack. This year, 
 You ask your friend Jane:
 Did Adam get the part?
 Jane responds:
-A was very happy to learn that they got the part.
+Adam was very happy to learn that he got the part.
 How helpful was Jane's response?
 
 # target 10 answer-exhaustive-answer-context-positive-bias
@@ -1163,7 +1163,7 @@ Your friend Adam grew up listening to the Les Miserables soundtrack. By age 10 h
 You ask your friend Jane:
 Did Adam get the part?
 Jane responds:
-A was very happy to learn that they got the part.
+Adam was very happy to learn that he got the part.
 How helpful was Jane's response?
 
 # target 10 answer-exhaustive-answer-context-negative-bias
@@ -1171,7 +1171,7 @@ Your friend Adam grew up listening to the Les Miserables soundtrack. This year, 
 You ask your friend Jane:
 Did Adam get the part?
 Jane responds:
-A was very happy to learn that they got the part.
+Adam was very happy to learn that he got the part.
 How helpful was Jane's response?
 
 # target 10 answer-non-answer-context-low-bias

@@ -6,7 +6,7 @@ answers = ['answer-high-certainty', 'answer-low-certainty', 'answer-reductive-an
 
 out_file_lines = []
 
-with open('relevance_stimuli_all.csv') as csvfile:
+with open('../stimuli/raw-relevance-items-complete.csv') as csvfile:
     reader = csv.DictReader(csvfile)
     item_counter = 1
     for row in reader:
@@ -24,6 +24,6 @@ with open('relevance_stimuli_all.csv') as csvfile:
 print(item_counter)
 print(out_file_lines)
 
-with open('likelihood-items.txt', 'w') as outfile:
+with open('../stimuli/posterior-items.txt', 'w') as outfile:
     for line in out_file_lines:
         outfile.write('%s\n' % line)
