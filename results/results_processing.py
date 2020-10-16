@@ -2,27 +2,26 @@ import csv
 import pandas as pd
 import numpy as np
 
-with open('prior_10_8.csv') as f:
+with open('prior_10_15.csv') as f:
     data = [{k: v for k, v in row.items()}
         for row in csv.DictReader(f, skipinitialspace=True)]
 
 # df = pd.read_csv("prior_10_8.csv", header=0)
 
 def LLO(p):
-    return 1 / (1 + ((-1 + 1 / p) ** 1.5))
+    if p == 0:
+        return 0
+    else:
+        return 1 / (1 + ((-1 + 1 / p) ** 1.5))
 
 # for column in df:
 #     if column.startswith("Answer.response"):
 #         df[column] = df[column].apply(LLO)
 #
-data_columns = ["WorkerId", "Input.list",
-                'Answer.response1', 'Answer.response10', 'Answer.response2',
-                'Answer.response3', 'Answer.response4', 'Answer.response5',
-                'Answer.response6', 'Answer.response7', 'Answer.response8', 'Answer.response9',
-                'Input.item_1_condition', 'Input.item_2_condition','Input.item_3_condition',
-                'Input.item_4_condition','Input.item_5_condition','Input.item_6_condition',
-                'Input.item_7_condition','Input.item_8_condition','Input.item_9_condition','Input.item_10_condition',
-                ]
+data_columns = ["WorkerId", "Input.list"]
+item_columns = ["Answer.response%d", "Input.item_%d_condition"]
+# data_columns.extend(["Answer.response%d" % i for i in range(1, 15)])
+# data_columns.extend(["Input.item_%d_condition" % i for i in range(1, 15)])
 #
 # responses = df[data_columns]
 
@@ -32,44 +31,70 @@ for worker in data:
     for k in worker:
         if k in data_columns:
             new[k] = worker[k]
+        new["items"] = []
+        for i in range(1,15):
+            item_dic = {
+                "item_number": worker["Input.item_%d_number" % i],
+                "condition": worker["Input.item_%d_condition" % i],
+                "response": LLO(float(worker["Answer.response%d" % i])),
+                "context": worker["Input.field_%d_1" % i],
+                "prompt": worker["Input.field_%d_2" % i],
+            }
+            new["items"].append(item_dic)
     responses.append(new)
 
-for worker in responses:
-    for k in worker:
-        if k.startswith("Answer.response"):
-            worker[k] = LLO(float(worker[k]))
+# for worker in responses:
+#     for k in worker:
+#         if k.startswith("Answer.response"):
+#             worker[k] = LLO(float(worker[k]))
 
-new_responses = []
-for worker in responses:
-    items = []
-    for i in range(1, 11):
-        condition = worker["Input.item_%d_condition" % i]
-        response = worker["Answer.response%d" % i]
-        items.append({"condition": condition, "response": response})
-    new_responses.append({"WorkerId": worker["WorkerId"],
-                          "Input.list": worker["Input.list"],
-                          "Responses": items
-                          })
+# new_responses = []
+# for worker in responses:
+#     items = []
+#     for i in range(1, 15):
+#         condition = worker["Input.item_%d_condition" % i]
+#         response = worker["Answer.response%d" % i]
+#         items.append({"condition": condition, "response": response})
+#     new_responses.append({"WorkerId": worker["WorkerId"],
+#                           "Input.list": worker["Input.list"],
+#                           "Responses": items
+#                           })
 
 
-responses = new_responses
+# responses = new_responses
 print("\t".join(["WorkerId", "Input.list", "negative_bias_average", "low_bias_average", "positive_bias_average"]))
 for worker in responses:
-    low_bias_average = np.mean([r["response"] for r in worker["Responses"] if r["condition"] == "low-bias"])
-    positive_bias_average = np.mean([r["response"] for r in worker["Responses"] if r["condition"] == "positive-bias"])
-    negative_bias_average = np.mean([r["response"] for r in worker["Responses"] if r["condition"] == "negative-bias"])
+    low_bias_average = np.mean([r["response"] for r in worker["items"] if r["condition"] == "low-bias"])
+    positive_bias_average = np.mean([r["response"] for r in worker["items"] if r["condition"] == "positive-bias"])
+    negative_bias_average = np.mean([r["response"] for r in worker["items"] if r["condition"] == "negative-bias"])
     worker["low_bias_average"] = low_bias_average
     worker["positive_bias_average"] = positive_bias_average
     worker["negative_bias_average"] = negative_bias_average
     print("\t".join([worker["WorkerId"], worker["Input.list"], str(negative_bias_average), str(low_bias_average), str(positive_bias_average)]))
 
+def passed_fillers(items):
+    for item in items:
+        if item["condition"] != "filler":
+            continue
+        if item["item_number"] == "1":
+            if item["response"] < 0.1 or item["response"] > 0.15:
+                return False
+        if item["item_number"] == "2":
+            if item["response"] < 0.8 or item["response"] > 0.85:
+                return False
+        if item["item_number"] == "3":
+            if item["response"] < 0.3 or item["response"] > 0.4:
+                return False
+        if item["item_number"] == "4":
+            if item["response"] < 0.1 or item["response"] > 0.15:
+                return False
+    return True
+
+
 filtered_responses = []
 for w in responses:
-    if w["negative_bias_average"] < w["low_bias_average"] and w["low_bias_average"] < w["positive_bias_average"]:
-        if w["positive_bias_average"] - w["negative_bias_average"] > 0.3:
-            filtered_responses.append(w)
-        else:
-            print(w["WorkerId"] + " failed " + w["Input.list"])
+    if w["positive_bias_average"] > w["negative_bias_average"] and passed_fillers(w["items"]):
+        filtered_responses.append(w)
     else:
         print(w["WorkerId"] + " failed " + w["Input.list"])
 
