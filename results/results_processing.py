@@ -73,30 +73,60 @@ for worker in responses:
     print("\t".join([worker["WorkerId"], worker["Input.list"], str(negative_bias_average), str(low_bias_average), str(positive_bias_average)]))
 
 def passed_fillers(items):
+    attention_score = 10
     for item in items:
         if item["condition"] != "filler":
             continue
         if item["item_number"] == "1":
             if item["response"] < 0.1 or item["response"] > 0.15:
-                return False
+                attention_score -= 3
         if item["item_number"] == "2":
             if item["response"] < 0.8 or item["response"] > 0.85:
-                return False
+                attention_score -= 3
         if item["item_number"] == "3":
             if item["response"] < 0.3 or item["response"] > 0.4:
-                return False
+                attention_score -= 2
         if item["item_number"] == "4":
             if item["response"] < 0.1 or item["response"] > 0.15:
-                return False
-    return True
+                attention_score -= 2
+    return attention_score == 10, attention_score
 
 
 filtered_responses = []
 for w in responses:
-    if w["positive_bias_average"] > w["negative_bias_average"] and passed_fillers(w["items"]):
+    test1 = w["positive_bias_average"] > w["negative_bias_average"]
+    test2, attention_score = passed_fillers(w["items"])
+    test1_text = "passed" if test1 else "failed"
+    test2_text = "passed" if test2 else "failed"
+    print("%s\t %s test1\t%s test2\tattention score=%s\t%s" % (w["WorkerId"], test1_text, test2_text, attention_score, w["Input.list"]))
+    if test1 and test2:
         filtered_responses.append(w)
-    else:
-        print(w["WorkerId"] + " failed " + w["Input.list"])
+
+items = {}
+for w in responses:
+    _, attention_score = passed_fillers(w["items"])
+    if attention_score < 6:
+        continue
+    for i in w["items"]:
+        if i["condition"] == "filler":
+            continue
+        if (i["item_number"], i["condition"]) not in items:
+            items[(i["item_number"], i["condition"])] = {
+                "responses": [],
+                "context": i["context"],
+                "prompt": i["prompt"]
+            }
+        items[(i["item_number"], i["condition"])]["responses"].append(i["response"])
+
+print("\t".join(["item number", "condition", "average", "length", "range", "standard deviation", "context", "prompt"]))
+for i in items:
+    length = len(items[i]["responses"])
+    average = np.mean(items[i]["responses"])
+    i_min = min(items[i]["responses"])
+    i_max = max(items[i]["responses"])
+    std = np.std(items[i]["responses"])
+    print("\t".join([i[0], i[1], str(average), str(length), str(i_max - i_min), str(std), items[i]["context"], items[i]["prompt"]]))
+
 
 
 pass
