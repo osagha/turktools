@@ -1,0 +1,18 @@
+# filler 1 filler
+You've been wanting to have a picnic with your friends, and several of them tell you that they will be free next Saturday morning.
+You check the weather app on your phone, and it says that there is a thirty percent chance of rain.
+How likely do you think it is that it will rain on Saturday?
+
+# filler 2 filler
+You and your friends are trying to decide whether to order pizza or dumplings, but nobody can seem to make up their minds.
+Your friend Clara decides to flip a fair coin. If it comes up heads, you'll order pizza, and if it comes up tails you'll order dumplings.
+How likely do you think it is that you will order dumplings?
+
+# filler 3 filler
+You have a hundred books on your shelves, and they are all different. You put on a blindfold and randomly pick a book.
+How likely do you think it is that you picked Dante's Inferno?
+
+# filler 4 filler
+You're playing dungeons and dragons with your friends. You're up against a very difficult monster. Two party members are down, and everything depends on the outcome of the next few rounds of combat. 
+To hit the monster, your friend needs to roll a sixteen or higher on a twenty-sided die.
+How likely do you think it is that your friend will miss her attack?

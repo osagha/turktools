@@ -1,3 +1,35 @@
+# filler 1 filler
+Tony got Ethan a book-shaped birthday gift. The book looks big and is probably a hardcover. You wonder if it could be a cool new cookbook.
+You ask your friend Claire:
+Did Tony get Ethan a cookbook for his birthday?
+Claire responds:
+Tony got Ethan "The Joy of Cooking".
+How helpful was Claire's response?
+
+# filler 2 filler
+Joe is the new guy at work, and he's pretty cute. You're thinking of asking him on a date, but if he's married that would be pretty awkward.
+You turn to your coworker Laura and ask:
+Is Joe married?
+Laura responds:
+He's married to his high school sweetheart.
+How helpful was Laura's response?
+
+# filler 3 filler
+Your friend Adam grew up listening to the Les Miserables soundtrack. This year, the school's drama club is putting on the show, and (naturally) Adam auditioned for the lead role. As a loyal friend, you are trying to find some information about how he did.
+You ask your friend Jane:
+Did Adam get the part?
+Jane responds:
+Musical theater began in ancient Greece and has evolved to include a variety of forms over the centuries.
+How helpful was Jane's response?
+
+# filler 4 filler
+Maria is the new foreign exchange student at school. You want to introduce yourself, but you forgot where she is from. You know it's a big city where they don't speak English, but where?
+You turn to your friend Chris and ask:
+Is Maria from Madrid?
+Chris responds:
+She's a talented singer.
+How helpful was Chris's response?
+
 # target 1 answer-high-certainty-context-low-bias
 It's the day of Kim and Sam's wedding. The wedding is at a beautiful beachside mansion. Last you heard, Kim wanted to have the ceremony on the beach, but Sam wanted to have it in the mansion ballroom.
 You turn to your friend Clara and ask:
