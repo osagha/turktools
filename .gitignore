@@ -4,3 +4,4 @@
 .coverage
 _site
 Gemfile.lock
+/pragmatics_dataset/*

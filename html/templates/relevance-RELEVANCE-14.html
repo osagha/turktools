@@ -25,10 +25,9 @@ label, input[type=radio], input[type=button] { cursor: pointer; }
 
 <p>Survey Code: <span class="blue">RELEVANCE</span></p>
 <p class="red"><strong>PLEASE COMPLETE AT MOST ONE <span class="blue">RELEVANCE</span> SURVEY. YOU WILL NOT BE PAID FOR COMPLETING MORE THAN ONE SURVEY WITH THIS CODE.</strong></p>
-<p><strong>This survey requires that your browser have <span class="red">JavaScript</span> enabled.</strong></p>
 
 <h3>Instructions</h3>
-<p>This questionnaire presents 10 English sentences. <strong>Your task is to judge how helpful an answer is to a question.</strong> Don't worry if it's not completely clear how helpful the answer is. There is no right answer: We're only interested in <strong>your intuition</strong>.</p>
+<p>This questionnaire presents 14 English sentences. <strong>Your task is to judge how helpful an answer is to a question.</strong> Don't worry if it's not completely clear how helpful the answer is. There is no right answer: We're only interested in <strong>your intuition</strong>.</p>
 <p>You can indicate the probability by dragging the slider between "NOT HELPFUL AT ALL" and "VERY HELPFUL".</p>
 <p>Here is an example:</p>
 <div class="trial">
@@ -57,10 +56,27 @@ label, input[type=radio], input[type=button] { cursor: pointer; }
 </div>
 
 
-<p class="red"><strong>In order to get paid, please make sure that you answer all 10 questions.</strong></p>
-<p><strong>Consent Statement:</strong> ... </p>
-<p>A counter will be displayed at the bottom of the page indicating how many questions have been answered. Please use this tool before submitting to ensure that all questions have been answered and you can receive payment.</p>
-<hr noshade="noshade" />
+<p class="red"><strong>In order to get paid, please make sure that you answer all 14 questions.</strong></p>
+
+<p class="left legal">
+<strong><br>
+<br>
+<br>
+LEGAL INFORMATION</strong>:<br>
+<br>
+By completing this survey you acknowledge that this is an academic survey conducted by NYU
+researchers studying language. The survey is expected to take up to 5 minutes.
+Information that could be used to identify you may be kept indefinitely, but will remain
+confidential. Because of the nature of the study, the information we are collecting cannot be
+deleted or otherwise forgotten and we may not be able to provide you with it. You will be paid if
+you complete all parts of the survey.<br><br>
+
+If you have any questions about the study, contact Lucas Champollion at
+<a href="mailto:champollion@nyu.edu">champollion@nyu.edu</a>. If you have any questions about your rights as a research subject,
+contact the NYU IRB at <a href="mailto:ask.humansubjects@nyu.edu">ask.humansubjects@nyu.edu</a>
+(or <a href="mailto:gdpr-info@nyu.edu">gdpr-info@nyu.edu</a> for participants in
+Europe) Please reference the IRB protocol number -- IRB-FY2020-4913 -- when emailing.
+</p><hr noshade="noshade" />
 <p class="red"><strong>IF YOU HAVE ALREADY COMPLETED A <span class="blue">RELEVANCE</span> SURVEY, PLEASE STOP HERE. YOU WILL NOT BE PAID FOR COMPLETING MORE THAN ONE SURVEY WITH THIS CODE.</strong></p>
 
 
@@ -235,24 +251,92 @@ label, input[type=radio], input[type=button] { cursor: pointer; }
 
 
 
+<div class="trial count">
+	<span class="trial_number">11.</span>
+	<p><strong>Background: </strong>${field_11_1}</p>
+	<p><strong>${field_11_2} </strong>${field_11_3}</p>
+	<p><strong>${field_11_4} </strong>${field_11_5}</p>
+	<p><strong>${field_11_6} </strong></p>
+	<table><tr><td class='label'>NOT HELPFUL AT ALL</td><td>
+		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response11"/></div>
+		<div class="output"></div></td><td class='label'>VERY HELPFUL</td></tr>
+	</table>
+</div>
+</div>
+
+<hr noshade="noshade" />
+
+
+
+<div class="trial count">
+	<span class="trial_number">12.</span>
+	<p><strong>Background: </strong>${field_12_1}</p>
+	<p><strong>${field_12_2} </strong>${field_12_3}</p>
+	<p><strong>${field_12_4} </strong>${field_12_5}</p>
+	<p><strong>${field_12_6} </strong></p>
+	<table><tr><td class='label'>NOT HELPFUL AT ALL</td><td>
+		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response12"/></div>
+		<div class="output"></div></td><td class='label'>VERY HELPFUL</td></tr>
+	</table>
+</div>
+</div>
+
+<hr noshade="noshade" />
+
+
+
+<div class="trial count">
+	<span class="trial_number">13.</span>
+	<p><strong>Background: </strong>${field_13_1}</p>
+	<p><strong>${field_13_2} </strong>${field_13_3}</p>
+	<p><strong>${field_13_4} </strong>${field_13_5}</p>
+	<p><strong>${field_13_6} </strong></p>
+	<table><tr><td class='label'>NOT HELPFUL AT ALL</td><td>
+		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response13"/></div>
+		<div class="output"></div></td><td class='label'>VERY HELPFUL</td></tr>
+	</table>
+</div>
+</div>
+
+<hr noshade="noshade" />
+
+
+
+<div class="trial count">
+	<span class="trial_number">14.</span>
+	<p><strong>Background: </strong>${field_14_1}</p>
+	<p><strong>${field_14_2} </strong>${field_14_3}</p>
+	<p><strong>${field_14_4} </strong>${field_14_5}</p>
+	<p><strong>${field_14_6} </strong></p>
+	<table><tr><td class='label'>NOT HELPFUL AT ALL</td><td>
+		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response14"/></div>
+		<div class="output"></div></td><td class='label'>VERY HELPFUL</td></tr>
+	</table>
+</div>
+</div>
+
+<hr noshade="noshade" />
+
+
+
 <p>Are you a native speaker of English? <label for="englishY"><input id="englishY" type="radio" name="english" value="1" /> Yes</label> <label for="englishN"><input id="englishN" type="radio" name="english" value="0" /> No</label></p>
 <p>Do you speak a language other than English? <label for="foreignlangY"><input id="foreignlangY" type="radio" name="foreignlang" value="1" /> Yes</label> <label for="foreignlangN"><input id="foreignlangN" type="radio" name="foreignlang" value="0" /> No</label></p>
 <p>(Your answers to these questions do not affect the payment.)</p>
 
 <div id="unanswered">
-	<span>&nbsp;</span> questions (out of 10 total) have been answered. If you submit now, you will not be paid.<br />
+	<span>&nbsp;</span> questions (out of 14 total) have been answered. If you submit now, you will not be paid.<br />
 	<input type="button" value="HIGHLIGHT UNANSWERED QUESTIONS" id="highlight-button" />
 </div>
 
 <div id="answered">
-	<span>&nbsp;</span> questions (out of 10 total) have been answered. You are ready to submit.
+	<span>&nbsp;</span> questions (out of 14 total) have been answered. You are ready to submit.
 </div>
 <h3 style="color: red; text-align:center;">After submitting this HIT, do NOT submit another HIT with survey code <span class="blue">RELEVANCE</span>. You will not be paid for completing more than one survey with this code.</h3>
 <p><input type="hidden" name="numanswered" id="numanswered" /> <input type="hidden" name="useragent" id="useragent" /></p>
 
 <script type='text/javascript'>
 
-total_number = parseInt("10") || Infinity;
+total_number = parseInt("14") || Infinity;
 
 function count() {
 	if ($(this).is('div'))

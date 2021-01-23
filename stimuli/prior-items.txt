@@ -14,122 +14,123 @@ How likely do you think it is that you pulled out a Yummy bar?
 You are entering a raffle. The grand prize is a new car, and you really want to win. So you purchase a bunch of tickets. You don't remember how many tickets, but it's between ten and fifteen. You see that a total of 100 raffle tickets have been bought.
 How likely do you think it is that you'll win the raffle?
 
-# target 1 low-bias
+# target 1 context-low-bias
 It's the day of Kim and Sam's wedding. The wedding is at a beautiful beachside mansion. Last you heard, Kim wanted to have the ceremony on the beach, but Sam wanted to have it in the mansion ballroom.
 How likely do you think it is that they will have the ceremony indoors?
 
-# target 1 positive-bias
+# target 1 context-positive-bias
 It's the day of Kim and Sam's wedding. The wedding is at a beautiful beachside mansion. You're not sure if the ceremony is supposed to be on the beach or in the mansion, but last you heard they were planning on having it indoors.
 How likely do you think it is that they will have the ceremony indoors?
 
-# target 1 negative-bias
+# target 1 context-negative-bias
 It's the day of Kim and Sam's wedding. The wedding is at a beautiful beachside mansion. Last you heard, the plan was to have the ceremony on the beach, and the reception in the mansion ballroom.
 How likely do you think it is that they will have the ceremony indoors?
 
-# target 2 low-bias
-After a long day of school, you come home starving, and wondering what Mom is cooking for dinner. It's Tuesday, which has been hamburger night the last couple weeks.
+# target 2 context-low-bias
+After a long day of school, you come home starving, and wondering what Mom is cooking for dinner. It's Tuesday, which has been hamburger night the last couple weeks. 
 How likely do you think it is that you are having hamburgers for dinner?
 
-# target 2 positive-bias
+# target 2 context-positive-bias
 After a long day of school, you come home starving, and wondering what Mom is cooking for dinner. It's Thursday, which is usually hamburger night.
 How likely do you think it is that you are having hamburgers for dinner?
 
-# target 2 negative-bias
+# target 2 context-negative-bias
 After a long day of school, you come home starving, and wondering what Mom is cooking for dinner. It's Thursday, which used to be hamburger night, but lately, Mom has stopped making hamburgers because they're too "unhealthy".
 How likely do you think it is that you are having hamburgers for dinner?
 
-# target 3 low-bias
+# target 3 context-low-bias
 Joe is the new guy at work, and he's pretty cute. You're thinking of asking him on a date, but if he's married that would be pretty awkward.
 How likely do you think it is that Joe is married?
 
-# target 3 positive-bias
+# target 3 context-positive-bias
 Joe is the new guy at work, and he's pretty cute. You're thinking of asking him on a date, but if he's married it would be pretty awkward, and you heard he has two children.
 How likely do you think it is that Joe is married?
 
-# target 3 negative-bias
+# target 3 context-negative-bias
 Joe is the new guy at work, and he's pretty cute. You're thinking of asking him on a date, but if he's married that would be pretty awkward. On the other hand, you saw him come to company picnic last week without a plus-one.
 How likely do you think it is that Joe is married?
 
-# target 4 low-bias
+# target 4 context-low-bias
 Maria is the new foreign exchange student at school. You want to introduce yourself, but you forgot where she is from. You know it's a big city where they don't speak English, but where?
 How likely do you think it is that Maria is from Madrid?
 
-# target 4 positive-bias
+# target 4 context-positive-bias
 Maria is the new foreign exchange student at school. You want to introduce yourself, but you forgot where she is from. You know it's a big city in Europe.
 How likely do you think it is that Maria is from Madrid?
 
-# target 4 negative-bias
+# target 4 context-negative-bias
 Maria is the new foreign exchange student at school. You want to introduce yourself, but you forgot where she is from. You know it's a big city somewhere.
 How likely do you think it is that Maria is from Madrid?
 
-# target 5 low-bias
+# target 5 context-low-bias
 You're a burglar trying to rob a house with your accomplice Chris. You've been staking out a good looking house for the last week, and noticed that the family often goes out to dinner around this time.
 How likely do you think it is that there is somebody in the house?
 
-# target 5 positive-bias
+# target 5 context-positive-bias
 You're a burglar trying to rob a house with your accomplice Chris. You've been staking out a good looking house for the last week, and noticed that the family usually watches TV together around this time.
 How likely do you think it is that there is somebody in the house?
 
-# target 5 negative-bias
+# target 5 context-negative-bias
 You're a burglar, trying to rob a house with your accomplice Chris. You've been staking out a good looking house for the last week, and noticed that the family seems to have left for vacation.
 How likely do you think it is that there is somebody in the house?
 
-# target 6 low-bias
+# target 6 context-low-bias
 It's afternoon at the office and you're ready for a snack. There was a birthday party for Lily earlier in the week, and the cake was delicious.
 How likely do you think it is that there is any cake left?
 
-# target 6 positive-bias
+# target 6 context-positive-bias
 It's afternoon at the office and you're ready for a snack. There was a birthday party for Lily earlier in the week, and the cake was so big that the party-goers barely made a dent in it.
 How likely do you think it is that there is any cake left?
 
-# target 6 negative-bias
+# target 6 context-negative-bias
 It's afternoon at the office and you're ready for a snack. There was a birthday party for Lily earlier in the week, and the cake was so delicious that the party-goers barely left any behind.
 How likely do you think it is that there is any cake left?
 
-# target 7 low-bias
+# target 7 context-low-bias
 You and your colleague Lauren are CIA analysts. Lauren is a star employee with good credentials and a brilliant knack for puzzle solving. But she is also a bit secretive---not entirely unexpected given your line of work, but your training causes you to dwell on some suspicious details from your conversations. On Monday your boss told you confidentially that your department is under investigation because the director suspects that a mole is leaking information to a foreign power.
 How likely do you think it is that Lauren is the mole?
 
-# target 7 positive-bias
+# target 7 context-positive-bias
 You and your colleague Lauren are CIA analysts. Lauren is a star employee with good credentials and a brilliant knack for puzzle solving. But lately you have noticed some suspicious things about her habits. She is almost always the last to leave, but one time when you stayed to work late, you noticed her talking to a shady figure in the parking lot. Another time, you could have sworn you saw her slip some documents into her bag before leaving---documents that are not supposed to leave the office. On Monday your boss told you confidentially that your department is under investigation because the director suspects that a mole is leaking information to a foreign power.
 How likely do you think it is that Lauren is the mole?
 
-# target 7 negative-bias
+# target 7 context-negative-bias
 You and your colleague Lauren are CIA analysts. Lauren is a star employee with good credentials and a brilliant knack for puzzle solving. She seems completely loyal to the agency. On Monday your boss told you confidentially that your department is under investigation because the director suspects that a mole is leaking information to a foreign power.
 How likely do you think it is that Lauren is the mole?
 
-# target 8 low-bias
+# target 8 context-low-bias
 Tony got Ethan a book-shaped birthday gift. The book looks big and is probably a hardcover. You wonder if it could be a cool new cookbook.
 How likely do you think it is that Tony got Ethan a cookbook for his birthday?
 
-# target 8 positive-bias
+# target 8 context-positive-bias
 Tony got Ethan a book-shaped birthday gift. The book looks big and is probably a hardcover. You know that Ethan is really into cooking, so the first possibility that comes to your mind is that Tony got him a cookbook.
 How likely do you think it is that Tony got Ethan a cookbook for his birthday?
 
-# target 8 negative-bias
+# target 8 context-negative-bias
 Tony got Ethan a book-shaped birthday gift. The book looks big and is probably a hardcover. You know that Ethan loves long fantasy novels.
 How likely do you think it is that Tony got Ethan a cookbook for his birthday?
 
-# target 9 low-bias
+# target 9 context-low-bias
 After a rowdy Sunday night, you wake up with a burning desire for pizza. Since you recently moved to the neighborhood, you're not sure whether your favorite pizza place is open on Mondays.
 How likely do you think it is that the pizza place is open on Monday?
 
-# target 9 positive-bias
+# target 9 context-positive-bias
 After a rowdy Sunday night, you wake up with a burning desire for pizza. You have a hazy memory of getting pizza from your favorite place on a Monday under similar circumstances, but you still wonder if the pizza place is open today.
 How likely do you think it is that the pizza place is open on Monday?
 
-# target 9 negative-bias
+# target 9 context-negative-bias
 After a rowdy Sunday night, you wake up with a burning desire for pizza. You wonder whether your favorite pizza place is open, but you remember another similar Monday when you found that it was closed.
 How likely do you think it is that the pizza place is open on Monday?
 
-# target 10 low-bias
+# target 10 context-low-bias
 Your friend Adam grew up listening to the Les Miserables soundtrack. This year, the school's drama club is putting on the show, and (naturally) Adam auditioned for the lead role. As a loyal friend, you are trying to find some information about how he did.
 How likely do you think it is that Adam got the part?
 
-# target 10 positive-bias
+# target 10 context-positive-bias
 Your friend Adam grew up listening to the Les Miserables soundtrack. By age 10 he had memorized every song and occasionally put on full-length productions with his stuffed animals. This year, the school's drama club is putting on the show, and (naturally) Adam auditioned for the lead role. As a loyal friend, you are trying to find some information about how he did.
 How likely do you think it is that Adam got the part?
 
-# target 10 negative-bias
+# target 10 context-negative-bias
 Your friend Adam grew up listening to the Les Miserables soundtrack. This year, the school's drama club is putting on the show, and (naturally) Adam auditioned for the lead role. Adam is enthusiastic, but he never learned how to sing. As a loyal friend, you are trying to find some information about how he did.
 How likely do you think it is that Adam got the part?
+
