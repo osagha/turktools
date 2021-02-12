@@ -12,6 +12,8 @@ label, input[type=radio], input[type=button] { cursor: pointer; }
 #unanswered { font-weight: bold; font-size: 2em; color: black; background-color: red; margin: 0 auto; width: 500px; border: black 1px solid; padding: 10px; display:none; }
 #answered { margin: 0 auto; width: 500px; border: black 1px solid; padding: 10px; display:none; }
 .slider { width: 300px; margin: 0 10px; }
+.example { background-color: #ccc; padding: 10px; }
+
 </style>
 
 <style type="text/css">
@@ -23,38 +25,41 @@ label, input[type=radio], input[type=button] { cursor: pointer; }
 }
 </style>
 
-<p>Survey Code: <span class="blue">RELEVANCE</span></p>
-<p class="red"><strong>PLEASE COMPLETE AT MOST ONE <span class="blue">RELEVANCE</span> SURVEY. YOU WILL NOT BE PAID FOR COMPLETING MORE THAN ONE SURVEY WITH THIS CODE.</strong></p>
+<p>Survey Code: <span class="blue">HEDGEHOG_OLYMPICS</span></p>
+<p class="red"><strong>PLEASE COMPLETE AT MOST ONE <span class="blue">HEDGEHOG_OLYMPICS</span> SURVEY. YOU WILL NOT BE PAID FOR COMPLETING MORE THAN ONE SURVEY WITH THIS CODE.</strong></p>
 
-<h3>Instructions</h3>
-<p>This questionnaire presents 14 English sentences. <strong>Your task is to judge how helpful an answer is to a question.</strong> Don't worry if it's not completely clear how helpful the answer is. There is no right answer: We're only interested in <strong>your intuition</strong>.</p>
-<p>You can indicate the probability by dragging the slider between "NOT HELPFUL AT ALL" and "VERY HELPFUL".</p>
+
+<h1>Instructions</h1>
+<p>This questionnaire presents 14 scenarios. <strong>Your task is to judge how relevant an answer is to a question about the scenario.</strong> Don't worry if it's not completely clear how relevant the answer is. There is no right answer: We're only interested in <strong>your intuition</strong>.</p>
+<p>This HIT should take about 10 minutes to complete.</p>
+<p>You can indicate the relevance by dragging the slider between "NOT RELEVANT AT ALL" and "VERY RELEVANT".</p>
 <p>Here is an example:</p>
+<div class="example">
 <div class="trial">
 	<p><strong>Background: </strong>Your friend Aaron has gone to Paris on vacation. He's the kind of person who would rather sit in a cafe all day than go around visiting tourist sites. But he'll make an exception for the really unmissable sites.</p>
 	<p><strong>You ask Aaron's friend Jess:</strong> Will Aaron go to the Eiffel Tower?</p>
 	<p><strong>Jess answers:</strong> It's his tenth time visiting Paris.</p>
-	<p><strong>How helpful is Jess's answer?</strong> Please indicate your answer using the slider.</p>
-	<table><tr><td class='label'>NOT HELPFUL AT ALL</td><td>
+	<p><strong>How relevant is Jess's answer?</strong> Please indicate your answer using the slider.</p>
+	<table><tr><td class='label'>NOT RELEVANT AT ALL</td><td>
 		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response_example1"/></div>
-		<div class="output"></div></td><td class='label'>VERY HELPFUL</td></tr>
+		<div class="output"></div></td><td class='label'>VERY RELEVANT</td></tr>
 	</table>
-	<p>Jess's answer isn't as helpful as a simple "yes" or "no", but it's still helpful given that you already know that Aaron doesn't like being a tourist. So move the slider towards the right. </p>
-</div>
+	<p>Jess's answer isn't as relevant as a simple "yes" or "no", but it's still relevant given that you already know that Aaron doesn't like being a tourist. So move the slider towards the right. </p>
+</div></div>
 
 <p>Here is another example:</p>
+<div class="example">
 <div class="trial">
 	<p><strong>Background: </strong>You're ready to leave home for the day, and you haven't checked the weather. It's springtime, and the weather is warming up.</p>
 	<p><strong>You ask your roommate: </strong>Do I need to wear a jacket?</p>
 	<p><strong>Your roommate replies: </strong>There's a full moon tonight.</p>
-	<p><strong>How helpful is your roommate's answer?</strong></p>
-	<table><tr><td class='label'>NOT HELPFUL AT ALL</td><td>
+	<p><strong>How relevant is your roommate's answer?</strong></p>
+	<table><tr><td class='label'>NOT RELEVANT AT ALL</td><td>
 		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response_example2"/></div>
-		<div class="output"></div></td><td class='label'>VERY HELPFUL</td></tr>
+		<div class="output"></div></td><td class='label'>VERY RELEVANT</td></tr>
 	</table>
-	<p>Your roommate's answer doesn't help you figure out if you need wear a jacket. So move the slider towards the left. </p>
-</div>
-
+	<p>Your roommate's answer isn't relevant to whether you need wear a jacket. So move the slider towards the left. </p>
+</div></div>
 
 <p class="red"><strong>In order to get paid, please make sure that you answer all 14 questions.</strong></p>
 
@@ -76,8 +81,11 @@ If you have any questions about the study, contact Lucas Champollion at
 contact the NYU IRB at <a href="mailto:ask.humansubjects@nyu.edu">ask.humansubjects@nyu.edu</a>
 (or <a href="mailto:gdpr-info@nyu.edu">gdpr-info@nyu.edu</a> for participants in
 Europe) Please reference the IRB protocol number -- IRB-FY2020-4913 -- when emailing.
+
 </p><hr noshade="noshade" />
-<p class="red"><strong>IF YOU HAVE ALREADY COMPLETED A <span class="blue">RELEVANCE</span> SURVEY, PLEASE STOP HERE. YOU WILL NOT BE PAID FOR COMPLETING MORE THAN ONE SURVEY WITH THIS CODE.</strong></p>
+</p><hr noshade="noshade" />
+
+<!--<p class="red"><strong>IF YOU HAVE ALREADY COMPLETED A <span class="blue">HEDGEHOG_OLYMPICS</span> SURVEY, PLEASE STOP HERE. YOU WILL NOT BE PAID FOR COMPLETING MORE THAN ONE SURVEY WITH THIS CODE.</strong></p>-->
 
 
 
@@ -87,9 +95,9 @@ Europe) Please reference the IRB protocol number -- IRB-FY2020-4913 -- when emai
 	<p><strong>${field_1_2} </strong>${field_1_3}</p>
 	<p><strong>${field_1_4} </strong>${field_1_5}</p>
 	<p><strong>${field_1_6} </strong></p>
-	<table><tr><td class='label'>NOT HELPFUL AT ALL</td><td>
+	<table><tr><td class='label'>NOT RELEVANT AT ALL</td><td>
 		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response1"/></div>
-		<div class="output"></div></td><td class='label'>VERY HELPFUL</td></tr>
+		<div class="output"></div></td><td class='label'>VERY RELEVANT</td></tr>
 	</table>
 </div>
 </div>
@@ -104,9 +112,9 @@ Europe) Please reference the IRB protocol number -- IRB-FY2020-4913 -- when emai
 	<p><strong>${field_2_2} </strong>${field_2_3}</p>
 	<p><strong>${field_2_4} </strong>${field_2_5}</p>
 	<p><strong>${field_2_6} </strong></p>
-	<table><tr><td class='label'>NOT HELPFUL AT ALL</td><td>
+	<table><tr><td class='label'>NOT RELEVANT AT ALL</td><td>
 		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response2"/></div>
-		<div class="output"></div></td><td class='label'>VERY HELPFUL</td></tr>
+		<div class="output"></div></td><td class='label'>VERY RELEVANT</td></tr>
 	</table>
 </div>
 </div>
@@ -121,9 +129,9 @@ Europe) Please reference the IRB protocol number -- IRB-FY2020-4913 -- when emai
 	<p><strong>${field_3_2} </strong>${field_3_3}</p>
 	<p><strong>${field_3_4} </strong>${field_3_5}</p>
 	<p><strong>${field_3_6} </strong></p>
-	<table><tr><td class='label'>NOT HELPFUL AT ALL</td><td>
+	<table><tr><td class='label'>NOT RELEVANT AT ALL</td><td>
 		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response3"/></div>
-		<div class="output"></div></td><td class='label'>VERY HELPFUL</td></tr>
+		<div class="output"></div></td><td class='label'>VERY RELEVANT</td></tr>
 	</table>
 </div>
 </div>
@@ -138,9 +146,9 @@ Europe) Please reference the IRB protocol number -- IRB-FY2020-4913 -- when emai
 	<p><strong>${field_4_2} </strong>${field_4_3}</p>
 	<p><strong>${field_4_4} </strong>${field_4_5}</p>
 	<p><strong>${field_4_6} </strong></p>
-	<table><tr><td class='label'>NOT HELPFUL AT ALL</td><td>
+	<table><tr><td class='label'>NOT RELEVANT AT ALL</td><td>
 		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response4"/></div>
-		<div class="output"></div></td><td class='label'>VERY HELPFUL</td></tr>
+		<div class="output"></div></td><td class='label'>VERY RELEVANT</td></tr>
 	</table>
 </div>
 </div>
@@ -155,9 +163,9 @@ Europe) Please reference the IRB protocol number -- IRB-FY2020-4913 -- when emai
 	<p><strong>${field_5_2} </strong>${field_5_3}</p>
 	<p><strong>${field_5_4} </strong>${field_5_5}</p>
 	<p><strong>${field_5_6} </strong></p>
-	<table><tr><td class='label'>NOT HELPFUL AT ALL</td><td>
+	<table><tr><td class='label'>NOT RELEVANT AT ALL</td><td>
 		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response5"/></div>
-		<div class="output"></div></td><td class='label'>VERY HELPFUL</td></tr>
+		<div class="output"></div></td><td class='label'>VERY RELEVANT</td></tr>
 	</table>
 </div>
 </div>
@@ -172,9 +180,9 @@ Europe) Please reference the IRB protocol number -- IRB-FY2020-4913 -- when emai
 	<p><strong>${field_6_2} </strong>${field_6_3}</p>
 	<p><strong>${field_6_4} </strong>${field_6_5}</p>
 	<p><strong>${field_6_6} </strong></p>
-	<table><tr><td class='label'>NOT HELPFUL AT ALL</td><td>
+	<table><tr><td class='label'>NOT RELEVANT AT ALL</td><td>
 		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response6"/></div>
-		<div class="output"></div></td><td class='label'>VERY HELPFUL</td></tr>
+		<div class="output"></div></td><td class='label'>VERY RELEVANT</td></tr>
 	</table>
 </div>
 </div>
@@ -189,9 +197,9 @@ Europe) Please reference the IRB protocol number -- IRB-FY2020-4913 -- when emai
 	<p><strong>${field_7_2} </strong>${field_7_3}</p>
 	<p><strong>${field_7_4} </strong>${field_7_5}</p>
 	<p><strong>${field_7_6} </strong></p>
-	<table><tr><td class='label'>NOT HELPFUL AT ALL</td><td>
+	<table><tr><td class='label'>NOT RELEVANT AT ALL</td><td>
 		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response7"/></div>
-		<div class="output"></div></td><td class='label'>VERY HELPFUL</td></tr>
+		<div class="output"></div></td><td class='label'>VERY RELEVANT</td></tr>
 	</table>
 </div>
 </div>
@@ -206,9 +214,9 @@ Europe) Please reference the IRB protocol number -- IRB-FY2020-4913 -- when emai
 	<p><strong>${field_8_2} </strong>${field_8_3}</p>
 	<p><strong>${field_8_4} </strong>${field_8_5}</p>
 	<p><strong>${field_8_6} </strong></p>
-	<table><tr><td class='label'>NOT HELPFUL AT ALL</td><td>
+	<table><tr><td class='label'>NOT RELEVANT AT ALL</td><td>
 		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response8"/></div>
-		<div class="output"></div></td><td class='label'>VERY HELPFUL</td></tr>
+		<div class="output"></div></td><td class='label'>VERY RELEVANT</td></tr>
 	</table>
 </div>
 </div>
@@ -223,9 +231,9 @@ Europe) Please reference the IRB protocol number -- IRB-FY2020-4913 -- when emai
 	<p><strong>${field_9_2} </strong>${field_9_3}</p>
 	<p><strong>${field_9_4} </strong>${field_9_5}</p>
 	<p><strong>${field_9_6} </strong></p>
-	<table><tr><td class='label'>NOT HELPFUL AT ALL</td><td>
+	<table><tr><td class='label'>NOT RELEVANT AT ALL</td><td>
 		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response9"/></div>
-		<div class="output"></div></td><td class='label'>VERY HELPFUL</td></tr>
+		<div class="output"></div></td><td class='label'>VERY RELEVANT</td></tr>
 	</table>
 </div>
 </div>
@@ -240,9 +248,9 @@ Europe) Please reference the IRB protocol number -- IRB-FY2020-4913 -- when emai
 	<p><strong>${field_10_2} </strong>${field_10_3}</p>
 	<p><strong>${field_10_4} </strong>${field_10_5}</p>
 	<p><strong>${field_10_6} </strong></p>
-	<table><tr><td class='label'>NOT HELPFUL AT ALL</td><td>
+	<table><tr><td class='label'>NOT RELEVANT AT ALL</td><td>
 		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response10"/></div>
-		<div class="output"></div></td><td class='label'>VERY HELPFUL</td></tr>
+		<div class="output"></div></td><td class='label'>VERY RELEVANT</td></tr>
 	</table>
 </div>
 </div>
@@ -257,9 +265,9 @@ Europe) Please reference the IRB protocol number -- IRB-FY2020-4913 -- when emai
 	<p><strong>${field_11_2} </strong>${field_11_3}</p>
 	<p><strong>${field_11_4} </strong>${field_11_5}</p>
 	<p><strong>${field_11_6} </strong></p>
-	<table><tr><td class='label'>NOT HELPFUL AT ALL</td><td>
+	<table><tr><td class='label'>NOT RELEVANT AT ALL</td><td>
 		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response11"/></div>
-		<div class="output"></div></td><td class='label'>VERY HELPFUL</td></tr>
+		<div class="output"></div></td><td class='label'>VERY RELEVANT</td></tr>
 	</table>
 </div>
 </div>
@@ -274,9 +282,9 @@ Europe) Please reference the IRB protocol number -- IRB-FY2020-4913 -- when emai
 	<p><strong>${field_12_2} </strong>${field_12_3}</p>
 	<p><strong>${field_12_4} </strong>${field_12_5}</p>
 	<p><strong>${field_12_6} </strong></p>
-	<table><tr><td class='label'>NOT HELPFUL AT ALL</td><td>
+	<table><tr><td class='label'>NOT RELEVANT AT ALL</td><td>
 		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response12"/></div>
-		<div class="output"></div></td><td class='label'>VERY HELPFUL</td></tr>
+		<div class="output"></div></td><td class='label'>VERY RELEVANT</td></tr>
 	</table>
 </div>
 </div>
@@ -291,9 +299,9 @@ Europe) Please reference the IRB protocol number -- IRB-FY2020-4913 -- when emai
 	<p><strong>${field_13_2} </strong>${field_13_3}</p>
 	<p><strong>${field_13_4} </strong>${field_13_5}</p>
 	<p><strong>${field_13_6} </strong></p>
-	<table><tr><td class='label'>NOT HELPFUL AT ALL</td><td>
+	<table><tr><td class='label'>NOT RELEVANT AT ALL</td><td>
 		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response13"/></div>
-		<div class="output"></div></td><td class='label'>VERY HELPFUL</td></tr>
+		<div class="output"></div></td><td class='label'>VERY RELEVANT</td></tr>
 	</table>
 </div>
 </div>
@@ -308,9 +316,9 @@ Europe) Please reference the IRB protocol number -- IRB-FY2020-4913 -- when emai
 	<p><strong>${field_14_2} </strong>${field_14_3}</p>
 	<p><strong>${field_14_4} </strong>${field_14_5}</p>
 	<p><strong>${field_14_6} </strong></p>
-	<table><tr><td class='label'>NOT HELPFUL AT ALL</td><td>
+	<table><tr><td class='label'>NOT RELEVANT AT ALL</td><td>
 		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response14"/></div>
-		<div class="output"></div></td><td class='label'>VERY HELPFUL</td></tr>
+		<div class="output"></div></td><td class='label'>VERY RELEVANT</td></tr>
 	</table>
 </div>
 </div>
@@ -323,6 +331,12 @@ Europe) Please reference the IRB protocol number -- IRB-FY2020-4913 -- when emai
 <p>Do you speak a language other than English? <label for="foreignlangY"><input id="foreignlangY" type="radio" name="foreignlang" value="1" /> Yes</label> <label for="foreignlangN"><input id="foreignlangN" type="radio" name="foreignlang" value="0" /> No</label></p>
 <p>(Your answers to these questions do not affect the payment.)</p>
 
+<div>
+	<p>If you experienced any problems with this HIT, please provide more detail below. Otherwise, please leave this portion blank.</p>
+	<input type="text" id="comments" name="comments" size="100" /></span>
+</div>
+<br />
+
 <div id="unanswered">
 	<span>&nbsp;</span> questions (out of 14 total) have been answered. If you submit now, you will not be paid.<br />
 	<input type="button" value="HIGHLIGHT UNANSWERED QUESTIONS" id="highlight-button" />
@@ -331,7 +345,7 @@ Europe) Please reference the IRB protocol number -- IRB-FY2020-4913 -- when emai
 <div id="answered">
 	<span>&nbsp;</span> questions (out of 14 total) have been answered. You are ready to submit.
 </div>
-<h3 style="color: red; text-align:center;">After submitting this HIT, do NOT submit another HIT with survey code <span class="blue">RELEVANCE</span>. You will not be paid for completing more than one survey with this code.</h3>
+<h3 style="color: red; text-align:center;">After submitting this HIT, do NOT submit another HIT with survey code <span class="blue">HEDGEHOG_OLYMPICS</span>. You will not be paid for completing more than one survey with this code.</h3>
 <p><input type="hidden" name="numanswered" id="numanswered" /> <input type="hidden" name="useragent" id="useragent" /></p>
 
 <script type='text/javascript'>

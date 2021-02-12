@@ -10,6 +10,8 @@ label, input[type=radio], input[type=button] { cursor: pointer; }
 #unanswered { font-weight: bold; font-size: 2em; color: black; background-color: red; margin: 0 auto; width: 500px; border: black 1px solid; padding: 10px; display:none; }
 #answered { margin: 0 auto; width: 500px; border: black 1px solid; padding: 10px; display:none; }
 .slider { width: 300px; margin: 0 10px; }
+.example { background-color: #ccc; padding: 10px; }
+
 </style>
 
 <style type="text/css">
@@ -21,13 +23,17 @@ label, input[type=radio], input[type=button] { cursor: pointer; }
 }
 </style>
 
-<p>Survey Code: <span class="blue">RELEVANCE</span></p>
-<p class="red"><strong>PLEASE COMPLETE AT MOST ONE <span class="blue">RELEVANCE</span> SURVEY. YOU WILL NOT BE PAID FOR COMPLETING MORE THAN ONE SURVEY WITH THIS CODE.</strong></p>
+<p>Survey Code: <span class="blue">HEDGEHOG_OLYMPICS</span></p>
+<p class="red"><strong>PLEASE COMPLETE AT MOST ONE <span class="blue">HEDGEHOG_OLYMPICS</span> SURVEY. YOU WILL NOT BE PAID FOR COMPLETING MORE THAN ONE SURVEY WITH THIS CODE.</strong></p>
 
-<h3>Instructions</h3>
-<p>This questionnaire presents 14 English sentences. <strong>Your task is to judge what the probability of an event is.</strong> Don't worry if there isn't enough information to assign an exact probability to the possibility. This means that there is no right answer: We're only interested in <strong>your intuition</strong>.</p>
+
+<h1>Instructions</h1>
+<p>This HIT presents 14 scenarios. <strong>Your task is to judge what the probability of an event is in the scenario.</strong> Don't worry if there isn't enough information to assign an exact probability to the possibility. There is no right answer: We're only interested in <strong>your intuition</strong>.</p>
+<p>This HIT should take about 10 minutes to complete.</p>
 <p>You can indicate the probability by dragging the slider between "Impossible" and "Certain". As you move the slider, you can see how the probability of the event changes.</p>
 <p>Here is an example:</p>
+
+<div class="example">
 <div class="trial">
 	<p><strong>Background: </strong>Aaron is going to Paris on vacation. He's never been before, so he's excited to see the famous sites.</p>
 	<p><strong>What's the probability that Aaron will go to the Eiffel Tower?</strong></p>
@@ -38,9 +44,11 @@ label, input[type=radio], input[type=button] { cursor: pointer; }
 	</table>
 	<p>The probability that Aaron will go to the Eiffel Tower is quite high, but not certain. So slide the slider to the right until you're happy with the percentage that shows under the slider. </p>
     <p>You may notice that the probabilities change more slowly as the slider approaches the 0% or 100%. This is to give you more control if the event is very unlikely or very likely.</p>
-</div>
+</div></div>
 
 <p>Here is another example:</p>
+
+<div class="example">
 <div class="trial">
 	<p><strong>Background: </strong>Lauren is getting dressed to go outside. It's December and she lives in Canada.</p>
 	<p><strong>What's the probability that Lauren will put on shorts?</strong></p>
@@ -49,7 +57,8 @@ label, input[type=radio], input[type=button] { cursor: pointer; }
 		<div class="output"></div></td><td class='label'>CERTAIN</td></tr>
 	</table>
 	<p>The probability that Lauren will put on shorts is very low. So please slide the slider to the left until you are happy with the percentage that shows under the slider. </p>
-</div>
+</div></div>
+
 
 <p class="red"><strong>In order to get paid, please make sure that you answer all 14 questions.</strong></p>
 
@@ -72,8 +81,9 @@ label, input[type=radio], input[type=button] { cursor: pointer; }
 	(or <a href="mailto:gdpr-info@nyu.edu">gdpr-info@nyu.edu</a> for participants in
 	Europe) Please reference the IRB protocol number -- IRB-FY2020-4913 -- when emailing.
   </p><hr noshade="noshade" />
+<hr noshade="noshade" />
 
-<p class="red"><strong>IF YOU HAVE ALREADY COMPLETED A <span class="blue">RELEVANCE</span> SURVEY, PLEASE STOP HERE. YOU WILL NOT BE PAID FOR COMPLETING MORE THAN ONE SURVEY WITH THIS CODE.</strong></p>
+<!--<p class="red"><strong>IF YOU HAVE ALREADY COMPLETED A <span class="blue">HEDGEHOG_OLYMPICS</span> SURVEY, PLEASE STOP HERE. YOU WILL NOT BE PAID FOR COMPLETING MORE THAN ONE SURVEY WITH THIS CODE.</strong></p>-->
 
 
 
@@ -277,6 +287,13 @@ label, input[type=radio], input[type=button] { cursor: pointer; }
 <p>Do you speak a language other than English? <label for="foreignlangY"><input id="foreignlangY" type="radio" name="foreignlang" value="1" /> Yes</label> <label for="foreignlangN"><input id="foreignlangN" type="radio" name="foreignlang" value="0" /> No</label></p>
 <p>(Your answers to these questions do not affect the payment.)</p>
 
+
+<div>
+	<p>If you experienced any problems with this HIT, please provide more detail below. Otherwise, please leave this portion blank.</p>
+	<input type="text" id="comments" name="comments" size="100" /></span>
+</div>
+<br />
+
 <div id="unanswered">
 	<span>&nbsp;</span> questions (out of 14 total) have been answered. If you submit now, you will not be paid.<br />
 	<input type="button" value="HIGHLIGHT UNANSWERED QUESTIONS" id="highlight-button" />
@@ -285,7 +302,7 @@ label, input[type=radio], input[type=button] { cursor: pointer; }
 <div id="answered">
 	<span>&nbsp;</span> questions (out of 14 total) have been answered. You are ready to submit.
 </div>
-<h3 style="color: red; text-align:center;">After submitting this HIT, do NOT submit another HIT with survey code <span class="blue">RELEVANCE</span>. You will not be paid for completing more than one survey with this code.</h3>
+<h3 style="color: red; text-align:center;">After submitting this HIT, do NOT submit another HIT with survey code <span class="blue">HEDGEHOG_OLYMPICS</span>. You will not be paid for completing more than one survey with this code.</h3>
 <p><input type="hidden" name="numanswered" id="numanswered" /> <input type="hidden" name="useragent" id="useragent" /></p>
 
 <script type='text/javascript'>

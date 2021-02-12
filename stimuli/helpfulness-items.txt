@@ -4,7 +4,7 @@ You ask your friend Claire:
 Did Tony get Ethan a cookbook for his birthday?
 Claire responds:
 Tony got Ethan "The Joy of Cooking".
-How relevant was Claire's response to the question at hand?
+How helpful was Claire's response?
 
 # filler 2 filler
 Joe is the new guy at work, and he's pretty cute. You're thinking of asking him on a date, but if he's married that would be pretty awkward.
@@ -12,7 +12,7 @@ You turn to your coworker Laura and ask:
 Is Joe married?
 Laura responds:
 He's married to his high school sweetheart.
-How relevant was Laura's response to the question at hand?
+How helpful was Laura's response?
 
 # filler 3 filler
 Your friend Adam grew up listening to the Les Miserables soundtrack. This year, the school's drama club is putting on the show, and (naturally) Adam auditioned for the lead role. As a loyal friend, you are trying to find some information about how he did.
@@ -20,7 +20,7 @@ You ask your friend Jane:
 Did Adam get the part?
 Jane responds:
 Musical theater began in ancient Greece and has evolved to include a variety of forms over the centuries.
-How relevant was Jane's response to the question at hand?
+How helpful was Jane's response?
 
 # filler 4 filler
 Maria is the new foreign exchange student at school. You want to introduce yourself, but you forgot where she is from. You know it's a big city where they don't speak English, but where?
@@ -28,7 +28,7 @@ You turn to your friend Chris and ask:
 Is Maria from Madrid?
 Chris responds:
 She's a talented singer.
-How relevant was Chris's response to the question at hand?
+How helpful was Chris's response?
 
 # target 1 context-low-bias answer-high-certainty
 It's the day of Kim and Sam's wedding. The wedding is at a beautiful beachside mansion. Last you heard, Kim wanted to have the ceremony on the beach, but Sam wanted to have it in the mansion ballroom.
@@ -36,7 +36,7 @@ You turn to your friend Clara and ask:
 Will they have the ceremony indoors?
 Clara responds:
 It's going to rain this afternoon.
-How relevant was Clara's response to the question at hand?
+How helpful was Clara's response?
 
 # target 1 context-low-bias answer-low-certainty
 It's the day of Kim and Sam's wedding. The wedding is at a beautiful beachside mansion. Last you heard, Kim wanted to have the ceremony on the beach, but Sam wanted to have it in the mansion ballroom.
@@ -44,7 +44,7 @@ You turn to your friend Clara and ask:
 Will they have the ceremony indoors?
 Clara responds:
 It's going to be cloudy this afternoon.
-How relevant was Clara's response to the question at hand?
+How helpful was Clara's response?
 
 # target 1 context-low-bias answer-reductive-answer
 It's the day of Kim and Sam's wedding. The wedding is at a beautiful beachside mansion. Last you heard, Kim wanted to have the ceremony on the beach, but Sam wanted to have it in the mansion ballroom.
@@ -52,7 +52,7 @@ You turn to your friend Clara and ask:
 Will they have the ceremony indoors?
 Clara responds:
 It'll be indoors if they need to use the sound system. 
-How relevant was Clara's response to the question at hand?
+How helpful was Clara's response?
 
 # target 1 context-low-bias answer-exhaustive-answer
 It's the day of Kim and Sam's wedding. The wedding is at a beautiful beachside mansion. Last you heard, Kim wanted to have the ceremony on the beach, but Sam wanted to have it in the mansion ballroom.
@@ -60,7 +60,7 @@ You turn to your friend Clara and ask:
 Will they have the ceremony indoors?
 Clara responds:
 It'll be in the ballroom.
-How relevant was Clara's response to the question at hand?
+How helpful was Clara's response?
 
 # target 1 context-low-bias answer-non-answer
 It's the day of Kim and Sam's wedding. The wedding is at a beautiful beachside mansion. Last you heard, Kim wanted to have the ceremony on the beach, but Sam wanted to have it in the mansion ballroom.
@@ -68,7 +68,7 @@ You turn to your friend Clara and ask:
 Will they have the ceremony indoors?
 Clara responds:
 There are supposed to be 100 guests.
-How relevant was Clara's response to the question at hand?
+How helpful was Clara's response?
 
 # target 1 context-positive-bias answer-high-certainty
 It's the day of Kim and Sam's wedding. The wedding is at a beautiful beachside mansion. You're not sure if the ceremony is supposed to be on the beach or in the mansion, but last you heard they were planning on having it indoors.
@@ -76,7 +76,7 @@ You turn to your friend Clara and ask:
 Will they have the ceremony indoors?
 Clara responds:
 It's going to rain this afternoon.
-How relevant was Clara's response to the question at hand?
+How helpful was Clara's response?
 
 # target 1 context-positive-bias answer-low-certainty
 It's the day of Kim and Sam's wedding. The wedding is at a beautiful beachside mansion. You're not sure if the ceremony is supposed to be on the beach or in the mansion, but last you heard they were planning on having it indoors.
@@ -84,7 +84,7 @@ You turn to your friend Clara and ask:
 Will they have the ceremony indoors?
 Clara responds:
 It's going to be cloudy this afternoon.
-How relevant was Clara's response to the question at hand?
+How helpful was Clara's response?
 
 # target 1 context-positive-bias answer-reductive-answer
 It's the day of Kim and Sam's wedding. The wedding is at a beautiful beachside mansion. You're not sure if the ceremony is supposed to be on the beach or in the mansion, but last you heard they were planning on having it indoors.
@@ -92,7 +92,7 @@ You turn to your friend Clara and ask:
 Will they have the ceremony indoors?
 Clara responds:
 It'll be indoors if they need to use the sound system. 
-How relevant was Clara's response to the question at hand?
+How helpful was Clara's response?
 
 # target 1 context-positive-bias answer-exhaustive-answer
 It's the day of Kim and Sam's wedding. The wedding is at a beautiful beachside mansion. You're not sure if the ceremony is supposed to be on the beach or in the mansion, but last you heard they were planning on having it indoors.
@@ -100,7 +100,7 @@ You turn to your friend Clara and ask:
 Will they have the ceremony indoors?
 Clara responds:
 It'll be in the ballroom.
-How relevant was Clara's response to the question at hand?
+How helpful was Clara's response?
 
 # target 1 context-positive-bias answer-non-answer
 It's the day of Kim and Sam's wedding. The wedding is at a beautiful beachside mansion. You're not sure if the ceremony is supposed to be on the beach or in the mansion, but last you heard they were planning on having it indoors.
@@ -108,7 +108,7 @@ You turn to your friend Clara and ask:
 Will they have the ceremony indoors?
 Clara responds:
 There are supposed to be 100 guests.
-How relevant was Clara's response to the question at hand?
+How helpful was Clara's response?
 
 # target 1 context-negative-bias answer-high-certainty
 It's the day of Kim and Sam's wedding. The wedding is at a beautiful beachside mansion. Last you heard, the plan was to have the ceremony on the beach, and the reception in the mansion ballroom.
@@ -116,7 +116,7 @@ You turn to your friend Clara and ask:
 Will they have the ceremony indoors?
 Clara responds:
 It's going to rain this afternoon.
-How relevant was Clara's response to the question at hand?
+How helpful was Clara's response?
 
 # target 1 context-negative-bias answer-low-certainty
 It's the day of Kim and Sam's wedding. The wedding is at a beautiful beachside mansion. Last you heard, the plan was to have the ceremony on the beach, and the reception in the mansion ballroom.
@@ -124,7 +124,7 @@ You turn to your friend Clara and ask:
 Will they have the ceremony indoors?
 Clara responds:
 It's going to be cloudy this afternoon.
-How relevant was Clara's response to the question at hand?
+How helpful was Clara's response?
 
 # target 1 context-negative-bias answer-reductive-answer
 It's the day of Kim and Sam's wedding. The wedding is at a beautiful beachside mansion. Last you heard, the plan was to have the ceremony on the beach, and the reception in the mansion ballroom.
@@ -132,7 +132,7 @@ You turn to your friend Clara and ask:
 Will they have the ceremony indoors?
 Clara responds:
 It'll be indoors if they need to use the sound system. 
-How relevant was Clara's response to the question at hand?
+How helpful was Clara's response?
 
 # target 1 context-negative-bias answer-exhaustive-answer
 It's the day of Kim and Sam's wedding. The wedding is at a beautiful beachside mansion. Last you heard, the plan was to have the ceremony on the beach, and the reception in the mansion ballroom.
@@ -140,7 +140,7 @@ You turn to your friend Clara and ask:
 Will they have the ceremony indoors?
 Clara responds:
 It'll be in the ballroom.
-How relevant was Clara's response to the question at hand?
+How helpful was Clara's response?
 
 # target 1 context-negative-bias answer-non-answer
 It's the day of Kim and Sam's wedding. The wedding is at a beautiful beachside mansion. Last you heard, the plan was to have the ceremony on the beach, and the reception in the mansion ballroom.
@@ -148,7 +148,7 @@ You turn to your friend Clara and ask:
 Will they have the ceremony indoors?
 Clara responds:
 There are supposed to be 100 guests.
-How relevant was Clara's response to the question at hand?
+How helpful was Clara's response?
 
 # target 2 context-low-bias answer-high-certainty
 After a long day of school, you come home starving, and wondering what Mom is cooking for dinner. It's Tuesday, which has been hamburger night the last couple weeks. 
@@ -156,7 +156,7 @@ You turn to your sibling and ask:
 Are we having hamburgers for dinner?
 your sibling responds:
 There are hamburger buns in the kitchen.
-How relevant was your sibling's response to the question at hand?
+How helpful was your sibling's response?
 
 # target 2 context-low-bias answer-low-certainty
 After a long day of school, you come home starving, and wondering what Mom is cooking for dinner. It's Tuesday, which has been hamburger night the last couple weeks. 
@@ -164,7 +164,7 @@ You turn to your sibling and ask:
 Are we having hamburgers for dinner?
 your sibling responds:
 There is ground beef in the kitchen.
-How relevant was your sibling's response to the question at hand?
+How helpful was your sibling's response?
 
 # target 2 context-low-bias answer-reductive-answer
 After a long day of school, you come home starving, and wondering what Mom is cooking for dinner. It's Tuesday, which has been hamburger night the last couple weeks. 
@@ -172,7 +172,7 @@ You turn to your sibling and ask:
 Are we having hamburgers for dinner?
 your sibling responds:
 We'll have hamburgers if Mom had a tough day at work.
-How relevant was your sibling's response to the question at hand?
+How helpful was your sibling's response?
 
 # target 2 context-low-bias answer-exhaustive-answer
 After a long day of school, you come home starving, and wondering what Mom is cooking for dinner. It's Tuesday, which has been hamburger night the last couple weeks. 
@@ -180,7 +180,7 @@ You turn to your sibling and ask:
 Are we having hamburgers for dinner?
 your sibling responds:
 We're having hamburgers and french fries.
-How relevant was your sibling's response to the question at hand?
+How helpful was your sibling's response?
 
 # target 2 context-low-bias answer-non-answer
 After a long day of school, you come home starving, and wondering what Mom is cooking for dinner. It's Tuesday, which has been hamburger night the last couple weeks. 
@@ -188,7 +188,7 @@ You turn to your sibling and ask:
 Are we having hamburgers for dinner?
 your sibling responds:
 We're having ice cream for dessert.
-How relevant was your sibling's response to the question at hand?
+How helpful was your sibling's response?
 
 # target 2 context-positive-bias answer-high-certainty
 After a long day of school, you come home starving, and wondering what Mom is cooking for dinner. It's Thursday, which is usually hamburger night.
@@ -196,7 +196,7 @@ You turn to your sibling and ask:
 Are we having hamburgers for dinner?
 your sibling responds:
 There are hamburger buns in the kitchen.
-How relevant was your sibling's response to the question at hand?
+How helpful was your sibling's response?
 
 # target 2 context-positive-bias answer-low-certainty
 After a long day of school, you come home starving, and wondering what Mom is cooking for dinner. It's Thursday, which is usually hamburger night.
@@ -204,7 +204,7 @@ You turn to your sibling and ask:
 Are we having hamburgers for dinner?
 your sibling responds:
 There is ground beef in the kitchen.
-How relevant was your sibling's response to the question at hand?
+How helpful was your sibling's response?
 
 # target 2 context-positive-bias answer-reductive-answer
 After a long day of school, you come home starving, and wondering what Mom is cooking for dinner. It's Thursday, which is usually hamburger night.
@@ -212,7 +212,7 @@ You turn to your sibling and ask:
 Are we having hamburgers for dinner?
 your sibling responds:
 We'll have hamburgers if Mom had a tough day at work.
-How relevant was your sibling's response to the question at hand?
+How helpful was your sibling's response?
 
 # target 2 context-positive-bias answer-exhaustive-answer
 After a long day of school, you come home starving, and wondering what Mom is cooking for dinner. It's Thursday, which is usually hamburger night.
@@ -220,7 +220,7 @@ You turn to your sibling and ask:
 Are we having hamburgers for dinner?
 your sibling responds:
 We're having hamburgers and french fries.
-How relevant was your sibling's response to the question at hand?
+How helpful was your sibling's response?
 
 # target 2 context-positive-bias answer-non-answer
 After a long day of school, you come home starving, and wondering what Mom is cooking for dinner. It's Thursday, which is usually hamburger night.
@@ -228,7 +228,7 @@ You turn to your sibling and ask:
 Are we having hamburgers for dinner?
 your sibling responds:
 We're having ice cream for dessert.
-How relevant was your sibling's response to the question at hand?
+How helpful was your sibling's response?
 
 # target 2 context-negative-bias answer-high-certainty
 After a long day of school, you come home starving, and wondering what Mom is cooking for dinner. It's Thursday, which used to be hamburger night, but lately, Mom has stopped making hamburgers because they're too "unhealthy".
@@ -236,7 +236,7 @@ You turn to your sibling and ask:
 Are we having hamburgers for dinner?
 your sibling responds:
 There are hamburger buns in the kitchen.
-How relevant was your sibling's response to the question at hand?
+How helpful was your sibling's response?
 
 # target 2 context-negative-bias answer-low-certainty
 After a long day of school, you come home starving, and wondering what Mom is cooking for dinner. It's Thursday, which used to be hamburger night, but lately, Mom has stopped making hamburgers because they're too "unhealthy".
@@ -244,7 +244,7 @@ You turn to your sibling and ask:
 Are we having hamburgers for dinner?
 your sibling responds:
 There is ground beef in the kitchen.
-How relevant was your sibling's response to the question at hand?
+How helpful was your sibling's response?
 
 # target 2 context-negative-bias answer-reductive-answer
 After a long day of school, you come home starving, and wondering what Mom is cooking for dinner. It's Thursday, which used to be hamburger night, but lately, Mom has stopped making hamburgers because they're too "unhealthy".
@@ -252,7 +252,7 @@ You turn to your sibling and ask:
 Are we having hamburgers for dinner?
 your sibling responds:
 We'll have hamburgers if Mom had a tough day at work.
-How relevant was your sibling's response to the question at hand?
+How helpful was your sibling's response?
 
 # target 2 context-negative-bias answer-exhaustive-answer
 After a long day of school, you come home starving, and wondering what Mom is cooking for dinner. It's Thursday, which used to be hamburger night, but lately, Mom has stopped making hamburgers because they're too "unhealthy".
@@ -260,7 +260,7 @@ You turn to your sibling and ask:
 Are we having hamburgers for dinner?
 your sibling responds:
 We're having hamburgers and french fries.
-How relevant was your sibling's response to the question at hand?
+How helpful was your sibling's response?
 
 # target 2 context-negative-bias answer-non-answer
 After a long day of school, you come home starving, and wondering what Mom is cooking for dinner. It's Thursday, which used to be hamburger night, but lately, Mom has stopped making hamburgers because they're too "unhealthy".
@@ -268,7 +268,7 @@ You turn to your sibling and ask:
 Are we having hamburgers for dinner?
 your sibling responds:
 We're having ice cream for dessert.
-How relevant was your sibling's response to the question at hand?
+How helpful was your sibling's response?
 
 # target 3 context-low-bias answer-high-certainty
 Joe is the new guy at work, and he's pretty cute. You're thinking of asking him on a date, but if he's married that would be pretty awkward.
@@ -276,7 +276,7 @@ You turn to your coworker Laura and ask:
 Is Joe married?
 Laura responds:
 He's wearing a ring.
-How relevant was Laura's response to the question at hand?
+How helpful was Laura's response?
 
 # target 3 context-low-bias answer-low-certainty
 Joe is the new guy at work, and he's pretty cute. You're thinking of asking him on a date, but if he's married that would be pretty awkward.
@@ -284,7 +284,7 @@ You turn to your coworker Laura and ask:
 Is Joe married?
 Laura responds:
 He lives in the suburbs.
-How relevant was Laura's response to the question at hand?
+How helpful was Laura's response?
 
 # target 3 context-low-bias answer-reductive-answer
 Joe is the new guy at work, and he's pretty cute. You're thinking of asking him on a date, but if he's married that would be pretty awkward.
@@ -292,7 +292,7 @@ You turn to your coworker Laura and ask:
 Is Joe married?
 Laura responds:
 He's not engaged.
-How relevant was Laura's response to the question at hand?
+How helpful was Laura's response?
 
 # target 3 context-low-bias answer-exhaustive-answer
 Joe is the new guy at work, and he's pretty cute. You're thinking of asking him on a date, but if he's married that would be pretty awkward.
@@ -300,7 +300,7 @@ You turn to your coworker Laura and ask:
 Is Joe married?
 Laura responds:
 He's married to his high school sweetheart.
-How relevant was Laura's response to the question at hand?
+How helpful was Laura's response?
 
 # target 3 context-low-bias answer-non-answer
 Joe is the new guy at work, and he's pretty cute. You're thinking of asking him on a date, but if he's married that would be pretty awkward.
@@ -308,7 +308,7 @@ You turn to your coworker Laura and ask:
 Is Joe married?
 Laura responds:
 He works in the IT department.
-How relevant was Laura's response to the question at hand?
+How helpful was Laura's response?
 
 # target 3 context-positive-bias answer-high-certainty
 Joe is the new guy at work, and he's pretty cute. You're thinking of asking him on a date, but if he's married it would be pretty awkward, and you heard he has two children.
@@ -316,7 +316,7 @@ You turn to your coworker Laura and ask:
 Is Joe married?
 Laura responds:
 He's wearing a ring.
-How relevant was Laura's response to the question at hand?
+How helpful was Laura's response?
 
 # target 3 context-positive-bias answer-low-certainty
 Joe is the new guy at work, and he's pretty cute. You're thinking of asking him on a date, but if he's married it would be pretty awkward, and you heard he has two children.
@@ -324,7 +324,7 @@ You turn to your coworker Laura and ask:
 Is Joe married?
 Laura responds:
 He lives in the suburbs.
-How relevant was Laura's response to the question at hand?
+How helpful was Laura's response?
 
 # target 3 context-positive-bias answer-reductive-answer
 Joe is the new guy at work, and he's pretty cute. You're thinking of asking him on a date, but if he's married it would be pretty awkward, and you heard he has two children.
@@ -332,7 +332,7 @@ You turn to your coworker Laura and ask:
 Is Joe married?
 Laura responds:
 He's not engaged.
-How relevant was Laura's response to the question at hand?
+How helpful was Laura's response?
 
 # target 3 context-positive-bias answer-exhaustive-answer
 Joe is the new guy at work, and he's pretty cute. You're thinking of asking him on a date, but if he's married it would be pretty awkward, and you heard he has two children.
@@ -340,7 +340,7 @@ You turn to your coworker Laura and ask:
 Is Joe married?
 Laura responds:
 He's married to his high school sweetheart.
-How relevant was Laura's response to the question at hand?
+How helpful was Laura's response?
 
 # target 3 context-positive-bias answer-non-answer
 Joe is the new guy at work, and he's pretty cute. You're thinking of asking him on a date, but if he's married it would be pretty awkward, and you heard he has two children.
@@ -348,7 +348,7 @@ You turn to your coworker Laura and ask:
 Is Joe married?
 Laura responds:
 He works in the IT department.
-How relevant was Laura's response to the question at hand?
+How helpful was Laura's response?
 
 # target 3 context-negative-bias answer-high-certainty
 Joe is the new guy at work, and he's pretty cute. You're thinking of asking him on a date, but if he's married that would be pretty awkward. On the other hand, you saw him come to company picnic last week without a plus-one.
@@ -356,7 +356,7 @@ You turn to your coworker Laura and ask:
 Is Joe married?
 Laura responds:
 He's wearing a ring.
-How relevant was Laura's response to the question at hand?
+How helpful was Laura's response?
 
 # target 3 context-negative-bias answer-low-certainty
 Joe is the new guy at work, and he's pretty cute. You're thinking of asking him on a date, but if he's married that would be pretty awkward. On the other hand, you saw him come to company picnic last week without a plus-one.
@@ -364,7 +364,7 @@ You turn to your coworker Laura and ask:
 Is Joe married?
 Laura responds:
 He lives in the suburbs.
-How relevant was Laura's response to the question at hand?
+How helpful was Laura's response?
 
 # target 3 context-negative-bias answer-reductive-answer
 Joe is the new guy at work, and he's pretty cute. You're thinking of asking him on a date, but if he's married that would be pretty awkward. On the other hand, you saw him come to company picnic last week without a plus-one.
@@ -372,7 +372,7 @@ You turn to your coworker Laura and ask:
 Is Joe married?
 Laura responds:
 He's not engaged.
-How relevant was Laura's response to the question at hand?
+How helpful was Laura's response?
 
 # target 3 context-negative-bias answer-exhaustive-answer
 Joe is the new guy at work, and he's pretty cute. You're thinking of asking him on a date, but if he's married that would be pretty awkward. On the other hand, you saw him come to company picnic last week without a plus-one.
@@ -380,7 +380,7 @@ You turn to your coworker Laura and ask:
 Is Joe married?
 Laura responds:
 He's married to his high school sweetheart.
-How relevant was Laura's response to the question at hand?
+How helpful was Laura's response?
 
 # target 3 context-negative-bias answer-non-answer
 Joe is the new guy at work, and he's pretty cute. You're thinking of asking him on a date, but if he's married that would be pretty awkward. On the other hand, you saw him come to company picnic last week without a plus-one.
@@ -388,7 +388,7 @@ You turn to your coworker Laura and ask:
 Is Joe married?
 Laura responds:
 He works in the IT department.
-How relevant was Laura's response to the question at hand?
+How helpful was Laura's response?
 
 # target 4 context-low-bias answer-high-certainty
 Maria is the new foreign exchange student at school. You want to introduce yourself, but you forgot where she is from. You know it's a big city where they don't speak English, but where?
@@ -396,7 +396,7 @@ You turn to your friend Chris and ask:
 Is Maria from Madrid?
 Chris responds:
 She's from Spain.
-How relevant was Chris's response to the question at hand?
+How helpful was Chris's response?
 
 # target 4 context-low-bias answer-low-certainty
 Maria is the new foreign exchange student at school. You want to introduce yourself, but you forgot where she is from. You know it's a big city where they don't speak English, but where?
@@ -404,7 +404,7 @@ You turn to your friend Chris and ask:
 Is Maria from Madrid?
 Chris responds:
 She speaks Spanish.
-How relevant was Chris's response to the question at hand?
+How helpful was Chris's response?
 
 # target 4 context-low-bias answer-reductive-answer
 Maria is the new foreign exchange student at school. You want to introduce yourself, but you forgot where she is from. You know it's a big city where they don't speak English, but where?
@@ -412,7 +412,7 @@ You turn to your friend Chris and ask:
 Is Maria from Madrid?
 Chris responds:
 She's either from Madrid or Moscow.
-How relevant was Chris's response to the question at hand?
+How helpful was Chris's response?
 
 # target 4 context-low-bias answer-exhaustive-answer
 Maria is the new foreign exchange student at school. You want to introduce yourself, but you forgot where she is from. You know it's a big city where they don't speak English, but where?
@@ -420,7 +420,7 @@ You turn to your friend Chris and ask:
 Is Maria from Madrid?
 Chris responds:
 She was born and raised in Madrid.
-How relevant was Chris's response to the question at hand?
+How helpful was Chris's response?
 
 # target 4 context-low-bias answer-non-answer
 Maria is the new foreign exchange student at school. You want to introduce yourself, but you forgot where she is from. You know it's a big city where they don't speak English, but where?
@@ -428,7 +428,7 @@ You turn to your friend Chris and ask:
 Is Maria from Madrid?
 Chris responds:
 She's a talented singer.
-How relevant was Chris's response to the question at hand?
+How helpful was Chris's response?
 
 # target 4 context-positive-bias answer-high-certainty
 Maria is the new foreign exchange student at school. You want to introduce yourself, but you forgot where she is from. You know it's a big city in Europe.
@@ -436,7 +436,7 @@ You turn to your friend Chris and ask:
 Is Maria from Madrid?
 Chris responds:
 She's from Spain.
-How relevant was Chris's response to the question at hand?
+How helpful was Chris's response?
 
 # target 4 context-positive-bias answer-low-certainty
 Maria is the new foreign exchange student at school. You want to introduce yourself, but you forgot where she is from. You know it's a big city in Europe.
@@ -444,7 +444,7 @@ You turn to your friend Chris and ask:
 Is Maria from Madrid?
 Chris responds:
 She speaks Spanish.
-How relevant was Chris's response to the question at hand?
+How helpful was Chris's response?
 
 # target 4 context-positive-bias answer-reductive-answer
 Maria is the new foreign exchange student at school. You want to introduce yourself, but you forgot where she is from. You know it's a big city in Europe.
@@ -452,7 +452,7 @@ You turn to your friend Chris and ask:
 Is Maria from Madrid?
 Chris responds:
 She's either from Madrid or Moscow.
-How relevant was Chris's response to the question at hand?
+How helpful was Chris's response?
 
 # target 4 context-positive-bias answer-exhaustive-answer
 Maria is the new foreign exchange student at school. You want to introduce yourself, but you forgot where she is from. You know it's a big city in Europe.
@@ -460,7 +460,7 @@ You turn to your friend Chris and ask:
 Is Maria from Madrid?
 Chris responds:
 She was born and raised in Madrid.
-How relevant was Chris's response to the question at hand?
+How helpful was Chris's response?
 
 # target 4 context-positive-bias answer-non-answer
 Maria is the new foreign exchange student at school. You want to introduce yourself, but you forgot where she is from. You know it's a big city in Europe.
@@ -468,7 +468,7 @@ You turn to your friend Chris and ask:
 Is Maria from Madrid?
 Chris responds:
 She's a talented singer.
-How relevant was Chris's response to the question at hand?
+How helpful was Chris's response?
 
 # target 4 context-negative-bias answer-high-certainty
 Maria is the new foreign exchange student at school. You want to introduce yourself, but you forgot where she is from. You know it's a big city somewhere.
@@ -476,7 +476,7 @@ You turn to your friend Chris and ask:
 Is Maria from Madrid?
 Chris responds:
 She's from Spain.
-How relevant was Chris's response to the question at hand?
+How helpful was Chris's response?
 
 # target 4 context-negative-bias answer-low-certainty
 Maria is the new foreign exchange student at school. You want to introduce yourself, but you forgot where she is from. You know it's a big city somewhere.
@@ -484,7 +484,7 @@ You turn to your friend Chris and ask:
 Is Maria from Madrid?
 Chris responds:
 She speaks Spanish.
-How relevant was Chris's response to the question at hand?
+How helpful was Chris's response?
 
 # target 4 context-negative-bias answer-reductive-answer
 Maria is the new foreign exchange student at school. You want to introduce yourself, but you forgot where she is from. You know it's a big city somewhere.
@@ -492,7 +492,7 @@ You turn to your friend Chris and ask:
 Is Maria from Madrid?
 Chris responds:
 She's either from Madrid or Moscow.
-How relevant was Chris's response to the question at hand?
+How helpful was Chris's response?
 
 # target 4 context-negative-bias answer-exhaustive-answer
 Maria is the new foreign exchange student at school. You want to introduce yourself, but you forgot where she is from. You know it's a big city somewhere.
@@ -500,7 +500,7 @@ You turn to your friend Chris and ask:
 Is Maria from Madrid?
 Chris responds:
 She was born and raised in Madrid.
-How relevant was Chris's response to the question at hand?
+How helpful was Chris's response?
 
 # target 4 context-negative-bias answer-non-answer
 Maria is the new foreign exchange student at school. You want to introduce yourself, but you forgot where she is from. You know it's a big city somewhere.
@@ -508,7 +508,7 @@ You turn to your friend Chris and ask:
 Is Maria from Madrid?
 Chris responds:
 She's a talented singer.
-How relevant was Chris's response to the question at hand?
+How helpful was Chris's response?
 
 # target 5 context-low-bias answer-high-certainty
 You're a burglar trying to rob a house with your accomplice Chris. You've been staking out a good looking house for the last week, and noticed that the family often goes out to dinner around this time.
@@ -516,7 +516,7 @@ You turn to your accomplice Chris and ask:
 Is there anyone inside the house?
 Chris responds:
 I heard voices coming from inside.
-How relevant was Chris's response to the question at hand?
+How helpful was Chris's response?
 
 # target 5 context-low-bias answer-low-certainty
 You're a burglar trying to rob a house with your accomplice Chris. You've been staking out a good looking house for the last week, and noticed that the family often goes out to dinner around this time.
@@ -524,7 +524,7 @@ You turn to your accomplice Chris and ask:
 Is there anyone inside the house?
 Chris responds:
 There's a light on.
-How relevant was Chris's response to the question at hand?
+How helpful was Chris's response?
 
 # target 5 context-low-bias answer-reductive-answer
 You're a burglar trying to rob a house with your accomplice Chris. You've been staking out a good looking house for the last week, and noticed that the family often goes out to dinner around this time.
@@ -532,7 +532,7 @@ You turn to your accomplice Chris and ask:
 Is there anyone inside the house?
 Chris responds:
 If there are two cars in the driveway, then someone is home.
-How relevant was Chris's response to the question at hand?
+How helpful was Chris's response?
 
 # target 5 context-low-bias answer-exhaustive-answer
 You're a burglar trying to rob a house with your accomplice Chris. You've been staking out a good looking house for the last week, and noticed that the family often goes out to dinner around this time.
@@ -540,7 +540,7 @@ You turn to your accomplice Chris and ask:
 Is there anyone inside the house?
 Chris responds:
 The whole family is inside the house.
-How relevant was Chris's response to the question at hand?
+How helpful was Chris's response?
 
 # target 5 context-low-bias answer-non-answer
 You're a burglar trying to rob a house with your accomplice Chris. You've been staking out a good looking house for the last week, and noticed that the family often goes out to dinner around this time.
@@ -548,7 +548,7 @@ You turn to your accomplice Chris and ask:
 Is there anyone inside the house?
 Chris responds:
 The house has two entrances.
-How relevant was Chris's response to the question at hand?
+How helpful was Chris's response?
 
 # target 5 context-positive-bias answer-high-certainty
 You're a burglar trying to rob a house with your accomplice Chris. You've been staking out a good looking house for the last week, and noticed that the family usually watches TV together around this time.
@@ -556,7 +556,7 @@ You turn to your accomplice Chris and ask:
 Is there anyone inside the house?
 Chris responds:
 I heard voices coming from inside.
-How relevant was Chris's response to the question at hand?
+How helpful was Chris's response?
 
 # target 5 context-positive-bias answer-low-certainty
 You're a burglar trying to rob a house with your accomplice Chris. You've been staking out a good looking house for the last week, and noticed that the family usually watches TV together around this time.
@@ -564,7 +564,7 @@ You turn to your accomplice Chris and ask:
 Is there anyone inside the house?
 Chris responds:
 There's a light on.
-How relevant was Chris's response to the question at hand?
+How helpful was Chris's response?
 
 # target 5 context-positive-bias answer-reductive-answer
 You're a burglar trying to rob a house with your accomplice Chris. You've been staking out a good looking house for the last week, and noticed that the family usually watches TV together around this time.
@@ -572,7 +572,7 @@ You turn to your accomplice Chris and ask:
 Is there anyone inside the house?
 Chris responds:
 If there are two cars in the driveway, then someone is home.
-How relevant was Chris's response to the question at hand?
+How helpful was Chris's response?
 
 # target 5 context-positive-bias answer-exhaustive-answer
 You're a burglar trying to rob a house with your accomplice Chris. You've been staking out a good looking house for the last week, and noticed that the family usually watches TV together around this time.
@@ -580,7 +580,7 @@ You turn to your accomplice Chris and ask:
 Is there anyone inside the house?
 Chris responds:
 The whole family is inside the house.
-How relevant was Chris's response to the question at hand?
+How helpful was Chris's response?
 
 # target 5 context-positive-bias answer-non-answer
 You're a burglar trying to rob a house with your accomplice Chris. You've been staking out a good looking house for the last week, and noticed that the family usually watches TV together around this time.
@@ -588,7 +588,7 @@ You turn to your accomplice Chris and ask:
 Is there anyone inside the house?
 Chris responds:
 The house has two entrances.
-How relevant was Chris's response to the question at hand?
+How helpful was Chris's response?
 
 # target 5 context-negative-bias answer-high-certainty
 You're a burglar, trying to rob a house with your accomplice Chris. You've been staking out a good looking house for the last week, and noticed that the family seems to have left for vacation.
@@ -596,7 +596,7 @@ You turn to your accomplice Chris and ask:
 Is there anyone inside the house?
 Chris responds:
 I heard voices coming from inside.
-How relevant was Chris's response to the question at hand?
+How helpful was Chris's response?
 
 # target 5 context-negative-bias answer-low-certainty
 You're a burglar, trying to rob a house with your accomplice Chris. You've been staking out a good looking house for the last week, and noticed that the family seems to have left for vacation.
@@ -604,7 +604,7 @@ You turn to your accomplice Chris and ask:
 Is there anyone inside the house?
 Chris responds:
 There's a light on.
-How relevant was Chris's response to the question at hand?
+How helpful was Chris's response?
 
 # target 5 context-negative-bias answer-reductive-answer
 You're a burglar, trying to rob a house with your accomplice Chris. You've been staking out a good looking house for the last week, and noticed that the family seems to have left for vacation.
@@ -612,7 +612,7 @@ You turn to your accomplice Chris and ask:
 Is there anyone inside the house?
 Chris responds:
 If there are two cars in the driveway, then someone is home.
-How relevant was Chris's response to the question at hand?
+How helpful was Chris's response?
 
 # target 5 context-negative-bias answer-exhaustive-answer
 You're a burglar, trying to rob a house with your accomplice Chris. You've been staking out a good looking house for the last week, and noticed that the family seems to have left for vacation.
@@ -620,7 +620,7 @@ You turn to your accomplice Chris and ask:
 Is there anyone inside the house?
 Chris responds:
 The whole family is inside the house.
-How relevant was Chris's response to the question at hand?
+How helpful was Chris's response?
 
 # target 5 context-negative-bias answer-non-answer
 You're a burglar, trying to rob a house with your accomplice Chris. You've been staking out a good looking house for the last week, and noticed that the family seems to have left for vacation.
@@ -628,7 +628,7 @@ You turn to your accomplice Chris and ask:
 Is there anyone inside the house?
 Chris responds:
 The house has two entrances.
-How relevant was Chris's response to the question at hand?
+How helpful was Chris's response?
 
 # target 6 context-low-bias answer-high-certainty
 It's afternoon at the office and you're ready for a snack. There was a birthday party for Lily earlier in the week, and the cake was delicious.
@@ -636,7 +636,7 @@ Your coworker Meaghan sees you looking hungry, so you turn to her and ask:
 Is there any cake left?
 Meaghan responds:
 The cake box is still on the counter in the kitchen.
-How relevant was Meaghan's response to the question at hand?
+How helpful was Meaghan's response?
 
 # target 6 context-low-bias answer-low-certainty
 It's afternoon at the office and you're ready for a snack. There was a birthday party for Lily earlier in the week, and the cake was delicious.
@@ -644,7 +644,7 @@ Your coworker Meaghan sees you looking hungry, so you turn to her and ask:
 Is there any cake left?
 Meaghan responds:
 I saw someone with a slice yesterday.
-How relevant was Meaghan's response to the question at hand?
+How helpful was Meaghan's response?
 
 # target 6 context-low-bias answer-reductive-answer
 It's afternoon at the office and you're ready for a snack. There was a birthday party for Lily earlier in the week, and the cake was delicious.
@@ -652,7 +652,7 @@ Your coworker Meaghan sees you looking hungry, so you turn to her and ask:
 Is there any cake left?
 Meaghan responds:
 There's still some left if Lily didn't take it home.
-How relevant was Meaghan's response to the question at hand?
+How helpful was Meaghan's response?
 
 # target 6 context-low-bias answer-exhaustive-answer
 It's afternoon at the office and you're ready for a snack. There was a birthday party for Lily earlier in the week, and the cake was delicious.
@@ -660,7 +660,7 @@ Your coworker Meaghan sees you looking hungry, so you turn to her and ask:
 Is there any cake left?
 Meaghan responds:
 There are three slices left.
-How relevant was Meaghan's response to the question at hand?
+How helpful was Meaghan's response?
 
 # target 6 context-low-bias answer-non-answer
 It's afternoon at the office and you're ready for a snack. There was a birthday party for Lily earlier in the week, and the cake was delicious.
@@ -668,7 +668,7 @@ Your coworker Meaghan sees you looking hungry, so you turn to her and ask:
 Is there any cake left?
 Meaghan responds:
 The cake was half chocolate, half vanilla.
-How relevant was Meaghan's response to the question at hand?
+How helpful was Meaghan's response?
 
 # target 6 context-positive-bias answer-high-certainty
 It's afternoon at the office and you're ready for a snack. There was a birthday party for Lily earlier in the week, and the cake was so big that the party-goers barely made a dent in it.
@@ -676,7 +676,7 @@ Your coworker Meaghan sees you looking hungry, so you turn to her and ask:
 Is there any cake left?
 Meaghan responds:
 The cake box is still on the counter in the kitchen.
-How relevant was Meaghan's response to the question at hand?
+How helpful was Meaghan's response?
 
 # target 6 context-positive-bias answer-low-certainty
 It's afternoon at the office and you're ready for a snack. There was a birthday party for Lily earlier in the week, and the cake was so big that the party-goers barely made a dent in it.
@@ -684,7 +684,7 @@ Your coworker Meaghan sees you looking hungry, so you turn to her and ask:
 Is there any cake left?
 Meaghan responds:
 I saw someone with a slice yesterday.
-How relevant was Meaghan's response to the question at hand?
+How helpful was Meaghan's response?
 
 # target 6 context-positive-bias answer-reductive-answer
 It's afternoon at the office and you're ready for a snack. There was a birthday party for Lily earlier in the week, and the cake was so big that the party-goers barely made a dent in it.
@@ -692,7 +692,7 @@ Your coworker Meaghan sees you looking hungry, so you turn to her and ask:
 Is there any cake left?
 Meaghan responds:
 There's still some left if Lily didn't take it home.
-How relevant was Meaghan's response to the question at hand?
+How helpful was Meaghan's response?
 
 # target 6 context-positive-bias answer-exhaustive-answer
 It's afternoon at the office and you're ready for a snack. There was a birthday party for Lily earlier in the week, and the cake was so big that the party-goers barely made a dent in it.
@@ -700,7 +700,7 @@ Your coworker Meaghan sees you looking hungry, so you turn to her and ask:
 Is there any cake left?
 Meaghan responds:
 There are three slices left.
-How relevant was Meaghan's response to the question at hand?
+How helpful was Meaghan's response?
 
 # target 6 context-positive-bias answer-non-answer
 It's afternoon at the office and you're ready for a snack. There was a birthday party for Lily earlier in the week, and the cake was so big that the party-goers barely made a dent in it.
@@ -708,7 +708,7 @@ Your coworker Meaghan sees you looking hungry, so you turn to her and ask:
 Is there any cake left?
 Meaghan responds:
 The cake was half chocolate, half vanilla.
-How relevant was Meaghan's response to the question at hand?
+How helpful was Meaghan's response?
 
 # target 6 context-negative-bias answer-high-certainty
 It's afternoon at the office and you're ready for a snack. There was a birthday party for Lily earlier in the week, and the cake was so delicious that the party-goers barely left any behind.
@@ -716,7 +716,7 @@ Your coworker Meaghan sees you looking hungry, so you turn to her and ask:
 Is there any cake left?
 Meaghan responds:
 The cake box is still on the counter in the kitchen.
-How relevant was Meaghan's response to the question at hand?
+How helpful was Meaghan's response?
 
 # target 6 context-negative-bias answer-low-certainty
 It's afternoon at the office and you're ready for a snack. There was a birthday party for Lily earlier in the week, and the cake was so delicious that the party-goers barely left any behind.
@@ -724,7 +724,7 @@ Your coworker Meaghan sees you looking hungry, so you turn to her and ask:
 Is there any cake left?
 Meaghan responds:
 I saw someone with a slice yesterday.
-How relevant was Meaghan's response to the question at hand?
+How helpful was Meaghan's response?
 
 # target 6 context-negative-bias answer-reductive-answer
 It's afternoon at the office and you're ready for a snack. There was a birthday party for Lily earlier in the week, and the cake was so delicious that the party-goers barely left any behind.
@@ -732,7 +732,7 @@ Your coworker Meaghan sees you looking hungry, so you turn to her and ask:
 Is there any cake left?
 Meaghan responds:
 There's still some left if Lily didn't take it home.
-How relevant was Meaghan's response to the question at hand?
+How helpful was Meaghan's response?
 
 # target 6 context-negative-bias answer-exhaustive-answer
 It's afternoon at the office and you're ready for a snack. There was a birthday party for Lily earlier in the week, and the cake was so delicious that the party-goers barely left any behind.
@@ -740,7 +740,7 @@ Your coworker Meaghan sees you looking hungry, so you turn to her and ask:
 Is there any cake left?
 Meaghan responds:
 There are three slices left.
-How relevant was Meaghan's response to the question at hand?
+How helpful was Meaghan's response?
 
 # target 6 context-negative-bias answer-non-answer
 It's afternoon at the office and you're ready for a snack. There was a birthday party for Lily earlier in the week, and the cake was so delicious that the party-goers barely left any behind.
@@ -748,7 +748,7 @@ Your coworker Meaghan sees you looking hungry, so you turn to her and ask:
 Is there any cake left?
 Meaghan responds:
 The cake was half chocolate, half vanilla.
-How relevant was Meaghan's response to the question at hand?
+How helpful was Meaghan's response?
 
 # target 7 context-low-bias answer-high-certainty
 You and your colleague Lauren are CIA analysts. Lauren is a star employee with good credentials and a brilliant knack for puzzle solving. But she is also a bit secretive---not entirely unexpected given your line of work, but your training causes you to dwell on some suspicious details from your conversations. On Monday your boss told you confidentially that your department is under investigation because the director suspects that a mole is leaking information to a foreign power.
@@ -756,7 +756,7 @@ You ask your colleague Alan privately:
 Is Lauren the mole?
 Alan responds:
 She was caught carrying a sensitive document outside the office.
-How relevant was Alan's response to the question at hand?
+How helpful was Alan's response?
 
 # target 7 context-low-bias answer-low-certainty
 You and your colleague Lauren are CIA analysts. Lauren is a star employee with good credentials and a brilliant knack for puzzle solving. But she is also a bit secretive---not entirely unexpected given your line of work, but your training causes you to dwell on some suspicious details from your conversations. On Monday your boss told you confidentially that your department is under investigation because the director suspects that a mole is leaking information to a foreign power.
@@ -764,7 +764,7 @@ You ask your colleague Alan privately:
 Is Lauren the mole?
 Alan responds:
 She has weekly meetings with her phone turned off.
-How relevant was Alan's response to the question at hand?
+How helpful was Alan's response?
 
 # target 7 context-low-bias answer-reductive-answer
 You and your colleague Lauren are CIA analysts. Lauren is a star employee with good credentials and a brilliant knack for puzzle solving. But she is also a bit secretive---not entirely unexpected given your line of work, but your training causes you to dwell on some suspicious details from your conversations. On Monday your boss told you confidentially that your department is under investigation because the director suspects that a mole is leaking information to a foreign power.
@@ -772,7 +772,7 @@ You ask your colleague Alan privately:
 Is Lauren the mole?
 Alan responds:
 She's the mole if she leaves the country tomorrow.
-How relevant was Alan's response to the question at hand?
+How helpful was Alan's response?
 
 # target 7 context-low-bias answer-exhaustive-answer
 You and your colleague Lauren are CIA analysts. Lauren is a star employee with good credentials and a brilliant knack for puzzle solving. But she is also a bit secretive---not entirely unexpected given your line of work, but your training causes you to dwell on some suspicious details from your conversations. On Monday your boss told you confidentially that your department is under investigation because the director suspects that a mole is leaking information to a foreign power.
@@ -780,7 +780,7 @@ You ask your colleague Alan privately:
 Is Lauren the mole?
 Alan responds:
 Last night Lauren was arrested for leaking classified information.
-How relevant was Alan's response to the question at hand?
+How helpful was Alan's response?
 
 # target 7 context-low-bias answer-non-answer
 You and your colleague Lauren are CIA analysts. Lauren is a star employee with good credentials and a brilliant knack for puzzle solving. But she is also a bit secretive---not entirely unexpected given your line of work, but your training causes you to dwell on some suspicious details from your conversations. On Monday your boss told you confidentially that your department is under investigation because the director suspects that a mole is leaking information to a foreign power.
@@ -788,7 +788,7 @@ You ask your colleague Alan privately:
 Is Lauren the mole?
 Alan responds:
 Lauren had sushi for lunch.
-How relevant was Alan's response to the question at hand?
+How helpful was Alan's response?
 
 # target 7 context-positive-bias answer-high-certainty
 You and your colleague Lauren are CIA analysts. Lauren is a star employee with good credentials and a brilliant knack for puzzle solving. But lately you have noticed some suspicious things about her habits. She is almost always the last to leave, but one time when you stayed to work late, you noticed her talking to a shady figure in the parking lot. Another time, you could have sworn you saw her slip some documents into her bag before leaving---documents that are not supposed to leave the office. On Monday your boss told you confidentially that your department is under investigation because the director suspects that a mole is leaking information to a foreign power.
@@ -796,7 +796,7 @@ You ask your colleague Alan privately:
 Is Lauren the mole?
 Alan responds:
 She was caught carrying a sensitive document outside the office.
-How relevant was Alan's response to the question at hand?
+How helpful was Alan's response?
 
 # target 7 context-positive-bias answer-low-certainty
 You and your colleague Lauren are CIA analysts. Lauren is a star employee with good credentials and a brilliant knack for puzzle solving. But lately you have noticed some suspicious things about her habits. She is almost always the last to leave, but one time when you stayed to work late, you noticed her talking to a shady figure in the parking lot. Another time, you could have sworn you saw her slip some documents into her bag before leaving---documents that are not supposed to leave the office. On Monday your boss told you confidentially that your department is under investigation because the director suspects that a mole is leaking information to a foreign power.
@@ -804,7 +804,7 @@ You ask your colleague Alan privately:
 Is Lauren the mole?
 Alan responds:
 She has weekly meetings with her phone turned off.
-How relevant was Alan's response to the question at hand?
+How helpful was Alan's response?
 
 # target 7 context-positive-bias answer-reductive-answer
 You and your colleague Lauren are CIA analysts. Lauren is a star employee with good credentials and a brilliant knack for puzzle solving. But lately you have noticed some suspicious things about her habits. She is almost always the last to leave, but one time when you stayed to work late, you noticed her talking to a shady figure in the parking lot. Another time, you could have sworn you saw her slip some documents into her bag before leaving---documents that are not supposed to leave the office. On Monday your boss told you confidentially that your department is under investigation because the director suspects that a mole is leaking information to a foreign power.
@@ -812,7 +812,7 @@ You ask your colleague Alan privately:
 Is Lauren the mole?
 Alan responds:
 She's the mole if she leaves the country tomorrow.
-How relevant was Alan's response to the question at hand?
+How helpful was Alan's response?
 
 # target 7 context-positive-bias answer-exhaustive-answer
 You and your colleague Lauren are CIA analysts. Lauren is a star employee with good credentials and a brilliant knack for puzzle solving. But lately you have noticed some suspicious things about her habits. She is almost always the last to leave, but one time when you stayed to work late, you noticed her talking to a shady figure in the parking lot. Another time, you could have sworn you saw her slip some documents into her bag before leaving---documents that are not supposed to leave the office. On Monday your boss told you confidentially that your department is under investigation because the director suspects that a mole is leaking information to a foreign power.
@@ -820,7 +820,7 @@ You ask your colleague Alan privately:
 Is Lauren the mole?
 Alan responds:
 Last night Lauren was arrested for leaking classified information.
-How relevant was Alan's response to the question at hand?
+How helpful was Alan's response?
 
 # target 7 context-positive-bias answer-non-answer
 You and your colleague Lauren are CIA analysts. Lauren is a star employee with good credentials and a brilliant knack for puzzle solving. But lately you have noticed some suspicious things about her habits. She is almost always the last to leave, but one time when you stayed to work late, you noticed her talking to a shady figure in the parking lot. Another time, you could have sworn you saw her slip some documents into her bag before leaving---documents that are not supposed to leave the office. On Monday your boss told you confidentially that your department is under investigation because the director suspects that a mole is leaking information to a foreign power.
@@ -828,7 +828,7 @@ You ask your colleague Alan privately:
 Is Lauren the mole?
 Alan responds:
 Lauren had sushi for lunch.
-How relevant was Alan's response to the question at hand?
+How helpful was Alan's response?
 
 # target 7 context-negative-bias answer-high-certainty
 You and your colleague Lauren are CIA analysts. Lauren is a star employee with good credentials and a brilliant knack for puzzle solving. She seems completely loyal to the agency. On Monday your boss told you confidentially that your department is under investigation because the director suspects that a mole is leaking information to a foreign power.
@@ -836,7 +836,7 @@ You ask your colleague Alan privately:
 Is Lauren the mole?
 Alan responds:
 She was caught carrying a sensitive document outside the office.
-How relevant was Alan's response to the question at hand?
+How helpful was Alan's response?
 
 # target 7 context-negative-bias answer-low-certainty
 You and your colleague Lauren are CIA analysts. Lauren is a star employee with good credentials and a brilliant knack for puzzle solving. She seems completely loyal to the agency. On Monday your boss told you confidentially that your department is under investigation because the director suspects that a mole is leaking information to a foreign power.
@@ -844,7 +844,7 @@ You ask your colleague Alan privately:
 Is Lauren the mole?
 Alan responds:
 She has weekly meetings with her phone turned off.
-How relevant was Alan's response to the question at hand?
+How helpful was Alan's response?
 
 # target 7 context-negative-bias answer-reductive-answer
 You and your colleague Lauren are CIA analysts. Lauren is a star employee with good credentials and a brilliant knack for puzzle solving. She seems completely loyal to the agency. On Monday your boss told you confidentially that your department is under investigation because the director suspects that a mole is leaking information to a foreign power.
@@ -852,7 +852,7 @@ You ask your colleague Alan privately:
 Is Lauren the mole?
 Alan responds:
 She's the mole if she leaves the country tomorrow.
-How relevant was Alan's response to the question at hand?
+How helpful was Alan's response?
 
 # target 7 context-negative-bias answer-exhaustive-answer
 You and your colleague Lauren are CIA analysts. Lauren is a star employee with good credentials and a brilliant knack for puzzle solving. She seems completely loyal to the agency. On Monday your boss told you confidentially that your department is under investigation because the director suspects that a mole is leaking information to a foreign power.
@@ -860,7 +860,7 @@ You ask your colleague Alan privately:
 Is Lauren the mole?
 Alan responds:
 Last night Lauren was arrested for leaking classified information.
-How relevant was Alan's response to the question at hand?
+How helpful was Alan's response?
 
 # target 7 context-negative-bias answer-non-answer
 You and your colleague Lauren are CIA analysts. Lauren is a star employee with good credentials and a brilliant knack for puzzle solving. She seems completely loyal to the agency. On Monday your boss told you confidentially that your department is under investigation because the director suspects that a mole is leaking information to a foreign power.
@@ -868,7 +868,7 @@ You ask your colleague Alan privately:
 Is Lauren the mole?
 Alan responds:
 Lauren had sushi for lunch.
-How relevant was Alan's response to the question at hand?
+How helpful was Alan's response?
 
 # target 8 context-low-bias answer-high-certainty
 Tony got Ethan a book-shaped birthday gift. The book looks big and is probably a hardcover. You wonder if it could be a cool new cookbook.
@@ -876,7 +876,7 @@ You ask your friend Claire:
 Did Tony get Ethan a cookbook for his birthday?
 Claire responds:
 I saw Tony order a cookbook with gift-wrap.
-How relevant was Claire's response to the question at hand?
+How helpful was Claire's response?
 
 # target 8 context-low-bias answer-low-certainty
 Tony got Ethan a book-shaped birthday gift. The book looks big and is probably a hardcover. You wonder if it could be a cool new cookbook.
@@ -884,7 +884,7 @@ You ask your friend Claire:
 Did Tony get Ethan a cookbook for his birthday?
 Claire responds:
 Tony asked about cookbook recommendations the other day.
-How relevant was Claire's response to the question at hand?
+How helpful was Claire's response?
 
 # target 8 context-low-bias answer-reductive-answer
 Tony got Ethan a book-shaped birthday gift. The book looks big and is probably a hardcover. You wonder if it could be a cool new cookbook.
@@ -892,7 +892,7 @@ You ask your friend Claire:
 Did Tony get Ethan a cookbook for his birthday?
 Claire responds:
 If Tony knows Ethan likes to cook, then he got him a cookbook.
-How relevant was Claire's response to the question at hand?
+How helpful was Claire's response?
 
 # target 8 context-low-bias answer-exhaustive-answer
 Tony got Ethan a book-shaped birthday gift. The book looks big and is probably a hardcover. You wonder if it could be a cool new cookbook.
@@ -900,7 +900,7 @@ You ask your friend Claire:
 Did Tony get Ethan a cookbook for his birthday?
 Claire responds:
 Tony got Ethan The Joy of Cooking.
-How relevant was Claire's response to the question at hand?
+How helpful was Claire's response?
 
 # target 8 context-low-bias answer-non-answer
 Tony got Ethan a book-shaped birthday gift. The book looks big and is probably a hardcover. You wonder if it could be a cool new cookbook.
@@ -908,7 +908,7 @@ You ask your friend Claire:
 Did Tony get Ethan a cookbook for his birthday?
 Claire responds:
 Ethan's sister gave him fuzzy socks.
-How relevant was Claire's response to the question at hand?
+How helpful was Claire's response?
 
 # target 8 context-positive-bias answer-high-certainty
 Tony got Ethan a book-shaped birthday gift. The book looks big and is probably a hardcover. You know that Ethan is really into cooking, so the first possibility that comes to your mind is that Tony got him a cookbook.
@@ -916,7 +916,7 @@ You ask your friend Claire:
 Did Tony get Ethan a cookbook for his birthday?
 Claire responds:
 I saw Tony order a cookbook with gift-wrap.
-How relevant was Claire's response to the question at hand?
+How helpful was Claire's response?
 
 # target 8 context-positive-bias answer-low-certainty
 Tony got Ethan a book-shaped birthday gift. The book looks big and is probably a hardcover. You know that Ethan is really into cooking, so the first possibility that comes to your mind is that Tony got him a cookbook.
@@ -924,7 +924,7 @@ You ask your friend Claire:
 Did Tony get Ethan a cookbook for his birthday?
 Claire responds:
 Tony asked about cookbook recommendations the other day.
-How relevant was Claire's response to the question at hand?
+How helpful was Claire's response?
 
 # target 8 context-positive-bias answer-reductive-answer
 Tony got Ethan a book-shaped birthday gift. The book looks big and is probably a hardcover. You know that Ethan is really into cooking, so the first possibility that comes to your mind is that Tony got him a cookbook.
@@ -932,7 +932,7 @@ You ask your friend Claire:
 Did Tony get Ethan a cookbook for his birthday?
 Claire responds:
 If Tony knows Ethan likes to cook, then he got him a cookbook.
-How relevant was Claire's response to the question at hand?
+How helpful was Claire's response?
 
 # target 8 context-positive-bias answer-exhaustive-answer
 Tony got Ethan a book-shaped birthday gift. The book looks big and is probably a hardcover. You know that Ethan is really into cooking, so the first possibility that comes to your mind is that Tony got him a cookbook.
@@ -940,7 +940,7 @@ You ask your friend Claire:
 Did Tony get Ethan a cookbook for his birthday?
 Claire responds:
 Tony got Ethan The Joy of Cooking.
-How relevant was Claire's response to the question at hand?
+How helpful was Claire's response?
 
 # target 8 context-positive-bias answer-non-answer
 Tony got Ethan a book-shaped birthday gift. The book looks big and is probably a hardcover. You know that Ethan is really into cooking, so the first possibility that comes to your mind is that Tony got him a cookbook.
@@ -948,7 +948,7 @@ You ask your friend Claire:
 Did Tony get Ethan a cookbook for his birthday?
 Claire responds:
 Ethan's sister gave him fuzzy socks.
-How relevant was Claire's response to the question at hand?
+How helpful was Claire's response?
 
 # target 8 context-negative-bias answer-high-certainty
 Tony got Ethan a book-shaped birthday gift. The book looks big and is probably a hardcover. You know that Ethan loves long fantasy novels.
@@ -956,7 +956,7 @@ You ask your friend Claire:
 Did Tony get Ethan a cookbook for his birthday?
 Claire responds:
 I saw Tony order a cookbook with gift-wrap.
-How relevant was Claire's response to the question at hand?
+How helpful was Claire's response?
 
 # target 8 context-negative-bias answer-low-certainty
 Tony got Ethan a book-shaped birthday gift. The book looks big and is probably a hardcover. You know that Ethan loves long fantasy novels.
@@ -964,7 +964,7 @@ You ask your friend Claire:
 Did Tony get Ethan a cookbook for his birthday?
 Claire responds:
 Tony asked about cookbook recommendations the other day.
-How relevant was Claire's response to the question at hand?
+How helpful was Claire's response?
 
 # target 8 context-negative-bias answer-reductive-answer
 Tony got Ethan a book-shaped birthday gift. The book looks big and is probably a hardcover. You know that Ethan loves long fantasy novels.
@@ -972,7 +972,7 @@ You ask your friend Claire:
 Did Tony get Ethan a cookbook for his birthday?
 Claire responds:
 If Tony knows Ethan likes to cook, then he got him a cookbook.
-How relevant was Claire's response to the question at hand?
+How helpful was Claire's response?
 
 # target 8 context-negative-bias answer-exhaustive-answer
 Tony got Ethan a book-shaped birthday gift. The book looks big and is probably a hardcover. You know that Ethan loves long fantasy novels.
@@ -980,7 +980,7 @@ You ask your friend Claire:
 Did Tony get Ethan a cookbook for his birthday?
 Claire responds:
 Tony got Ethan The Joy of Cooking.
-How relevant was Claire's response to the question at hand?
+How helpful was Claire's response?
 
 # target 8 context-negative-bias answer-non-answer
 Tony got Ethan a book-shaped birthday gift. The book looks big and is probably a hardcover. You know that Ethan loves long fantasy novels.
@@ -988,7 +988,7 @@ You ask your friend Claire:
 Did Tony get Ethan a cookbook for his birthday?
 Claire responds:
 Ethan's sister gave him fuzzy socks.
-How relevant was Claire's response to the question at hand?
+How helpful was Claire's response?
 
 # target 9 context-low-bias answer-high-certainty
 After a rowdy Sunday night, you wake up with a burning desire for pizza. Since you recently moved to the neighborhood, you're not sure whether your favorite pizza place is open on Mondays.
@@ -996,7 +996,7 @@ You ask your friend Buster:
 Is the pizza place open on Monday?
 Buster responds:
 Google maps says it's open on Monday.
-How relevant was Buster's response to the question at hand?
+How helpful was Buster's response?
 
 # target 9 context-low-bias answer-low-certainty
 After a rowdy Sunday night, you wake up with a burning desire for pizza. Since you recently moved to the neighborhood, you're not sure whether your favorite pizza place is open on Mondays.
@@ -1004,7 +1004,7 @@ You ask your friend Buster:
 Is the pizza place open on Monday?
 Buster responds:
 Most pizza places are open on Mondays.
-How relevant was Buster's response to the question at hand?
+How helpful was Buster's response?
 
 # target 9 context-low-bias answer-reductive-answer
 After a rowdy Sunday night, you wake up with a burning desire for pizza. Since you recently moved to the neighborhood, you're not sure whether your favorite pizza place is open on Mondays.
@@ -1012,7 +1012,7 @@ You ask your friend Buster:
 Is the pizza place open on Monday?
 Buster responds:
 If it's closed on Sunday, then it's open on Monday.
-How relevant was Buster's response to the question at hand?
+How helpful was Buster's response?
 
 # target 9 context-low-bias answer-exhaustive-answer
 After a rowdy Sunday night, you wake up with a burning desire for pizza. Since you recently moved to the neighborhood, you're not sure whether your favorite pizza place is open on Mondays.
@@ -1020,7 +1020,7 @@ You ask your friend Buster:
 Is the pizza place open on Monday?
 Buster responds:
 It's open all week.
-How relevant was Buster's response to the question at hand?
+How helpful was Buster's response?
 
 # target 9 context-low-bias answer-non-answer
 After a rowdy Sunday night, you wake up with a burning desire for pizza. Since you recently moved to the neighborhood, you're not sure whether your favorite pizza place is open on Mondays.
@@ -1028,7 +1028,7 @@ You ask your friend Buster:
 Is the pizza place open on Monday?
 Buster responds:
 Weekend hours are 10am to 10pm.
-How relevant was Buster's response to the question at hand?
+How helpful was Buster's response?
 
 # target 9 context-positive-bias answer-high-certainty
 After a rowdy Sunday night, you wake up with a burning desire for pizza. You have a hazy memory of getting pizza from your favorite place on a Monday under similar circumstances, but you still wonder if the pizza place is open today.
@@ -1036,7 +1036,7 @@ You ask your friend Buster:
 Is the pizza place open on Monday?
 Buster responds:
 Google maps says it's open on Monday.
-How relevant was Buster's response to the question at hand?
+How helpful was Buster's response?
 
 # target 9 context-positive-bias answer-low-certainty
 After a rowdy Sunday night, you wake up with a burning desire for pizza. You have a hazy memory of getting pizza from your favorite place on a Monday under similar circumstances, but you still wonder if the pizza place is open today.
@@ -1044,7 +1044,7 @@ You ask your friend Buster:
 Is the pizza place open on Monday?
 Buster responds:
 Most pizza places are open on Mondays.
-How relevant was Buster's response to the question at hand?
+How helpful was Buster's response?
 
 # target 9 context-positive-bias answer-reductive-answer
 After a rowdy Sunday night, you wake up with a burning desire for pizza. You have a hazy memory of getting pizza from your favorite place on a Monday under similar circumstances, but you still wonder if the pizza place is open today.
@@ -1052,7 +1052,7 @@ You ask your friend Buster:
 Is the pizza place open on Monday?
 Buster responds:
 If it's closed on Sunday, then it's open on Monday.
-How relevant was Buster's response to the question at hand?
+How helpful was Buster's response?
 
 # target 9 context-positive-bias answer-exhaustive-answer
 After a rowdy Sunday night, you wake up with a burning desire for pizza. You have a hazy memory of getting pizza from your favorite place on a Monday under similar circumstances, but you still wonder if the pizza place is open today.
@@ -1060,7 +1060,7 @@ You ask your friend Buster:
 Is the pizza place open on Monday?
 Buster responds:
 It's open all week.
-How relevant was Buster's response to the question at hand?
+How helpful was Buster's response?
 
 # target 9 context-positive-bias answer-non-answer
 After a rowdy Sunday night, you wake up with a burning desire for pizza. You have a hazy memory of getting pizza from your favorite place on a Monday under similar circumstances, but you still wonder if the pizza place is open today.
@@ -1068,7 +1068,7 @@ You ask your friend Buster:
 Is the pizza place open on Monday?
 Buster responds:
 Weekend hours are 10am to 10pm.
-How relevant was Buster's response to the question at hand?
+How helpful was Buster's response?
 
 # target 9 context-negative-bias answer-high-certainty
 After a rowdy Sunday night, you wake up with a burning desire for pizza. You wonder whether your favorite pizza place is open, but you remember another similar Monday when you found that it was closed.
@@ -1076,7 +1076,7 @@ You ask your friend Buster:
 Is the pizza place open on Monday?
 Buster responds:
 Google maps says it's open on Monday.
-How relevant was Buster's response to the question at hand?
+How helpful was Buster's response?
 
 # target 9 context-negative-bias answer-low-certainty
 After a rowdy Sunday night, you wake up with a burning desire for pizza. You wonder whether your favorite pizza place is open, but you remember another similar Monday when you found that it was closed.
@@ -1084,7 +1084,7 @@ You ask your friend Buster:
 Is the pizza place open on Monday?
 Buster responds:
 Most pizza places are open on Mondays.
-How relevant was Buster's response to the question at hand?
+How helpful was Buster's response?
 
 # target 9 context-negative-bias answer-reductive-answer
 After a rowdy Sunday night, you wake up with a burning desire for pizza. You wonder whether your favorite pizza place is open, but you remember another similar Monday when you found that it was closed.
@@ -1092,7 +1092,7 @@ You ask your friend Buster:
 Is the pizza place open on Monday?
 Buster responds:
 If it's closed on Sunday, then it's open on Monday.
-How relevant was Buster's response to the question at hand?
+How helpful was Buster's response?
 
 # target 9 context-negative-bias answer-exhaustive-answer
 After a rowdy Sunday night, you wake up with a burning desire for pizza. You wonder whether your favorite pizza place is open, but you remember another similar Monday when you found that it was closed.
@@ -1100,7 +1100,7 @@ You ask your friend Buster:
 Is the pizza place open on Monday?
 Buster responds:
 It's open all week.
-How relevant was Buster's response to the question at hand?
+How helpful was Buster's response?
 
 # target 9 context-negative-bias answer-non-answer
 After a rowdy Sunday night, you wake up with a burning desire for pizza. You wonder whether your favorite pizza place is open, but you remember another similar Monday when you found that it was closed.
@@ -1108,7 +1108,7 @@ You ask your friend Buster:
 Is the pizza place open on Monday?
 Buster responds:
 Weekend hours are 10am to 10pm.
-How relevant was Buster's response to the question at hand?
+How helpful was Buster's response?
 
 # target 10 context-low-bias answer-high-certainty
 Your friend Adam grew up listening to the Les Miserables soundtrack. This year, the school's drama club is putting on the show, and (naturally) Adam auditioned for the lead role. As a loyal friend, you are trying to find some information about how he did.
@@ -1116,7 +1116,7 @@ You ask your friend Jane:
 Did Adam get the part?
 Jane responds:
 Everyone else got rejection letters.
-How relevant was Jane's response to the question at hand?
+How helpful was Jane's response?
 
 # target 10 context-low-bias answer-low-certainty
 Your friend Adam grew up listening to the Les Miserables soundtrack. This year, the school's drama club is putting on the show, and (naturally) Adam auditioned for the lead role. As a loyal friend, you are trying to find some information about how he did.
@@ -1124,7 +1124,7 @@ You ask your friend Jane:
 Did Adam get the part?
 Jane responds:
 Buster got a rejection letter yesterday.
-How relevant was Jane's response to the question at hand?
+How helpful was Jane's response?
 
 # target 10 context-low-bias answer-reductive-answer
 Your friend Adam grew up listening to the Les Miserables soundtrack. This year, the school's drama club is putting on the show, and (naturally) Adam auditioned for the lead role. As a loyal friend, you are trying to find some information about how he did.
@@ -1132,7 +1132,7 @@ You ask your friend Jane:
 Did Adam get the part?
 Jane responds:
 If Buster got rejected, Adam got the part.
-How relevant was Jane's response to the question at hand?
+How helpful was Jane's response?
 
 # target 10 context-low-bias answer-exhaustive-answer
 Your friend Adam grew up listening to the Les Miserables soundtrack. This year, the school's drama club is putting on the show, and (naturally) Adam auditioned for the lead role. As a loyal friend, you are trying to find some information about how he did.
@@ -1140,7 +1140,7 @@ You ask your friend Jane:
 Did Adam get the part?
 Jane responds:
 Adam was very happy to learn that they got the part.
-How relevant was Jane's response to the question at hand?
+How helpful was Jane's response?
 
 # target 10 context-low-bias answer-non-answer
 Your friend Adam grew up listening to the Les Miserables soundtrack. This year, the school's drama club is putting on the show, and (naturally) Adam auditioned for the lead role. As a loyal friend, you are trying to find some information about how he did.
@@ -1148,7 +1148,7 @@ You ask your friend Jane:
 Did Adam get the part?
 Jane responds:
 The set design budget is huge this year.
-How relevant was Jane's response to the question at hand?
+How helpful was Jane's response?
 
 # target 10 context-positive-bias answer-high-certainty
 Your friend Adam grew up listening to the Les Miserables soundtrack. By age 10 he had memorized every song and occasionally put on full-length productions with his stuffed animals. This year, the school's drama club is putting on the show, and (naturally) Adam auditioned for the lead role. As a loyal friend, you are trying to find some information about how he did.
@@ -1156,7 +1156,7 @@ You ask your friend Jane:
 Did Adam get the part?
 Jane responds:
 Everyone else got rejection letters.
-How relevant was Jane's response to the question at hand?
+How helpful was Jane's response?
 
 # target 10 context-positive-bias answer-low-certainty
 Your friend Adam grew up listening to the Les Miserables soundtrack. By age 10 he had memorized every song and occasionally put on full-length productions with his stuffed animals. This year, the school's drama club is putting on the show, and (naturally) Adam auditioned for the lead role. As a loyal friend, you are trying to find some information about how he did.
@@ -1164,7 +1164,7 @@ You ask your friend Jane:
 Did Adam get the part?
 Jane responds:
 Buster got a rejection letter yesterday.
-How relevant was Jane's response to the question at hand?
+How helpful was Jane's response?
 
 # target 10 context-positive-bias answer-reductive-answer
 Your friend Adam grew up listening to the Les Miserables soundtrack. By age 10 he had memorized every song and occasionally put on full-length productions with his stuffed animals. This year, the school's drama club is putting on the show, and (naturally) Adam auditioned for the lead role. As a loyal friend, you are trying to find some information about how he did.
@@ -1172,7 +1172,7 @@ You ask your friend Jane:
 Did Adam get the part?
 Jane responds:
 If Buster got rejected, Adam got the part.
-How relevant was Jane's response to the question at hand?
+How helpful was Jane's response?
 
 # target 10 context-positive-bias answer-exhaustive-answer
 Your friend Adam grew up listening to the Les Miserables soundtrack. By age 10 he had memorized every song and occasionally put on full-length productions with his stuffed animals. This year, the school's drama club is putting on the show, and (naturally) Adam auditioned for the lead role. As a loyal friend, you are trying to find some information about how he did.
@@ -1180,7 +1180,7 @@ You ask your friend Jane:
 Did Adam get the part?
 Jane responds:
 Adam was very happy to learn that they got the part.
-How relevant was Jane's response to the question at hand?
+How helpful was Jane's response?
 
 # target 10 context-positive-bias answer-non-answer
 Your friend Adam grew up listening to the Les Miserables soundtrack. By age 10 he had memorized every song and occasionally put on full-length productions with his stuffed animals. This year, the school's drama club is putting on the show, and (naturally) Adam auditioned for the lead role. As a loyal friend, you are trying to find some information about how he did.
@@ -1188,7 +1188,7 @@ You ask your friend Jane:
 Did Adam get the part?
 Jane responds:
 The set design budget is huge this year.
-How relevant was Jane's response to the question at hand?
+How helpful was Jane's response?
 
 # target 10 context-negative-bias answer-high-certainty
 Your friend Adam grew up listening to the Les Miserables soundtrack. This year, the school's drama club is putting on the show, and (naturally) Adam auditioned for the lead role. Adam is enthusiastic, but he never learned how to sing. As a loyal friend, you are trying to find some information about how he did.
@@ -1196,7 +1196,7 @@ You ask your friend Jane:
 Did Adam get the part?
 Jane responds:
 Everyone else got rejection letters.
-How relevant was Jane's response to the question at hand?
+How helpful was Jane's response?
 
 # target 10 context-negative-bias answer-low-certainty
 Your friend Adam grew up listening to the Les Miserables soundtrack. This year, the school's drama club is putting on the show, and (naturally) Adam auditioned for the lead role. Adam is enthusiastic, but he never learned how to sing. As a loyal friend, you are trying to find some information about how he did.
@@ -1204,7 +1204,7 @@ You ask your friend Jane:
 Did Adam get the part?
 Jane responds:
 Buster got a rejection letter yesterday.
-How relevant was Jane's response to the question at hand?
+How helpful was Jane's response?
 
 # target 10 context-negative-bias answer-reductive-answer
 Your friend Adam grew up listening to the Les Miserables soundtrack. This year, the school's drama club is putting on the show, and (naturally) Adam auditioned for the lead role. Adam is enthusiastic, but he never learned how to sing. As a loyal friend, you are trying to find some information about how he did.
@@ -1212,7 +1212,7 @@ You ask your friend Jane:
 Did Adam get the part?
 Jane responds:
 If Buster got rejected, Adam got the part.
-How relevant was Jane's response to the question at hand?
+How helpful was Jane's response?
 
 # target 10 context-negative-bias answer-exhaustive-answer
 Your friend Adam grew up listening to the Les Miserables soundtrack. This year, the school's drama club is putting on the show, and (naturally) Adam auditioned for the lead role. Adam is enthusiastic, but he never learned how to sing. As a loyal friend, you are trying to find some information about how he did.
@@ -1220,7 +1220,7 @@ You ask your friend Jane:
 Did Adam get the part?
 Jane responds:
 Adam was very happy to learn that they got the part.
-How relevant was Jane's response to the question at hand?
+How helpful was Jane's response?
 
 # target 10 context-negative-bias answer-non-answer
 Your friend Adam grew up listening to the Les Miserables soundtrack. This year, the school's drama club is putting on the show, and (naturally) Adam auditioned for the lead role. Adam is enthusiastic, but he never learned how to sing. As a loyal friend, you are trying to find some information about how he did.
@@ -1228,5 +1228,5 @@ You ask your friend Jane:
 Did Adam get the part?
 Jane responds:
 The set design budget is huge this year.
-How relevant was Jane's response to the question at hand?
+How helpful was Jane's response?
 

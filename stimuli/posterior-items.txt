@@ -679,7 +679,7 @@ How likely do you think it is that Tony got Ethan a cookbook for his birthday?
 # target 8 context-low-bias answer-non-answer
 Tony got Ethan a book-shaped birthday gift. The book looks big and is probably a hardcover. You wonder if it could be a cool new cookbook.
 Your friend Claire turns to you and says:
-
+Ethan's sister gave him fuzzy socks.
 How likely do you think it is that Tony got Ethan a cookbook for his birthday?
 
 # target 8 context-positive-bias answer-high-certainty
@@ -709,7 +709,7 @@ How likely do you think it is that Tony got Ethan a cookbook for his birthday?
 # target 8 context-positive-bias answer-non-answer
 Tony got Ethan a book-shaped birthday gift. The book looks big and is probably a hardcover. You know that Ethan is really into cooking, so the first possibility that comes to your mind is that Tony got him a cookbook.
 Your friend Claire turns to you and says:
-
+Ethan's sister gave him fuzzy socks.
 How likely do you think it is that Tony got Ethan a cookbook for his birthday?
 
 # target 8 context-negative-bias answer-high-certainty
@@ -739,7 +739,7 @@ How likely do you think it is that Tony got Ethan a cookbook for his birthday?
 # target 8 context-negative-bias answer-non-answer
 Tony got Ethan a book-shaped birthday gift. The book looks big and is probably a hardcover. You know that Ethan loves long fantasy novels.
 Your friend Claire turns to you and says:
-
+Ethan's sister gave him fuzzy socks.
 How likely do you think it is that Tony got Ethan a cookbook for his birthday?
 
 # target 9 context-low-bias answer-high-certainty
