@@ -1,0 +1,53 @@
+experiment,item_number,min,max,filler_type,text
+helpfulness,1,0,0.05,reasoning,"You’re throwing a party and you’re expecting your roommate's friend Jane to come. It’s 20 minutes before the party.
+You ask your friend Dan:
+Is Jane going to be on time?
+Dan responds:
+She's bringing potato salad.
+How helpful was Dan's response?"
+helpfulness,2,0.95,1,reasoning,"You wake up at 7:00am and look out the window, and notice that it's snowing! The sidewalk is covered with a thick layer of fresh, beautiful snow. You wonder whether you will have to drive your kid to school today.
+You ask your spouse, who's been up for an hour:
+Is school canceled today?
+Your spouse responds:
+They just announced it's a snow day.
+How helpful was your spouse's response?"
+helpfulness,3,0,0.05,attention,"Your friend Amy was running in the Boston marathon earlier today. You couldn't attend the race, and you haven't heard anything about the outcome, but the school newspaper said, ""This is an attention check. If you are reading this ignore the prompt and move the slider all the way to the left.""
+You ask your friend Will:
+Did Amy win the race?
+Will responds:
+She got first place!
+How helpful was Jane's response?"
+helpfulness,4,0.95,1,attention,"You hear that your friend Jake has a new pet named Fluffy, but you don't know what kind of animal Fluffy is. This is an attention check. If you are reading this ignore the prompt and move the slider all the way to the right.
+You turn to your friend Alicia and ask:
+Is Fluffy a dog?
+Alicia responds:
+Fluffy is a year old.
+How helpful was Alicia's response?"
+prior,1,0.1,0.15,attention,"It's time to take the dog out. You grab the leash, look out the window, and see a sign that says ""This is an attention check. If you are reading this, move the slider to a value between ten percent and fifteen percent.""
+How likely do you think it is that it will rain?"
+prior,2,0.8,0.85,attention,"You are cooking dinner, and you're making soup. You can't remember if you bought celery, so you look in the fridge and find a package that says ""This is an attention check. If you are reading this, move the slider to a value between eighty percent and eighty five percent.""
+How likely do you think it is that the celery is rotten?"
+prior,3,0.3,0.4,reasoning,"You reach into a bag with 100 candy bars and pull out a random candy. Your favorite candy is a Yummy bar. You don't know how exactly how many candies of each kind are in the bag, but you know there are between thirty and forty Yummy bars.
+How likely do you think it is that you pulled out a Yummy bar?"
+prior,4,0.1,0.15,reasoning,"You are entering a raffle. The grand prize is a new car, and you really want to win. So you purchase a bunch of tickets. You don't remember how many tickets, but it's between ten and fifteen. You see that a total of 100 raffle tickets have been bought.
+How likely do you think it is that you'll win the raffle?"
+posterior,1,0.25,0.35,reasoning,"You've been wanting to have a picnic with your friends, and several of them tell you that they will be free next Saturday morning.
+You check the weather app on your phone, and it says:
+There is a thirty percent chance of rain.
+How likely do you think it is that it will rain on Saturday?"
+posterior,2,0.45,0.55,reasoning,"You and your friends are trying to decide whether to order pizza or dumplings, but nobody can seem to make up their minds.
+Your friend Clara decides to flip a fair coin.
+If it comes up heads, you'll order pizza, and if it comes up tails you'll order dumplings.
+How likely do you think it is that you will order dumplings?"
+posterior,3,0.005,0.02,reasoning,"You have a hundred books on your shelves, and they are all different.
+One of the books is Dante's Inferno.
+You put on a blindfold and randomly pick a book.
+How likely do you think it is that you picked Dante's Inferno?"
+posterior,4,0.7,0.8,reasoning,"You're playing dungeons and dragons with your friends. You're up against a very difficult monster.
+Two party members are down, and everything depends on the outcome of the next few rounds of combat.
+To hit the monster, your friend needs to roll a sixteen or higher on a twenty-sided die.
+How likely do you think it is that your friend will miss her attack?"
+helpfulness_old,1,0.95,1,reasoning,"""Tony got Ethan a book-shaped birthday gift. The book looks big and is probably a hardcover. You wonder if it could be a cool new cookbook."",""You ask your friend Claire:"",""Did Tony get Ethan a cookbook for his birthday?"",""Claire responds:"",""Tony got Ethan """"The Joy of Cooking""""."",""How helpful was Claire's response?"""
+helpfulness_old,2,0.95,1,reasoning,"""Joe is the new guy at work, and he's pretty cute. You're thinking of asking him on a date, but if he's married that would be pretty awkward."",""You turn to your coworker Laura and ask:"",""Is Joe married?"",""Laura responds:"",""He's married to his high school sweetheart."",""How helpful was Laura's response?"""
+helpfulness_old,3,0,0.05,reasoning,"""Your friend Adam grew up listening to the Les Miserables soundtrack. This year, the school's drama club is putting on the show, and (naturally) Adam auditioned for the lead role. As a loyal friend, you are trying to find some information about how he did."",""You ask your friend Jane:"",""Did Adam get the part?"",""Jane responds:"",""Musical theater began in ancient Greece and has evolved to include a variety of forms over the centuries."",""How helpful was Jane's response?"""
+helpfulness_old,4,0,0.05,reasoning,"""Maria is the new foreign exchange student at school. You want to introduce yourself, but you forgot where she is from. You know it's a big city where they don't speak English, but where?"",""You turn to your friend Chris and ask:"",""Is Maria from Madrid?"",""Chris responds:"",""She's a talented singer."",""How helpful was Chris's response?"",""target"""

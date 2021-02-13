@@ -6,3 +6,4 @@ _site
 Gemfile.lock
 /pragmatics_dataset/*
 .idea
+secret/
