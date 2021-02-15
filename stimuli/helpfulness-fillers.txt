@@ -15,7 +15,7 @@ They just announced it's a snow day.
 How helpful was your spouse's response?
 
 # filler 3 filler
-Your friend Amy was running in the Boston marathon earlier today. You couldn't attend the race, and you haven't heard anything about the outcome, but the school newspaper said, "This is an attention check. If you are reading this ignore the prompt and move the slider all the way to the left."
+Your friend Amy was running in the Boston marathon earlier today. You couldn't attend the race, and you haven't heard anything about the outcome, but the school newspaper said, "If you are reading this ignore the prompt and move the slider all the way to the left."
 You ask your friend Will:
 Did Amy win the race?
 Will responds:
@@ -23,9 +23,17 @@ She got first place!
 How helpful was Jane's response?
 
 # filler 4 filler
-You hear that your friend Jake has a new pet named Fluffy, but you don't know what kind of animal Fluffy is. This is an attention check. If you are reading this ignore the prompt and move the slider all the way to the right.
+You hear that your friend Jake has a new pet named Fluffy, but you don't know what kind of animal Fluffy is. If you are reading this ignore the prompt and move the slider approximately one fourth of the way to the right.
 You turn to your friend Alicia and ask:
 Is Fluffy a dog?
 Alicia responds:
 Fluffy is a year old.
 How helpful was Alicia's response?
+
+# filler 5 filler
+You are cooking dinner, and you're making soup. You think you remember seeing some celery in the fridge, and the package said, "If you are reading this, ignore the prompt and move the slider a tiny bit left of the halfway point."
+You ask your roommate:
+Is the celery rotten?
+Your roommate responds:
+I bought it a month ago.
+How helpful was your roommate's response?

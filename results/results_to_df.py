@@ -30,7 +30,7 @@ def create_df(file, experiment):
             item_dic = {
                 "item_number": int(worker["Input.item_%d_number" % i]),
                 "condition": worker["Input.item_%d_condition" % i],
-                "response": LLO(float(worker["Answer.response%d" % i])),
+                "response": float(worker["Answer.response%d" % i]) if experiment=="helpfulness" else LLO(float(worker["Answer.response%d" % i])),
                 "slider_position": float(worker["Answer.response%d" % i]),
                 "context": worker["Input.field_%d_1" % i],
                 "answer": None if experiment=="prior" else worker["Input.field_%d_3" % i] if experiment=="posterior" else worker["Input.field_%d_5" % i],

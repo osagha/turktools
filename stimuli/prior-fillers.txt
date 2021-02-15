@@ -1,9 +1,9 @@
 # filler 1 filler
-It's time to take the dog out. You grab the leash, look out the window, and see a sign that says "This is an attention check. If you are reading this, move the slider to a value between ten percent and fifteen percent."
+It's time to take the dog out. You grab the leash, look out the window, and see a sign that says "If you are reading this, ignore the prompt and move the slider to a value between ten percent and fifteen percent."
 How likely do you think it is that it will rain?
 
 # filler 2 filler
-You are cooking dinner, and you're making soup. You can't remember if you bought celery, so you look in the fridge and find a package that says "This is an attention check. If you are reading this, move the slider to a value between eighty percent and eighty five percent."
+You are cooking dinner, and you're making soup. You can't remember if you bought celery, so you look in the fridge and find a package that says "If you are reading this, ignore the prompt and move the slider to a value between eighty percent and eighty five percent."
 How likely do you think it is that the celery is rotten?
 
 # filler 3 filler
@@ -13,3 +13,7 @@ How likely do you think it is that you pulled out a Yummy bar?
 # filler 4 filler
 You are entering a raffle. The grand prize is a new car, and you really want to win. So you purchase a bunch of tickets. You don't remember how many tickets, but it's between ten and fifteen. You see that a total of 100 raffle tickets have been bought.
 How likely do you think it is that you'll win the raffle?
+
+# filler 5 filler
+You and your friends are trying to decide whether to order pizza or dumplings, but nobody can seem to make up their minds. If you're reading this, move the slider to a value between forty and forty five percent.
+How likely do you think it is that you'll order dumplings?

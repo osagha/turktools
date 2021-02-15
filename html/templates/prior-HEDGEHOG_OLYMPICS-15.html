@@ -1,0 +1,385 @@
+
+
+<style type="text/css">
+label, input[type=radio], input[type=button] { cursor: pointer; }
+.blue { color: blue; }
+.red { color: red; }
+.trial { padding: 15px 10px; }
+.trial p, .trial table { padding-left: 50px; margin: 3px; }
+.trial_number { float: left; font-size: 1.5em; font-weight: bold; display:inline-block; min-width:50px; }
+#unanswered { font-weight: bold; font-size: 2em; color: black; background-color: red; margin: 0 auto; width: 500px; border: black 1px solid; padding: 10px; display:none; }
+#answered { margin: 0 auto; width: 500px; border: black 1px solid; padding: 10px; display:none; }
+.slider { width: 300px; margin: 0 10px; }
+.example { background-color: #ccc; padding: 10px; }
+
+</style>
+
+<style type="text/css">
+.slider-wrapper input {
+  width: 300px;
+  height: 20px;
+  margin: 0;
+  transform-origin: 75px 75px;
+}
+</style>
+
+<p>Survey Code: <span class="blue">HEDGEHOG_OLYMPICS</span></p>
+<p class="red"><strong>PLEASE COMPLETE AT MOST ONE <span class="blue">HEDGEHOG_OLYMPICS</span> SURVEY. YOU WILL NOT BE PAID FOR COMPLETING MORE THAN ONE SURVEY WITH THIS CODE.</strong></p>
+
+
+<h1>Instructions</h1>
+<p>This HIT presents 14 scenarios. <strong>Your task is to judge what the probability of an event is in the scenario.</strong> Don't worry if there isn't enough information to assign an exact probability to the possibility. There is no right answer: We're only interested in <strong>your intuition</strong>.</p>
+<p>This HIT should take about 10 minutes to complete.</p>
+<p>You can indicate the probability by dragging the slider between "Impossible" and "Certain". As you move the slider, you can see how the probability of the event changes.</p>
+<p>Here is an example:</p>
+
+<div class="example">
+<div class="trial">
+	<p><strong>Background: </strong>Aaron is going to Paris on vacation. He's never been before, so he's excited to see the famous sites.</p>
+	<p><strong>What's the probability that Aaron will go to the Eiffel Tower?</strong></p>
+
+	<table><tr><td class='label'>IMPOSSIBLE</td><td>
+		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response_example1"/></div>
+		<div class="output"></div></td><td class='label'>CERTAIN</td></tr>
+	</table>
+	<p>The probability that Aaron will go to the Eiffel Tower is quite high, but not certain. So slide the slider to the right until you're happy with the percentage that shows under the slider. </p>
+    <p>You may notice that the probabilities change more slowly as the slider approaches the 0% or 100%. This is to give you more control if the event is very unlikely or very likely.</p>
+</div></div>
+
+<p>Here is another example:</p>
+
+<div class="example">
+<div class="trial">
+	<p><strong>Background: </strong>Lauren is getting dressed to go outside. It's December and she lives in Canada.</p>
+	<p><strong>What's the probability that Lauren will put on shorts?</strong></p>
+	<table><tr><td class='label'>IMPOSSIBLE</td><td>
+		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response_example2"/></div>
+		<div class="output"></div></td><td class='label'>CERTAIN</td></tr>
+	</table>
+	<p>The probability that Lauren will put on shorts is very low. So please slide the slider to the left until you are happy with the percentage that shows under the slider. </p>
+</div></div>
+
+
+<p class="red"><strong>In order to get paid, please make sure that you answer all 15 questions.</strong></p>
+
+  <p class="left legal">
+	<strong><br>
+	<br>
+	<br>
+	LEGAL INFORMATION</strong>:<br>
+	<br>
+	By completing this survey you acknowledge that this is an academic survey conducted by NYU
+	researchers studying language. The survey is expected to take up to 5 minutes.
+	Information that could be used to identify you may be kept indefinitely, but will remain
+	confidential. Because of the nature of the study, the information we are collecting cannot be
+	deleted or otherwise forgotten and we may not be able to provide you with it. You will be paid if
+	you complete all parts of the survey.<br><br>
+
+	If you have any questions about the study, contact Lucas Champollion at
+	<a href="mailto:champollion@nyu.edu">champollion@nyu.edu</a>. If you have any questions about your rights as a research subject,
+	contact the NYU IRB at <a href="mailto:ask.humansubjects@nyu.edu">ask.humansubjects@nyu.edu</a>
+	(or <a href="mailto:gdpr-info@nyu.edu">gdpr-info@nyu.edu</a> for participants in
+	Europe) Please reference the IRB protocol number -- IRB-FY2020-4913 -- when emailing.
+  </p><hr noshade="noshade" />
+<hr noshade="noshade" />
+
+<!--<p class="red"><strong>IF YOU HAVE ALREADY COMPLETED A <span class="blue">HEDGEHOG_OLYMPICS</span> SURVEY, PLEASE STOP HERE. YOU WILL NOT BE PAID FOR COMPLETING MORE THAN ONE SURVEY WITH THIS CODE.</strong></p>-->
+
+
+
+<div class="trial count">
+	<span class="trial_number">1.</span>
+	<p><strong>Background: </strong>${field_1_1}</p>
+	<p>${field_1_2}</p>
+	<table><tr><td class='label'>IMPOSSIBLE</td><td>
+		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response1"/></div>
+		<div class="output"></div></td><td class='label'>CERTAIN</td></tr>
+	</table>
+</div>
+
+<hr noshade="noshade" />
+
+
+
+<div class="trial count">
+	<span class="trial_number">2.</span>
+	<p><strong>Background: </strong>${field_2_1}</p>
+	<p>${field_2_2}</p>
+	<table><tr><td class='label'>IMPOSSIBLE</td><td>
+		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response2"/></div>
+		<div class="output"></div></td><td class='label'>CERTAIN</td></tr>
+	</table>
+</div>
+
+<hr noshade="noshade" />
+
+
+
+<div class="trial count">
+	<span class="trial_number">3.</span>
+	<p><strong>Background: </strong>${field_3_1}</p>
+	<p>${field_3_2}</p>
+	<table><tr><td class='label'>IMPOSSIBLE</td><td>
+		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response3"/></div>
+		<div class="output"></div></td><td class='label'>CERTAIN</td></tr>
+	</table>
+</div>
+
+<hr noshade="noshade" />
+
+
+
+<div class="trial count">
+	<span class="trial_number">4.</span>
+	<p><strong>Background: </strong>${field_4_1}</p>
+	<p>${field_4_2}</p>
+	<table><tr><td class='label'>IMPOSSIBLE</td><td>
+		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response4"/></div>
+		<div class="output"></div></td><td class='label'>CERTAIN</td></tr>
+	</table>
+</div>
+
+<hr noshade="noshade" />
+
+
+
+<div class="trial count">
+	<span class="trial_number">5.</span>
+	<p><strong>Background: </strong>${field_5_1}</p>
+	<p>${field_5_2}</p>
+	<table><tr><td class='label'>IMPOSSIBLE</td><td>
+		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response5"/></div>
+		<div class="output"></div></td><td class='label'>CERTAIN</td></tr>
+	</table>
+</div>
+
+<hr noshade="noshade" />
+
+
+
+<div class="trial count">
+	<span class="trial_number">6.</span>
+	<p><strong>Background: </strong>${field_6_1}</p>
+	<p>${field_6_2}</p>
+	<table><tr><td class='label'>IMPOSSIBLE</td><td>
+		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response6"/></div>
+		<div class="output"></div></td><td class='label'>CERTAIN</td></tr>
+	</table>
+</div>
+
+<hr noshade="noshade" />
+
+
+
+<div class="trial count">
+	<span class="trial_number">7.</span>
+	<p><strong>Background: </strong>${field_7_1}</p>
+	<p>${field_7_2}</p>
+	<table><tr><td class='label'>IMPOSSIBLE</td><td>
+		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response7"/></div>
+		<div class="output"></div></td><td class='label'>CERTAIN</td></tr>
+	</table>
+</div>
+
+<hr noshade="noshade" />
+
+
+
+<div class="trial count">
+	<span class="trial_number">8.</span>
+	<p><strong>Background: </strong>${field_8_1}</p>
+	<p>${field_8_2}</p>
+	<table><tr><td class='label'>IMPOSSIBLE</td><td>
+		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response8"/></div>
+		<div class="output"></div></td><td class='label'>CERTAIN</td></tr>
+	</table>
+</div>
+
+<hr noshade="noshade" />
+
+
+
+<div class="trial count">
+	<span class="trial_number">9.</span>
+	<p><strong>Background: </strong>${field_9_1}</p>
+	<p>${field_9_2}</p>
+	<table><tr><td class='label'>IMPOSSIBLE</td><td>
+		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response9"/></div>
+		<div class="output"></div></td><td class='label'>CERTAIN</td></tr>
+	</table>
+</div>
+
+<hr noshade="noshade" />
+
+
+
+<div class="trial count">
+	<span class="trial_number">10.</span>
+	<p><strong>Background: </strong>${field_10_1}</p>
+	<p>${field_10_2}</p>
+	<table><tr><td class='label'>IMPOSSIBLE</td><td>
+		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response10"/></div>
+		<div class="output"></div></td><td class='label'>CERTAIN</td></tr>
+	</table>
+</div>
+
+<hr noshade="noshade" />
+
+
+
+<div class="trial count">
+	<span class="trial_number">11.</span>
+	<p><strong>Background: </strong>${field_11_1}</p>
+	<p>${field_11_2}</p>
+	<table><tr><td class='label'>IMPOSSIBLE</td><td>
+		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response11"/></div>
+		<div class="output"></div></td><td class='label'>CERTAIN</td></tr>
+	</table>
+</div>
+
+<hr noshade="noshade" />
+
+
+
+<div class="trial count">
+	<span class="trial_number">12.</span>
+	<p><strong>Background: </strong>${field_12_1}</p>
+	<p>${field_12_2}</p>
+	<table><tr><td class='label'>IMPOSSIBLE</td><td>
+		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response12"/></div>
+		<div class="output"></div></td><td class='label'>CERTAIN</td></tr>
+	</table>
+</div>
+
+<hr noshade="noshade" />
+
+
+
+<div class="trial count">
+	<span class="trial_number">13.</span>
+	<p><strong>Background: </strong>${field_13_1}</p>
+	<p>${field_13_2}</p>
+	<table><tr><td class='label'>IMPOSSIBLE</td><td>
+		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response13"/></div>
+		<div class="output"></div></td><td class='label'>CERTAIN</td></tr>
+	</table>
+</div>
+
+<hr noshade="noshade" />
+
+
+
+<div class="trial count">
+	<span class="trial_number">14.</span>
+	<p><strong>Background: </strong>${field_14_1}</p>
+	<p>${field_14_2}</p>
+	<table><tr><td class='label'>IMPOSSIBLE</td><td>
+		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response14"/></div>
+		<div class="output"></div></td><td class='label'>CERTAIN</td></tr>
+	</table>
+</div>
+
+<hr noshade="noshade" />
+
+
+
+<div class="trial count">
+	<span class="trial_number">15.</span>
+	<p><strong>Background: </strong>${field_15_1}</p>
+	<p>${field_15_2}</p>
+	<table><tr><td class='label'>IMPOSSIBLE</td><td>
+		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response15"/></div>
+		<div class="output"></div></td><td class='label'>CERTAIN</td></tr>
+	</table>
+</div>
+
+<hr noshade="noshade" />
+
+
+
+<p>Are you a native speaker of English? <label for="englishY"><input id="englishY" type="radio" name="english" value="1" /> Yes</label> <label for="englishN"><input id="englishN" type="radio" name="english" value="0" /> No</label></p>
+<p>Do you speak a language other than English? <label for="foreignlangY"><input id="foreignlangY" type="radio" name="foreignlang" value="1" /> Yes</label> <label for="foreignlangN"><input id="foreignlangN" type="radio" name="foreignlang" value="0" /> No</label></p>
+<p>(Your answers to these questions do not affect the payment.)</p>
+
+
+<div>
+	<p>If you experienced any problems with this HIT, please provide more detail below. Otherwise, please leave this portion blank.</p>
+	<input type="text" id="comments" name="comments" size="100" /></span>
+</div>
+<br />
+
+<div id="unanswered">
+	<span>&nbsp;</span> questions (out of 15 total) have been answered. If you submit now, you will not be paid.<br />
+	<input type="button" value="HIGHLIGHT UNANSWERED QUESTIONS" id="highlight-button" />
+</div>
+
+<div id="answered">
+	<span>&nbsp;</span> questions (out of 15 total) have been answered. You are ready to submit.
+</div>
+<h3 style="color: red; text-align:center;">After submitting this HIT, do NOT submit another HIT with survey code <span class="blue">HEDGEHOG_OLYMPICS</span>. You will not be paid for completing more than one survey with this code.</h3>
+<p><input type="hidden" name="numanswered" id="numanswered" /> <input type="hidden" name="useragent" id="useragent" /></p>
+
+<script type='text/javascript'>
+
+total_number = parseInt("15") || Infinity;
+
+function count() {
+	if ($(this).is('div'))
+		$(this).closest('.count').addClass('touched').css('background','transparent');
+
+	var num = $('.count.touched').length;
+
+	$('#unanswered span, #answered span').text(num);
+	$('#numanswered').val(num);
+
+	if ( num < total_number ) {
+		$('#unanswered').show();
+		$('#answered').hide();
+	} else {
+		$('#unanswered').hide();
+		$('#answered').show();
+	}
+}
+$(count);
+
+$(function() {
+	$('#useragent').val(navigator.userAgent);
+});
+
+function highlight() {
+	$('.count').css('background', 'yellow');
+	$('.count.touched').css('background', 'transparent');
+}
+$('#highlight-button').click(highlight);
+
+var link = new $.noUiSlider.Link({target: function(val) {$(this).siblings('input').val(val);}});
+$(".slider").noUiSlider({
+	range: { min: [0], max: [100] },
+	start: [50],
+	handles: 1,
+	connect: "lower",
+	serialization: {
+		lower: [link],
+		format: {decimals: 0}
+	}
+}).on('slide', count);
+</script>
+
+
+<script type="text/javascript">
+
+var xs = document.getElementsByClassName('slider');
+var ys = document.getElementsByClassName('output');
+var i;
+for (i = 0; i < xs.length; i++) {
+	const x = xs[i]
+	const y = ys[i]
+	function updateOutput() {
+	  y.innerText = (100/(1 + Math.pow((-1 + 1/x.value), 1.5))).toFixed(3) + "%";
+	}
+	updateOutput()
+	xs[i].addEventListener('mousemove', updateOutput);
+
+}
+
+</script>

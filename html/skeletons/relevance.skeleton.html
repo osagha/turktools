@@ -39,7 +39,7 @@ label, input[type=radio], input[type=button] { cursor: pointer; }
 	<p><strong>Background: </strong>Your friend Aaron has gone to Paris on vacation. He's the kind of person who would rather sit in a cafe all day than go around visiting tourist sites. But he'll make an exception for the really unmissable sites.</p>
 	<p><strong>You ask Aaron's friend Jess:</strong> Will Aaron go to the Eiffel Tower?</p>
 	<p><strong>Jess answers:</strong> It's his tenth time visiting Paris.</p>
-	<p><strong>How relevant is Jess's answer?</strong> Please indicate your answer using the slider.</p>
+	<p><strong>How relevant is Jess's answer to the question at hand?</strong> Please indicate your answer using the slider.</p>
 	<table><tr><td class='label'>NOT RELEVANT AT ALL</td><td>
 		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response_example1"/></div>
 		<div class="output"></div></td><td class='label'>VERY RELEVANT</td></tr>
@@ -50,10 +50,24 @@ label, input[type=radio], input[type=button] { cursor: pointer; }
 <p>Here is another example:</p>
 <div class="example">
 <div class="trial">
+	<p><strong>Background: </strong>You and your friend are looking for a seat in a crowded movie theater. You find a pair of seats that appear to be open.</p>
+	<p><strong>You ask a man sitting in the row: </strong>Are these seats taken?</p>
+	<p><strong>The man replies: </strong>I'm saving them for my friends.</p>
+	<p><strong>How relevant was the man's answer to the question at hand?</strong></p>
+	<table><tr><td class='label'>NOT RELEVANT AT ALL</td><td>
+		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response_example1"/></div>
+		<div class="output"></div></td><td class='label'>VERY RELEVANT</td></tr>
+	</table>
+	<p>Even though the man's response doesn't help you find a seat, it fully addressed the question at hand. So move the slider all the way to the right.</p>
+</div></div>
+
+<p>Here is another example:</p>
+<div class="example">
+<div class="trial">
 	<p><strong>Background: </strong>You're ready to leave home for the day, and you haven't checked the weather. It's springtime, and the weather is warming up.</p>
 	<p><strong>You ask your roommate: </strong>Do I need to wear a jacket?</p>
 	<p><strong>Your roommate replies: </strong>There's a full moon tonight.</p>
-	<p><strong>How relevant is your roommate's answer?</strong></p>
+	<p><strong>How relevant is your roommate's answer to the question at hand?</strong></p>
 	<table><tr><td class='label'>NOT RELEVANT AT ALL</td><td>
 		<div class="slider-wrapper"><input class="slider" type="range" min="0" max="1" value="0.5" step="0.0001" name="response_example2"/></div>
 		<div class="output"></div></td><td class='label'>VERY RELEVANT</td></tr>
