@@ -859,7 +859,7 @@ How likely do you think it is that Adam got the part?
 # target 10 context-low-bias answer-exhaustive-answer
 Your friend Adam grew up listening to the Les Miserables soundtrack. This year, the school's drama club is putting on the show, and (naturally) Adam auditioned for the lead role. As a loyal friend, you are trying to find some information about how he did.
 Your other friend Jane tells you:
-Adam was very happy to learn that they got the part.
+Adam was very happy to learn that he got the part.
 How likely do you think it is that Adam got the part?
 
 # target 10 context-low-bias answer-non-answer
@@ -889,7 +889,7 @@ How likely do you think it is that Adam got the part?
 # target 10 context-positive-bias answer-exhaustive-answer
 Your friend Adam grew up listening to the Les Miserables soundtrack. By age 10 he had memorized every song and occasionally put on full-length productions with his stuffed animals. This year, the school's drama club is putting on the show, and (naturally) Adam auditioned for the lead role. As a loyal friend, you are trying to find some information about how he did.
 Your other friend Jane tells you:
-Adam was very happy to learn that they got the part.
+Adam was very happy to learn that he got the part.
 How likely do you think it is that Adam got the part?
 
 # target 10 context-positive-bias answer-non-answer
@@ -919,7 +919,7 @@ How likely do you think it is that Adam got the part?
 # target 10 context-negative-bias answer-exhaustive-answer
 Your friend Adam grew up listening to the Les Miserables soundtrack. This year, the school's drama club is putting on the show, and (naturally) Adam auditioned for the lead role. Adam is enthusiastic, but he never learned how to sing. As a loyal friend, you are trying to find some information about how he did.
 Your other friend Jane tells you:
-Adam was very happy to learn that they got the part.
+Adam was very happy to learn that he got the part.
 How likely do you think it is that Adam got the part?
 
 # target 10 context-negative-bias answer-non-answer

@@ -7,10 +7,12 @@ import matplotlib.pyplot as plt
 
 
 
-results_dir = "pilot_11_Feb_21/secret/"
+results_dir = "second_launch-15_Feb_21/secret/"
 prior = os.path.join(results_dir, "prior.csv")
 posterior = os.path.join(results_dir, "posterior.csv")
 helpfulness = os.path.join(results_dir, "helpfulness.csv")
+num_items = 15
+
 
 def LLO(p):
     if p == 0:
@@ -23,10 +25,10 @@ def create_df(file, experiment):
         data = [{k: v for k, v in row.items()}
             for row in csv.DictReader(f, skipinitialspace=True)]
 
-    data_columns = ["WorkerId", "Input.list"]
+    data_columns = ["WorkerId", "Input.list", "AssignmentId"]
     responses = []
     for worker in data:
-        for i in range(1,15):
+        for i in range(1, num_items+1):
             item_dic = {
                 "item_number": int(worker["Input.item_%d_number" % i]),
                 "condition": worker["Input.item_%d_condition" % i],
@@ -58,3 +60,4 @@ df_helpfulness["condition_answer"] = df_helpfulness["condition"].apply(lambda x:
 df_helpfulness["experiment"] = "helpfulness"
 
 df = pd.concat([df_helpfulness, df_prior, df_posterior])
+print(df.to_string())

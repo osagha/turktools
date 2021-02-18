@@ -1147,7 +1147,7 @@ Your friend Adam grew up listening to the Les Miserables soundtrack. This year, 
 You ask your friend Jane:
 Did Adam get the part?
 Jane responds:
-Adam was very happy to learn that they got the part.
+Adam was very happy to learn that he got the part.
 How relevant was Jane's response to the question at hand?
 
 # target 10 context-low-bias answer-non-answer
@@ -1187,7 +1187,7 @@ Your friend Adam grew up listening to the Les Miserables soundtrack. By age 10 h
 You ask your friend Jane:
 Did Adam get the part?
 Jane responds:
-Adam was very happy to learn that they got the part.
+Adam was very happy to learn that he got the part.
 How relevant was Jane's response to the question at hand?
 
 # target 10 context-positive-bias answer-non-answer
@@ -1227,7 +1227,7 @@ Your friend Adam grew up listening to the Les Miserables soundtrack. This year, 
 You ask your friend Jane:
 Did Adam get the part?
 Jane responds:
-Adam was very happy to learn that they got the part.
+Adam was very happy to learn that he got the part.
 How relevant was Jane's response to the question at hand?
 
 # target 10 context-negative-bias answer-non-answer

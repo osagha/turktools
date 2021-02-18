@@ -26,8 +26,10 @@ label, input[type=radio], input[type=button] { cursor: pointer; }
 <p class="red"><strong>PLEASE COMPLETE AT MOST ONE <span class="blue">HEDGEHOG_OLYMPICS</span> SURVEY. YOU WILL NOT BE PAID FOR COMPLETING MORE THAN ONE SURVEY WITH THIS CODE.</strong></p>
 
 <h1>Instructions</h1>
-<p>This HIT presents 14 scenarios. <strong>Your task is to judge what the probability of an event is in the scenario.</strong> Don't worry if there isn't enough information to assign an exact probability to the possibility. There is no right answer: We're only interested in <strong>your intuition</strong>.</p>
+<p>This HIT presents 15 scenarios. <strong>Your task is to judge what the probability of an event is in the scenario.</strong></p>
 <p>This HIT should take about 10 minutes to complete.</p>
+<p>You will receive a $1.50 bonus if your work is high quality (most people receive this bonus).</p>
+<p>Don't worry if there isn't enough information to assign an exact probability to the possibility. There is no right answer: We're only interested in <strong>your intuition</strong>.</p>
 <p>You can indicate the probability by dragging the slider between "Impossible" and "Certain". As you move the slider, you can see how the probability of the event changes.</p>
 <p>Here is an example:</p>
 <div class="example">
@@ -314,17 +316,24 @@ Europe) Please reference the IRB protocol number -- IRB-FY2020-4913 -- when emai
 
 
 
+
+<h1>Exit Survey</h1>
+<p>(None of your responses to these questions will affect the payment.)</p>
+
 <p>Are you a native speaker of English? <label for="englishY"><input id="englishY" type="radio" name="english" value="1" /> Yes</label> <label for="englishN"><input id="englishN" type="radio" name="english" value="0" /> No</label></p>
 <p>Do you speak a language other than English? <label for="foreignlangY"><input id="foreignlangY" type="radio" name="foreignlang" value="1" /> Yes</label> <label for="foreignlangN"><input id="foreignlangN" type="radio" name="foreignlang" value="0" /> No</label></p>
-<p>(Your answers to these questions do not affect the payment.)</p>
-
 
 <div>
-	<p>If you experienced any problems with this HIT, please provide more detail below. Otherwise, please leave this portion blank.</p>
+	<p>Did you notice any errors in this HIT or find anything unclear? If so, please provide more detail below.</p>
+	<input type="text" id="issues" name="issues" size="100" /></span>
+</div>
+<br/>
+
+<div>
+	<p>Do you have any comments about this HIT?</p>
 	<input type="text" id="comments" name="comments" size="100" /></span>
 </div>
-
-<br />
+<br/>
 
 <div id="unanswered">
 	<span>&nbsp;</span> questions (out of 15 total) have been answered. If you submit now, you will not be paid.<br />

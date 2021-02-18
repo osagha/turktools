@@ -1,5 +1,5 @@
 experiment,item_number,min,max,filler_type,text
-helpfulness,1,0,0.05,reasoning,"You’re throwing a party and you’re expecting your roommate's friend Jane to come. It’s 20 minutes before the party.
+helpfulness,1,0,0.2,reasoning,"You’re throwing a party and you’re expecting your roommate's friend Jane to come. It’s 20 minutes before the party.
 You ask your friend Dan:
 Is Jane going to be on time?
 Dan responds:
@@ -17,7 +17,7 @@ Did Amy win the race?
 Will responds:
 She got first place!
 How helpful was Jane's response?"
-helpfulness,4,0.15,0.35,attention,"You hear that your friend Jake has a new pet named Fluffy, but you don't know what kind of animal Fluffy is. If you are reading this ignore the prompt and move the slider approximately one fourth of the way to the right.
+helpfulness,4,0.15,0.8,attention,"You hear that your friend Jake has a new pet named Fluffy, but you don't know what kind of animal Fluffy is. If you are reading this ignore the prompt and move the slider approximately one fourth of the way to the right.
 You turn to your friend Alicia and ask:
 Is Fluffy a dog?
 Alicia responds:
