@@ -58,7 +58,7 @@ print(spearmanr(items["entropy_reduction"], items["helpfulness"]))
 ax = plt.gca()
 # ax.set_xlim(-0.05, 4)
 # sns.regplot(data=items, x="kl_exp", y="helpfulness", scatter_kws={'alpha':0.2})
-sns.scatterplot(data=items, x="kl_exp", y="helpfulness", alpha=0.2)
+sns.scatterplot(data=items, x="entropy_reduction", y="helpfulness", alpha=0.2)
 
 
 # Plot entropy reduction vs helpfulness
