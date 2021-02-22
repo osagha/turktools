@@ -37,9 +37,22 @@ def annotate(data, **kws):
 # plt.savefig(f"../figures/scatter/{name}_vs_helpfulness_by_context.png")
 # plt.savefig(f"../figures/scatter/{name}_vs_helpfulness_by_context.pdf")
 
-results = results[results.apply(lambda x: x["helpfulness_stdev"] < 0.3 and
-                                    x["prior_stdev"] < 0.3 and
-                                    x["posterior_stdev"] < 0.3, axis=1)]
+
+
+
+
+# Filtered Results
+
+# # Filter by stdev
+# results = results[results.apply(lambda x: x["helpfulness_stdev"] < 0.3 and
+#                                     x["prior_stdev"] < 0.3 and
+#
+
+results = results[results.apply(lambda x: x["helpfulness_range"] < 0.75 and
+                                    x["prior_range"] < 0.75 and
+                                    x["posterior_range"] < 0.75, axis=1)]
+
+
 
 name = "KL_exp"
 g = sns.relplot(data=results, col="condition_context", x="kl_exp", y="helpfulness_mean",
@@ -47,8 +60,8 @@ g = sns.relplot(data=results, col="condition_context", x="kl_exp", y="helpfulnes
 g.fig.suptitle(f"{name} by Answer/Context Condition")
 g.fig.tight_layout()
 g.map_dataframe(annotate)
-plt.savefig(f"../figures/scatter/{name}_vs_helpfulness_by_context_filtered.png")
-plt.savefig(f"../figures/scatter/{name}_vs_helpfulness_by_context_filtered.pdf")
+plt.savefig(f"../figures/scatter/{name}_vs_helpfulness_by_context_filtered_by_range.png")
+plt.savefig(f"../figures/scatter/{name}_vs_helpfulness_by_context_filtered_by_range.pdf")
 
 name = "ER"
 g = sns.relplot(data=results, col="condition_context", x="entropy_reduction", y="helpfulness_mean",
@@ -56,5 +69,5 @@ g = sns.relplot(data=results, col="condition_context", x="entropy_reduction", y=
 g.fig.suptitle(f"{name} by Answer/Context Condition")
 g.fig.tight_layout()
 g.map_dataframe(annotate)
-plt.savefig(f"../figures/scatter/{name}_vs_helpfulness_by_context_filtered.png")
-plt.savefig(f"../figures/scatter/{name}_vs_helpfulness_by_context_filtered.pdf")
+plt.savefig(f"../figures/scatter/{name}_vs_helpfulness_by_context_filtered_by_range.png")
+plt.savefig(f"../figures/scatter/{name}_vs_helpfulness_by_context_filtered_by_range.pdf")

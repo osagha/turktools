@@ -33,11 +33,53 @@ results = pd.read_json("../results/analyzed_results_combined.jsonl", orient="rec
 r = results[["condition_answer", "condition_context", "item_number",
              "entropy_reduction", "kl_exp",
              "posterior_mean", "prior_mean", "helpfulness_mean",
+             "posterior_range", "prior_range", "helpfulness_range",
              "posterior_stdev", "prior_stdev", "helpfulness_stdev"]]
-r = r.melt(id_vars=["condition_answer", "condition_context", "item_number"], value_vars=["helpfulness_mean", "kl_exp", "entropy_reduction"])
+# r = r.melt(id_vars=["condition_answer", "condition_context", "item_number"], value_vars=["helpfulness_mean", "kl_exp", "entropy_reduction"])
+#
+#
+# name = "All Relevance Metrics"
+# g = sns.catplot(data=r,
+#                 x="variable", y="value",
+#                 row="condition_context", col="condition_answer",
+#                 kind="violin",
+#                 cut=0, scale="width", row_order=["negative-bias", "low-bias", "positive-bias"])
+# g.set_xticklabels(rotation=30, ha="right")
+# g.set_ylabels(name)
+# g.set_xlabels("Answer")
+# g.fig.suptitle(f"{name} by Answer/Context Condition")
+# g.fig.tight_layout()
+# g.add_legend()
+# name = "_".join(name.split())
+# plt.savefig(f"../figures/violins/{name}_by_condition.png")
+# plt.savefig(f"../figures/violins/{name}_by_condition.pdf")
 
 
-name = "All Relevance Metrics"
+
+
+# # Agreement metrics: Range
+# r = r.melt(id_vars=["condition_answer", "condition_context", "item_number"], value_vars=["helpfulness_range", "prior_range", "posterior_range"])
+# name = "Response Range"
+# g = sns.catplot(data=r,
+#                 x="variable", y="value",
+#                 row="condition_context", col="condition_answer",
+#                 kind="violin",
+#                 cut=0, scale="width", row_order=["negative-bias", "low-bias", "positive-bias"])
+# g.set_xticklabels(rotation=30, ha="right")
+# g.set_ylabels(name)
+# g.set_xlabels("Answer")
+# g.fig.suptitle(f"{name} by Answer/Context Condition")
+# g.fig.tight_layout()
+# g.add_legend()
+# name = "_".join(name.split())
+# plt.savefig(f"../figures/violins/{name}_by_condition.png")
+# plt.savefig(f"../figures/violins/{name}_by_condition.pdf")
+
+
+
+# Agreement metrics: Range
+r = r.melt(id_vars=["condition_answer", "condition_context", "item_number"], value_vars=["helpfulness_stdev", "prior_stdev", "posterior_stdev"])
+name = "Response stdev"
 g = sns.catplot(data=r,
                 x="variable", y="value",
                 row="condition_context", col="condition_answer",

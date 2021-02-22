@@ -17,6 +17,9 @@ items = items.reset_index().merge(prior, on=["item_number", "condition_context"]
 
 # create df with metrics & write to csv
 
+def range(l):
+    return max(l) - min(l)
+
 items = items[items.apply(lambda x: len(x["helpfulness"]) > 0 and
                                     len(x["prior"]) > 0 and
                                     len(x["posterior"]) > 0, axis=1)]
@@ -24,6 +27,7 @@ items = items[items.apply(lambda x: len(x["helpfulness"]) > 0 and
 for exp in ["helpfulness", "posterior", "prior"]:
     items[exp + "_mean"] = items[exp].apply(np.mean)
     items[exp + "_stdev"] = items[exp].apply(np.std)
+    items[exp + "_range"] = items[exp].apply(lambda l: max(l) - min(l))
 
 
 
@@ -58,11 +62,11 @@ items = items.merge(results[results["experiment"]=="helpfulness"][["condition", 
 items = items.drop_duplicates(subset=["condition", "item_number"])
 items.to_csv("analyzed_results_combined.csv")
 items.to_json("analyzed_results_combined.jsonl", orient="records", lines=True)
-print(items.to_string())
-
-print(spearmanr(items["kl"], items["helpfulness_mean"]))
-print(spearmanr(items["kl_exp"], items["helpfulness_mean"]))
-print(spearmanr(items["entropy_reduction"], items["helpfulness_mean"]))
+# print(items.to_string())
+#
+# print(spearmanr(items["kl"], items["helpfulness_mean"]))
+# print(spearmanr(items["kl_exp"], items["helpfulness_mean"]))
+# print(spearmanr(items["entropy_reduction"], items["helpfulness_mean"]))
 
 
 # # Trellis of lineplots by item number
@@ -79,16 +83,16 @@ print(spearmanr(items["entropy_reduction"], items["helpfulness_mean"]))
 
 
 # Plot KL vs helpfulness
-ax = plt.gca()
-# ax.set_xlim(-0.05, 4)
-# sns.regplot(data=items, x="kl_exp", y="helpfulness", scatter_kws={'alpha':0.2})
-sns.scatterplot(data=items, x="kl_exp", y="helpfulness_mean", alpha=0.2)
-
-
-# Plot entropy reduction vs helpfulness
-# sns.regplot(data=items, x="entropy_reduction", y="helpfulness")
-
-
-plt.show()
+# ax = plt.gca()
+# # ax.set_xlim(-0.05, 4)
+# # sns.regplot(data=items, x="kl_exp", y="helpfulness", scatter_kws={'alpha':0.2})
+# sns.scatterplot(data=items, x="kl_exp", y="helpfulness_mean", alpha=0.2)
+#
+#
+# # Plot entropy reduction vs helpfulness
+# # sns.regplot(data=items, x="entropy_reduction", y="helpfulness")
+#
+#
+# plt.show()
 
 
