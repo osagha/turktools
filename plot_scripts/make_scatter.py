@@ -53,21 +53,15 @@ results = results[results.apply(lambda x: x["helpfulness_range"] < 0.75 and
                                     x["posterior_range"] < 0.75, axis=1)]
 
 
-
-name = "KL_exp"
-g = sns.relplot(data=results, col="condition_context", x="kl_exp", y="helpfulness_mean",
-                alpha=0.7, s=80, col_order=["negative-bias", "low-bias", "positive-bias"])
-g.fig.suptitle(f"{name} by Answer/Context Condition")
-g.fig.tight_layout()
-g.map_dataframe(annotate)
-plt.savefig(f"../figures/scatter/{name}_vs_helpfulness_by_context_filtered_by_range.png")
-plt.savefig(f"../figures/scatter/{name}_vs_helpfulness_by_context_filtered_by_range.pdf")
-
-name = "ER"
-g = sns.relplot(data=results, col="condition_context", x="entropy_reduction", y="helpfulness_mean",
-                alpha=0.7, s=80, col_order=["negative-bias", "low-bias", "positive-bias"])
-g.fig.suptitle(f"{name} by Answer/Context Condition")
-g.fig.tight_layout()
-g.map_dataframe(annotate)
-plt.savefig(f"../figures/scatter/{name}_vs_helpfulness_by_context_filtered_by_range.png")
-plt.savefig(f"../figures/scatter/{name}_vs_helpfulness_by_context_filtered_by_range.pdf")
+for x_name in ["kl_exp", "entropy_reduction"]:
+    name = "KL Exponential" if x_name == "kl_exp" else "Entropy Reduction"
+    plot_name = "KL_exp" if x_name == "kl_exp" else "ER"
+    g = sns.relplot(data=results, col="condition_context", x=x_name, y="helpfulness_mean", #hue="condition_answer",
+                    alpha=0.7, s=80, col_order=["negative-bias", "low-bias", "positive-bias"])
+    g.map_dataframe(annotate)
+    g.fig.suptitle(f"{name} by Answer/Context Condition")
+    g.set_xlabels(name)
+    g.set_ylabels("Helpfulness")
+    g.fig.tight_layout()
+    plt.savefig(f"../figures/scatter/{plot_name}_vs_helpfulness_by_context_filtered_by_range.png")
+    plt.savefig(f"../figures/scatter/{plot_name}_vs_helpfulness_by_context_filtered_by_range.pdf")

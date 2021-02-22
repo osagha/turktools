@@ -12,6 +12,7 @@ items = pd.pivot_table(results, values="response", index=["item_number", "condit
 items.columns = items.columns.droplevel()
 prior = pd.pivot_table(results[results["experiment"] == "prior"], index=["item_number", "condition_context"], values="response", aggfunc=list)
 items = items.reset_index().merge(prior, on=["item_number", "condition_context"]).rename({"response":"prior"}, axis=1)
+print(items.to_string())
 # posterior_prior = items.set_index(['item_number', 'condition_answer', 'condition', 'condition_context', 'helpfulness'])
 # posterior_prior = posterior_prior.stack().reset_index().rename({"level_5":"judgment", 0:"response"}, axis=1)
 

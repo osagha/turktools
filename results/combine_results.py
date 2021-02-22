@@ -4,9 +4,12 @@ import os
 results_dirs = ["pilot_11_Feb_21/round1",
                 "pilot_11_Feb_21/redo",
                 "pilot_11_Feb_21/redo2",
+                "pilot_11_Feb_21/redo3",
+                "pilot_11_Feb_21/redo4",
                  "second_launch-15_Feb_21/round1",
                  "second_launch-15_Feb_21/redo",
                  "second_launch-15_Feb_21/redo2",
+                 "second_launch-15_Feb_21/redo3",
                 ]
 
 
