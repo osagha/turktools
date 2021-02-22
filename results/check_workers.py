@@ -7,8 +7,8 @@ import os
 # print(df.to_string())
 
 # Check that workers did not do more than one HIT
-# results_dir = "pilot_11_Feb_21/redo2"
-results_dir = "second_launch-15_Feb_21/redo2"
+results_dir = "pilot_11_Feb_21/redo4"
+# results_dir = "second_launch-15_Feb_21/redo3"
 results_files = [x for x in os.listdir(os.path.join(results_dir, "secret")) if "bonus" not in x and "workers" not in x]
 num_items = 15
 
@@ -84,9 +84,11 @@ workers = df.drop_duplicates(subset=["WorkerId", "Input.list"])[["WorkerId", "In
 repeat_worker_ids = [item for item, count in collections.Counter(workers["WorkerId"]).items() if count > 1]
 results_dirs = ["pilot_11_Feb_21/redo",
                 "pilot_11_Feb_21/redo2",
+                "pilot_11_Feb_21/redo3",
                 "pilot_11_Feb_21/round1",
                 "second_launch-15_Feb_21/redo",
                 "second_launch-15_Feb_21/redo2",
+                "second_launch-15_Feb_21/redo3",
                 "second_launch-15_Feb_21/round1",
                 ]
 previous_workers = [x for d in results_dirs if d != results_dirs for x in list(set(pd.read_json(os.path.join(d, "secret/workers.jsonl"), orient="records", lines=True)["WorkerId"]))]
